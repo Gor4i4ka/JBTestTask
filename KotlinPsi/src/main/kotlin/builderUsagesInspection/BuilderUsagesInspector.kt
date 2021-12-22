@@ -1,0 +1,11 @@
+package builderUsagesInspection
+
+import com.intellij.codeInspection.LocalInspectionTool
+import com.intellij.codeInspection.ProblemsHolder
+import dataClassBuilderInspection.DataClassVisitor
+
+class BuilderUsagesInspector: LocalInspectionTool() {
+    override fun buildVisitor(holder: ProblemsHolder, isOnTheFly: Boolean): PotentialBuilderUsageVisitor {
+        return PotentialBuilderUsageVisitor(holder, isOnTheFly)
+    }
+}

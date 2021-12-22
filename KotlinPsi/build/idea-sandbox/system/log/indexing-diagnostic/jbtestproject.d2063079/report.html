@@ -1,0 +1,102 @@
+<html><head><title>Indexing diagnostics of &#39;JBTestProject&#39;</title><style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 80%;
+}
+
+table.two-columns td {
+  width: 50%;
+}
+
+th, td {
+  padding: 3px;
+}
+
+th {
+  background: lightgrey;
+}
+
+td {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+        
+.stats-content {
+  margin-left: 20%;
+}
+
+.aggregate-report-content {
+  margin-left: 10%;
+}
+
+.navigation-bar {
+  width: 15%;
+  background-color: lightgrey;
+  position: fixed;
+  height: 100%;
+}
+
+div.navigation-bar ul {
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+div.navigation-bar ul li a, label {
+  display: block;
+  color: #000;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+label input {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+div.navigation-bar ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.minor-data {}
+
+.invisible {
+  display: none;
+}
+
+.jetbrains-logo {
+  width: 50%;
+  bottom: 5%;
+  position: absolute;
+  left: 20%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.linkable-table-row:hover {
+  background: #f2f3ff;
+  outline: none;
+  cursor: pointer;
+}</style><script>document.addEventListener("DOMContentLoaded", () => {
+  const rows = document.getElementsByClassName("linkable-table-row")
+  for (const row of rows) {
+    const href = row.getAttribute("href")
+    row.addEventListener("click", () => {
+      window.open(href, "_blank");
+    });
+  }
+});</script></head><body><div class="aggregate-report-content"><h1>Project name</h1>JBTestProject<div><h1>Indexing history</h1><table class="centered-text"><caption style="caption-side: bottom; text-align: right; font-size: 14px">Hover for details</caption><thead><tr><th colspan="6">Time</th><th colspan="6">Files</th><th rowspan="2">IDE</th></tr><tr><th>Started</th><th>Total</th><th>Scanning</th><th>Indexing</th><th>Content loading</th><th>Finished</th><th>Providers</th><th>Scanned</th><th>Shared indexes (w/o content loading)</th><th>Scheduled for indexing</th><th>Shared indexes (content loaded)</th><th>Total indexed (shared indexes included)</th></tr></thead><tbody><tr class="linkable-table-row" href="diagnostic-2021-12-22-19-02-01.313.html"><td><strong>On refresh of 23 files</strong><br/>19:02:00 22 Dec</td><td>30 ms</td><td>&lt; 1 ms</td><td>3 ms</td><td>&lt; 1 ms</td><td>19:02:00 22 Dec</td><td>1</td><td>23</td><td>0</td><td>23</td><td>0</td><td>23</td><td>IC-213.5744.223</td></tr><tr class="linkable-table-row" href="diagnostic-2021-12-22-19-02-01.259.html"><td><strong>On refresh of 24 files</strong><br/>19:02:00 22 Dec</td><td>60 ms</td><td>&lt; 1 ms</td><td>11 ms</td><td>1 ms</td><td>19:02:00 22 Dec</td><td>1</td><td>24</td><td>0</td><td>24</td><td>0</td><td>24</td><td>IC-213.5744.223</td></tr><tr class="linkable-table-row" href="diagnostic-2021-12-22-19-02-00.726.html"><td><strong>changes in: &quot;Module &#39;JBTestProject.test&#39; (test)&quot;, &quot;Module &#39;JBTestProject.main&#39; (main)&quot;, &quot;JDK 11&quot;, &quot;Library Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10&quot;, &quot;Library Gradle: org.jetbrains.kotlin:kotlin-test:1.6.10&quot;, &quot;Library Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10&quot;, &quot;Library Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10&quot;, &quot;Library Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.6.10&quot;, &quot;Library Gradle: org.jetbrains:annotations:13.0&quot;, &quot;Library Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10&quot; and 6 iterators more</strong><br/>19:02:00 22 Dec</td><td>156 ms</td><td>71 ms</td><td>0</td><td>0</td><td>19:02:00 22 Dec</td><td>16</td><td>33750</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-213.5744.223</td></tr><tr class="linkable-table-row" href="diagnostic-2021-12-22-19-02-00.566.html"><td><strong>Reindex requested by project root model changes</strong><br/>19:00:29 22 Dec</td><td>1 m 31 s 209 ms</td><td>12 s 566 ms</td><td>1 m 18 s 589 ms</td><td>17 s 53 ms</td><td>19:02:00 22 Dec</td><td>23</td><td>135970</td><td>0</td><td>134287</td><td>0</td><td>134287</td><td>IC-213.5744.223</td></tr><tr class="linkable-table-row" href="diagnostic-2021-12-22-18-59-23.998.html"><td><strong>On project open</strong><br/>18:59:18 22 Dec</td><td>5 s 685 ms</td><td>1 s 717 ms</td><td>3 s 686 ms</td><td>197 ms</td><td>18:59:23 22 Dec</td><td>7</td><td>345</td><td>0</td><td>244</td><td>0</td><td>244</td><td>IC-213.5744.223</td></tr></tbody></table></div><div><h1>Scanning to push properties of changed files</h1><table><thead><tr><th>Time</th><th>Reason</th><th>Full duration</th><th>Is cancelled</th><th>Number</th></tr></thead><tbody><tr><td>19:02:00 22 Dec</td><td>Push on VFS changes</td><td>&lt; 1 ms</td><td>fully finished</td><td>1</td></tr></tbody></table></div></div></body></html>

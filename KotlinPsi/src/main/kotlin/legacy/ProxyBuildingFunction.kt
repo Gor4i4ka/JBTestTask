@@ -1,0 +1,4 @@
+package legacy
+
+class ProxyBuildingFunction {
+}

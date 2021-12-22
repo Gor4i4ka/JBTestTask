@@ -1,0 +1,9 @@
+<project>
+  <component name="ExternalProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JBTestProject.iml" filepath="$PROJECT_DIR$/.idea/JBTestProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JBTestProject.main.iml" filepath="$PROJECT_DIR$/.idea/modules/JBTestProject.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JBTestProject.test.iml" filepath="$PROJECT_DIR$/.idea/modules/JBTestProject.test.iml" />
+    </modules>
+  </component>
+</project>

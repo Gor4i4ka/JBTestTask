@@ -1,0 +1,23 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="213.5744" until-build="213.*" />
+  <id>com.ktpsi.KotlinPsi</id>
+  <name>KTPSI</name>
+  <vendor email="" url="">NoBrains</vendor>
+  <description><![CDATA[KOTLINNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN]]></description>
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.java</depends>
+  <depends>org.jetbrains.kotlin</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <localInspection implementationClass="dataClassBuilderInspection.DataClassInspector" language="kotlin" level="WARNING" enabledByDefault="true" displayName="THE INSPECTION" />
+    <localInspection implementationClass="builderUsagesInspection.BuilderUsagesInspector" language="kotlin" level="WARNING" enabledByDefault="true" displayName="OTHER INSPECTION" />
+    <!-- Add your extensions here -->
+  </extensions>
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+</idea-plugin>
