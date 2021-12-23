@@ -3,16 +3,10 @@ package builderUsagesInspection
 import com.intellij.codeInspection.ProblemsHolder
 import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiElementVisitor
-import com.intellij.refactoring.typeCook.deductive.resolver.BindingFactory
-import dataClassBuilderInspection.DataClassBuilderCreationFix
 import org.jetbrains.kotlin.idea.caches.resolve.analyze
-import org.jetbrains.kotlin.idea.references.KtInvokeFunctionReference
-import org.jetbrains.kotlin.idea.references.KtInvokeFunctionReferenceDescriptorsImpl
 import org.jetbrains.kotlin.idea.references.mainReference
 import org.jetbrains.kotlin.idea.references.resolveToDescriptors
 import org.jetbrains.kotlin.psi.*
-import org.jetbrains.kotlin.resolve.BindingContext
-import org.jetbrains.kotlin.resolve.BindingContextUtils
 import org.jetbrains.kotlin.resolve.lazy.BodyResolveMode
 
 class PotentialBuilderUsageVisitor(private val holder: ProblemsHolder, private val isOnTheFly: Boolean):

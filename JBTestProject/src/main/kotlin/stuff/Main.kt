@@ -27,13 +27,3 @@ fun main(args: Array<String>) {
     println("END")
 }
 
-class DataABuilder {
-    var valueA: Float? = null
-    var valueB: Int? = null
-    fun build(): DataA? {
-        return if (valueB == null)
-            null
-        else
-            DataA(valueA!!, valueB)
-    }
-}

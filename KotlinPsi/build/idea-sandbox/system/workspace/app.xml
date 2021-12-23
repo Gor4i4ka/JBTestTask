@@ -767,6 +767,7 @@
             </plugins>
           </entry>
         </featureMap>
+        <option name="lastUpdateTime" value="1640274037799" />
       </features>
     </option>
     <option name="extensions">
@@ -12232,7 +12233,22 @@
               </dataSet>
             </plugins>
           </entry>
+          <entry key="*.jce">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="com.tencent.jceplugin" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="*.jsh">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="dev.jbang.intellij.JBangPlugin" />
+              </dataSet>
+            </plugins>
+          </entry>
         </featureMap>
+        <option name="lastUpdateTime" value="1640274037689" />
       </features>
     </option>
   </component>
@@ -12643,5 +12659,20 @@
         <option name="path" value="$APPLICATION_HOME_DIR$/plugins/textmate/lib/bundles/sql" />
       </BundleConfigBean>
     </bundles>
+  </component>
+  <component name="shared-index-jdk-hash">
+    <option name="entries">
+      <entry>
+        <option name="aliases">
+          <list>
+            <option value="11.0.13" />
+            <option value="11" />
+          </list>
+        </option>
+        <option name="hash" value="f9afe15f2398336ac0f31972868cbb9ac4991d74" />
+        <option name="name" value="11" />
+        <option name="snapshotHash" value="a3bfe8b79e86b1e988f1499df7e163214abc5d07573465562f85d2a20369dd84" />
+      </entry>
+    </option>
   </component>
 </application>

@@ -7,3 +7,5 @@ Streams.ktinternaljdk8!JDK8PlatformImplementations.ktcollections
 sourcesorg	gradle	kotlindslPluginAccessors.ktcom.intellij.java
 extensions%"predefinedExternalAnnotations.json
 Main.kt
+Main.kt
+Main.ktworkspace.xmlotherDirectory	otherPackotherFile.kt

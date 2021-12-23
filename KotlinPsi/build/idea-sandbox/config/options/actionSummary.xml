@@ -6,5 +6,11 @@
     <e n="WelcomeScreen.OpenProject">
       <i c="2" l="1640188733174" />
     </e>
+    <e n="com.intellij.diagnostic.IdeMessagePanel$4">
+      <i c="1" l="1640274083632" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="1" l="1640274038152" />
+    </e>
   </component>
 </application>

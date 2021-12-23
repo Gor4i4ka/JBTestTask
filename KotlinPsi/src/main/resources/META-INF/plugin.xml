@@ -15,7 +15,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <localInspection
-                implementationClass="dataClassBuilderInspection.DataClassInspector"
+                implementationClass="dataClassBuilderInspection.DataClassInspection"
                 language="kotlin"
                 level="WARNING"
                 enabledByDefault="true"
