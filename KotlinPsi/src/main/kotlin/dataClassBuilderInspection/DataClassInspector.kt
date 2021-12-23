@@ -5,7 +5,11 @@ import com.intellij.codeInspection.ProblemsHolder
 
 class DataClassInspector: LocalInspectionTool() {
 
-//TODO: Add GUI Swing panel
+/*TODO: Add GUI Swing panel
+
+    Вопрос: добавить Swing панельку для более красочного отображения description'а плагина (в потенциале)?
+    PS: это откуда-то сворованная заготовка
+*/
 //// PREPARATIONS FOR GUI BOIZZZZZ
 //    override fun createOptionsPanel(): JComponent {
 //        val panel = JPanel(FlowLayout(FlowLayout.LEFT))

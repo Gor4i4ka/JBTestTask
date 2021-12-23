@@ -22,7 +22,30 @@ class PotentialBuilderUsageVisitor(private val holder: ProblemsHolder, private v
     private val quickFix = BuilderWrapperFix()
 
 
-    //TODO: Understand what the hell is going on
+    /*TODO: Understand what the hell is going on
+    Возникла проблема с resolve'ингом reference'ов в Kotlin: все в null.
+    В файлике, который кидался с Заданием было пояснение как resolve'нуть reference'ы.
+
+    val call: KtCallElement =
+        val resolvedTo: DeclarationDescriptor? =
+        call.mainReference.resolveToDescriptors().firstOrNull()
+
+    Я попытался так сделать и:
+    1) Во первых resolveToDescriptors требует BindingContext, я попытался достать его с помощью analyze метода к самому элементу,
+    потыкал разные параметры к analyze но зарезолвить так и не смог. Видимо он не для этого.
+    2) Java-шные reference'ы резолвятся очень хорошо по типу element.mainReference.resolve(), с Kotlin не работает
+    3) Потыкал разные классы, в которых было навание Search, Find, названия уже не помню, но не помогло. Думал найду
+    какой-то полезный дескриптор.
+    4) потыкал разные StackOverflow на тему написания плагинов (есть реп с примерами плагинов, но там самая база и для java,
+    того же JavaPsiFacade походу для Kotlin нет), люди сталкивались с таким же постоянным null что и я.
+
+    *) Есть мега-неоптимальный вариант искать Visitor'ом в каждом VirtualFile необходимый data class и его primary constructor: в package legacy
+    я где-то эксперементировал с получением информации о всем проекте и запуске Visitor на нем. Но в таком случае это
+    ОЧЕНЬ НЕОПТИМАЛЬНО и так делать очевидно не следует.
+
+    Вопрос:Как на 2021 год нормально resolve'ить Kotlin референсы?Не получается(
+
+     */
     override fun visitElement(element: PsiElement) {
 
         if (element is KtCallElement) {

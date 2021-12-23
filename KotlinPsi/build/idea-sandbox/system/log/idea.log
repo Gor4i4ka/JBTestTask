@@ -940,3 +940,620 @@ java.lang.Throwable
 2021-12-22 19:07:11,978 [ 505645]   INFO - stubs.SerializationManagerImpl - Finished shutting down /home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/system/index/rep.names 
 2021-12-22 19:07:12,080 [ 505747]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
 2021-12-22 19:07:12,082 [ 505749]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2021-12-23 00:16:27,030 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2021-12-23 00:16:27,426 [    396]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-213.5744.223, 27 Nov 2021 10:14) 
+2021-12-23 00:16:27,525 [    495]   INFO -        #com.intellij.idea.Main - OS: Linux (5.4.0-91-generic, amd64) 
+2021-12-23 00:16:27,596 [    566]   INFO -        #com.intellij.idea.Main - JRE: 11.0.13+7-b1751.19 (JetBrains s.r.o.) 
+2021-12-23 00:16:27,597 [    567]   INFO -        #com.intellij.idea.Main - JVM: 11.0.13+7-b1751.19 (OpenJDK 64-Bit Server VM) 
+2021-12-23 00:16:27,603 [    573]   INFO -        #com.intellij.idea.Main - JVM options: [-Didea.auto.reload.plugins=true, -Didea.classpath.index.enabled=false, -Didea.config.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/config, -Didea.is.internal=true, -Didea.platform.prefix=Idea, -Didea.plugins.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/plugins, -Didea.required.plugins.id=com.ktpsi.KotlinPsi, -Didea.system.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/system, -Dsun.awt.disablegrab=true, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant, -ea] 
+2021-12-23 00:16:27,604 [    574]   INFO -        #com.intellij.idea.Main - args: [] 
+2021-12-23 00:16:27,604 [    574]   INFO -        #com.intellij.idea.Main - library path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib 
+2021-12-23 00:16:27,605 [    575]   INFO -        #com.intellij.idea.Main - boot library path: /home/nick/.gradle/caches/modules-2/files-2.1/com.jetbrains/jbre/jbr_jcef-11_0_13-linux-x64-b1751.19/extracted/jbr/lib 
+2021-12-23 00:16:27,754 [    724]   INFO -        #com.intellij.idea.Main - locale=en_US JNU=UTF-8 file.encoding=UTF-8
+  idea.config.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/config
+  idea.system.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/system
+  idea.plugins.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/plugins
+  idea.log.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/system/log 
+2021-12-23 00:16:27,775 [    745]   INFO -        #com.intellij.idea.Main - CPU cores: 8; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@4bbbf84d[Running, parallelism = 7, size = 7, active = 5, running = 5, steals = 2, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@139a7502 
+2021-12-23 00:16:27,969 [    939]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 193 ms 
+2021-12-23 00:16:29,717 [   2687]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, descriptorPath=plugin.xml, path=~/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.3/75777e10a0e2880bc02945066dda2480a696c3d9/ideaIC-2021.3/plugins/Groovy, version=213.5744.223, package=org.jetbrains.plugins.groovy, isBundled=true) misses optional descriptor duplicates-groovy.xml 
+2021-12-23 00:16:29,832 [   2802]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, descriptorPath=plugin.xml, path=~/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.3/75777e10a0e2880bc02945066dda2480a696c3d9/ideaIC-2021.3/plugins/Groovy, version=213.5744.223, package=org.jetbrains.plugins.groovy, isBundled=true) misses optional descriptor duplicates-detection-groovy.xml 
+2021-12-23 00:16:32,347 [   5317]   INFO - llij.ide.plugins.PluginManager - Module intellij.space.index is not enabled because dependency intellij.indexing.shared is not available 
+2021-12-23 00:16:32,417 [   5387]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: IDEA CORE (213.5744.223), IDE Features Trainer (213.5744.223), Grazie (213.5744.223), Settings Repository (213.5744.223), YAML (213.5744.223), WSL File System Support (213.5744.223), TextMate Bundles (213.5744.223), Terminal (213.5744.223), Emoji Picker (213.5744.223), JetBrains maven model api classes (213.5744.223), JetBrains Repository Search (213.5744.223), Qodana (213.5744.223), EditorConfig (213.5744.223), WebP Support (213.5744.223), Mercurial (213.5744.223), Shell Script (213.5744.223), Projector Libraries for Code With Me and Remote Development (213.5744.223), JetBrains Marketplace Licensing Support (213.5744.223), Windows 10 Light Theme (213.5744.223), macOS Light Theme (213.5744.223), Dependency Management Api for External Build Tools (213.5744.223), Copyright (213.5744.223), Properties (213.5744.223), Gradle (213.5744.223), Images (213.5744.223), Java (213.5744.223), JavaFX (213.5744.223), Kotlin (213-1.5.10-release-949-IJ5744.223), Java Bytecode Decompiler (213.5744.223), Eclipse Interoperability (213.5744.223), Java Stream Debugger (213.5744.223), Package Search (213.5744.223), Code With Me (213.5744.223), com.intellij.tracing.ide (213.5744.223), Java IDE Customization (213.5744.223), Java Internationalization (213.5744.223), UI Designer (213.5744.223), Configuration Script (213.5744.223), Shared Indexes (213.5744.223), Machine Learning Code Completion (213.5744.223), Smali Support (213.5744.223), XPathView + XSLT (213.5744.223), IntelliLang (213.5744.223), Markdown (213.5744.223), Task Management (213.5744.223), XSLT Debugger (213.5744.223), TestNG (213.5744.223), Subversion (213.5744.223), Perforce Helix Core (213.5744.223), Lombok (213.5744.223), JUnit (213.5744.223), GitHub (213.5744.223), Space (213.5744.223), Git (213.5744.223), IDE Features Trainer: Git Lessons (213.5744.223), ChangeReminder (213.5744.223), Machine Learning in Search Everywhere (213.5744.223), Code Coverage for Java (213.5744.223), Bytecode Viewer (213.5744.223), Groovy (213.5744.223), Ant (213.5744.223), Maven (213.5744.223), Gradle-Java (213.5744.223), Gradle-Maven (213.5744.223), Gradle DSL API (213.5744.223), Gradle Dependency Updater Implementation (213.5744.223), Android (2020.3.1 Final.213.5744.223), Plugin DevKit (213.5744.223) 
+2021-12-23 00:16:32,417 [   5387]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: KTPSI (1.0-SNAPSHOT) 
+2021-12-23 00:16:32,878 [   5848]   INFO -        #com.intellij.idea.Main - WM detected: GNOME Shell, desktop: ubuntu:GNOME 
+2021-12-23 00:16:35,988 [   8958]   INFO - ication.options.PathMacrosImpl - Loaded path macros: {MAVEN_REPOSITORY=/home/nick/.m2/repository, KOTLIN_BUNDLED=/home/nick/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.3/75777e10a0e2880bc02945066dda2480a696c3d9/ideaIC-2021.3/plugins/Kotlin/kotlinc} 
+2021-12-23 00:16:36,206 [   9176]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2021-12-23 00:16:36,223 [   9193]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2021-12-23 00:16:36,298 [   9268]   INFO - intellij.util.io.FilePageCache - lower=100; upper=492; buffer=10; max=492 
+2021-12-23 00:16:36,362 [   9332]   WARN - j.internal.DebugAttachDetector - Unable to start DebugAttachDetector, please add `--add-exports java.base/jdk.internal.vm=ALL-UNNAMED` to VM options 
+2021-12-23 00:16:36,614 [   9584]   INFO - til.io.storage.AbstractStorage - Space waste in /home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/system/caches/attrib.dat is 8709815 bytes. Compacting now. 
+2021-12-23 00:16:36,644 [   9614]   INFO - intellij.diagnostic.JitWatcher - JIT compilation state checking enabled 
+2021-12-23 00:16:36,817 [   9787]   INFO - lors.impl.AppEditorFontOptions - Font setting migration: JetBrains Mono -> [JetBrains Mono, Regular, Bold] 
+2021-12-23 00:16:37,804 [  10774]   INFO - til.io.storage.AbstractStorage - Done compacting in 1190msec. 
+2021-12-23 00:16:38,624 [  11594]   INFO - penapi.application.Experiments - Experimental features enabled for user: wsl.p9.support, wsl.prefer.p9.support, wsl.p9.show.roots.in.file.chooser, wsl.execute.with.wsl.exe, linux.native.menu, recent.and.edited.files.together, show.create.new.element.in.popup, search.everywhere.mixed.results, editor.reader.mode, new.large.text.file.viewer, wsl.fsd.content.loader, terminal.shell.command.handling 
+2021-12-23 00:16:39,157 [  12127]   INFO - penapi.wm.impl.GlobalMenuLinux - Start glib main loop in thread: GlobalMenuLinux loop 
+2021-12-23 00:16:39,212 [  12182]   INFO - penapi.wm.impl.GlobalMenuLinux - Closed dbus-service 'com.canonical.AppMenu.Registrar' 
+2021-12-23 00:16:39,314 [  12284]   INFO - BridgeArtifactManagerRedefiner - Using workspace model to open project 
+2021-12-23 00:16:39,884 [  12854]   INFO - penapi.wm.impl.GlobalMenuLinux - created instance of GlobalMenuLinux for xid=0x300002e 
+2021-12-23 00:16:40,224 [  13194]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: /home/nick/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.3/75777e10a0e2880bc02945066dda2480a696c3d9/ideaIC-2021.3/bin/linux/fsnotifier 
+2021-12-23 00:16:40,326 [  13296]   INFO - impl.SharedIndexMainZipStorage - Shared Indexes Storage is opened and empty 
+2021-12-23 00:16:40,497 [  13467]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2021-12-23 00:16:41,589 [  14559]   INFO -                         STDOUT - Info  | RdCoroutineScope          | 12:JobScheduler FJ pool 0/7 | RdCoroutineHost overridden  
+2021-12-23 00:16:41,674 [  14644]   WARN - l.NotificationGroupManagerImpl - Notification group CodeWithMe is already registered (group=com.intellij.notification.NotificationGroup@76d46eee). Plugin descriptor: PluginDescriptor(name=Code With Me, id=com.jetbrains.codeWithMe, descriptorPath=plugin.xml, path=~/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.3/75777e10a0e2880bc02945066dda2480a696c3d9/ideaIC-2021.3/plugins/cwm-plugin, version=213.5744.223, package=null, isBundled=true) 
+2021-12-23 00:16:42,364 [  15334]   INFO - tests.impl.DistributedTestHost - Host address=localhost/127.0.0.1 
+2021-12-23 00:16:42,775 [  15745]   INFO - pl.projectlevelman.NewMappings - VCS Root: [Git] - [/home/nick/JetBrainsProjects/JBTestTask] 
+2021-12-23 00:16:42,994 [  15964]   INFO - rojectCodeStyleSettingsManager - Loading Project code style 
+2021-12-23 00:16:43,004 [  15974]   INFO - el.ide.impl.WorkspaceModelImpl - Load workspace model from cache in 3044 ms 
+2021-12-23 00:16:43,010 [  15980]   INFO - eStyle.CustomCodeStyleSettings - Loaded org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings 
+2021-12-23 00:16:43,072 [  16042]   INFO - eStyle.CustomCodeStyleSettings - Loaded org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings 
+2021-12-23 00:16:43,132 [  16102]   INFO - eStyle.CommonCodeStyleSettings - Loaded Kotlin common code style settings 
+2021-12-23 00:16:43,132 [  16102]   INFO - eStyle.CommonCodeStyleSettings - Loaded Kotlin common code style settings 
+2021-12-23 00:16:43,134 [  16104]   INFO - rojectCodeStyleSettingsManager - Project code style loaded 
+2021-12-23 00:16:43,907 [  16877]   INFO - .intellij.openapi.wm.StatusBar - Factory is not registered as `com.intellij.statusBarWidgetFactory` extension: com.intellij.openapi.vcs.changes.committed.IncomingChangesIndicatorFactory 
+2021-12-23 00:16:44,259 [  17229]   INFO - ins.rd.platform.codeWithMe.f.S - sessionStatus: null 
+2021-12-23 00:16:44,265 [  17235]   INFO - ins.rd.platform.codeWithMe.f.S - freeSessionRemainingTimeMs: null null 
+2021-12-23 00:16:46,356 [  19326]   INFO - al.NewToolbarRootPaneExtension - Show old main toolbar: false; show old navigation bar: true 
+2021-12-23 00:16:46,356 [  19326]   INFO - al.NewToolbarRootPaneExtension - Show new main toolbar: false 
+2021-12-23 00:16:49,281 [  22251]   INFO - leBasedIndexDataInitialization - Index data initialization done: 10853 ms. Initialized indexes: [FilenameIndex, FrameworkDetectionIndex, TodoIndex, IdIndex, filetypes, Stubs, Trigram.Index, fileIncludes, DomFileIndex, RelaxSymbolIndex, XmlTagNames, XmlNamespaces, html5.custom.attributes.index, SchemaTypeInheritance, json.file.root.values, yaml.keys.name, editorconfig.index.name, xmlProperties, bytecodeAnalysis, java.auto.module.name, java.source.module.name, java.null.method.argument, java.fun.expression, java.binary.plus.expression, JavaFxControllerClassIndex, javafx.id.name, javafx.custom.component, org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex, org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinJavaScriptMetaFileIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFilePackageIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinPackageSourcesMemberNamesIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinBuiltInsMetadataIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinStdlibIndex, org.jetbrains.kotlin.idea.vfilefinder.KlibMetaFileIndex, com.intellij.uiDesigner.FormClassIndex, XsltSymbolIndex, groovy.trait.fields, groovy.trait.methods, LombokConfigIndex, ant-imports, com.android.tools.idea.model.AndroidManifestIndex$Companion$NAME$1.NAME, BindingXmlIndex, MlModelFileIndex, NavXmlIndex, IdeaPluginRegistrationIndex, PluginIdModuleIndex, PluginIdDependenciesIndex, devkit.ExtensionPointIndex, devkit.ExtensionPointClassIndex]. 
+2021-12-23 00:16:49,703 [  22673]   WARN - ctionSystem.impl.ActionUpdater - 530 ms to call on EDT SpaceMainToolBarAction#update (com.intellij.space.actions.SpaceMainToolBarAction) - speed it up and/or implement UpdateInBackground. 
+2021-12-23 00:16:49,709 [  22679]   WARN - ctionSystem.impl.ActionUpdater - 525 ms to grab EDT for SaveAllAction#update (com.intellij.ide.actions.SaveAllAction) 
+2021-12-23 00:16:50,473 [  23443]   WARN - ctionSystem.impl.ActionUpdater - 762 ms to grab EDT for SynchronizeAction#update (com.intellij.ide.actions.SynchronizeAction) 
+2021-12-23 00:16:50,768 [  23738]   WARN - ctionSystem.impl.ActionUpdater - 294 ms to grab EDT for CacheRecoveryActionGroup#update (com.intellij.ide.actions.cache.CacheRecoveryActionGroup) 
+2021-12-23 00:16:50,968 [  23938]   WARN - ctionSystem.impl.ActionUpdater - 174 ms to call on EDT CacheRecoveryActionGroup#getChildren (com.intellij.ide.actions.cache.CacheRecoveryActionGroup) - speed it up and/or implement UpdateInBackground. 
+2021-12-23 00:16:51,080 [  24050]   WARN - ctionSystem.impl.ActionUpdater - 290 ms to grab EDT for RedoAction#update (com.intellij.ide.actions.RedoAction) 
+2021-12-23 00:16:51,215 [  24185]   INFO - System.impl.PopupMenuPreloader - Popup menu 'File' preloaded at 'MainMenu' in 2976 ms 
+2021-12-23 00:16:51,598 [  24568]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Edit' preloaded at 'MainMenu' in 3403 ms 
+2021-12-23 00:16:52,232 [  25202]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Navigate' preloaded at 'MainMenu' in 4036 ms 
+2021-12-23 00:16:52,371 [  25341]   INFO - System.impl.PopupMenuPreloader - Popup menu 'View' preloaded at 'MainMenu' in 4175 ms 
+2021-12-23 00:16:53,207 [  26177]   INFO - exImpl$StubIndexInitialization - Index data initialization done: 3925 ms. Initialized stub indexes: {kotlin.primeIndexKey, org.jetbrains.kotlin.idea.stubindex.KotlinSubclassObjectNameIndex, jvm.static.member.type, dom.namespaceKey, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyFqnNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasFqNameIndex, gr.class.super, org.jetbrains.kotlin.idea.stubindex.KotlinClassShortNameIndex, gr.annot.members, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasByPackageIndex, java.anonymous.baseref, dom.elementClass, jvm.static.member.name, properties.index, java.method.parameter.types, java.class.extlist, org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex, java.class.fqn, org.jetbrains.kotlin.idea.stubindex.KotlinAnnotationsIndex, java.module.name, gr.method.name, gr.field.name, gr.script.fqn, org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinPropertyShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinExactPackagesIndex, java.annotations, java.class.shortname, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionByPackageIndex, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelClassByPackageIndex, java.field.name, java.method.name, gr.anonymous.class, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyByPackageIndex, gr.annot.method.name, org.jetbrains.kotlin.idea.stubindex.KotlinFullClassNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinSuperClassIndex, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex, markdown.header, gr.class.fqn, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionFqnNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingPropertyShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingFunctionShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinProbablyContractedFunctionShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinJvmNameAnnotationIndex, org.jetbrains.kotlin.idea.stubindex.KotlinExtensionsInObjectsByReceiverTypeIndex, org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinScriptFqnIndex, org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinFilePartClassIndex, org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeClassByPackageIndex, org.jetbrains.kotlin.idea.stubindex.KotlinMultifileClassPartIndex, org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeShortNameIndex, gr.script.class}. 
+2021-12-23 00:16:54,924 [  27894]   WARN - ctionSystem.impl.ActionUpdater - 2215 ms to grab EDT for SilentCodeCleanupAction#update (com.intellij.codeInspection.actions.SilentCodeCleanupAction) 
+2021-12-23 00:16:54,924 [  27894]   WARN - ctionSystem.impl.ActionUpdater - 2153 ms to grab EDT for RefactoringQuickListPopupAction#update (com.intellij.refactoring.actions.RefactoringQuickListPopupAction) 
+2021-12-23 00:16:56,257 [  29227]   INFO - ings.impl.UpdateCheckerService - channel: release 
+2021-12-23 00:16:58,518 [  31488]   INFO - erver.followMe.FollowMeManager - Register new user 0:'nick' with ClientId=ClientId(value=Host) 
+2021-12-23 00:16:58,663 [  31633]   INFO - til.indexing.RootChangesLogger - New rootsChanged event for "JBTestProject" project with full reindex with trace_hash = -1025509999:
+java.lang.Throwable
+	at com.intellij.util.indexing.RootChangesLogger.info(RootChangesLogger.java:27)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.logRootChanges(EntityIndexingServiceImpl.java:99)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.runFullReindex(EntityIndexingServiceImpl.java:84)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.indexChanges(EntityIndexingServiceImpl.java:46)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerComponent.synchronizeRoots(ProjectRootManagerComponent.java:298)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerComponent.fireRootsChangedEvent(ProjectRootManagerComponent.java:211)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.fireRootsChanged(ProjectRootManagerImpl.java:447)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$1.fireRootsChanged(ProjectRootManagerImpl.java:145)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$1.fireRootsChanged(ProjectRootManagerImpl.java:142)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$BatchSession.lambda$levelDown$0(ProjectRootManagerImpl.java:90)
+	at com.intellij.openapi.application.WriteAction.lambda$run$1(WriteAction.java:86)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteActionWithClass(ApplicationImpl.java:935)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteAction(ApplicationImpl.java:961)
+	at com.intellij.openapi.application.WriteAction.run(WriteAction.java:85)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$BatchSession.levelDown(ProjectRootManagerImpl.java:90)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.mergeRootsChangesDuring(ProjectRootManagerImpl.java:393)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.projectJdkChanged(ProjectRootManagerImpl.java:318)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.lambda$loadState$1(ProjectRootManagerImpl.java:359)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteAction(ApplicationImpl.java:947)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.lambda$loadState$2(ProjectRootManagerImpl.java:359)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:214)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$200(TransactionGuardImpl.java:21)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:196)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:805)
+	at com.intellij.openapi.application.impl.ApplicationImpl.lambda$invokeLater$4(ApplicationImpl.java:348)
+	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:82)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:131)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:47)
+	at com.intellij.openapi.application.impl.FlushQueue$FlushNow.run(FlushQueue.java:187)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:891)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:760)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:447)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:818)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:446)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:805)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:492)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+ 
+2021-12-23 00:16:58,663 [  31633]   INFO - penapi.project.DumbServiceImpl - cancel UnindexedFilesUpdater[JBTestProject] 
+2021-12-23 00:16:58,923 [  31893]   INFO - til.indexing.RootChangesLogger - New rootsChanged event for "JBTestProject" project with partial reindex with trace_hash = 1788304299:
+java.lang.Throwable
+	at com.intellij.util.indexing.RootChangesLogger.info(RootChangesLogger.java:27)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.logRootChanges(EntityIndexingServiceImpl.java:99)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.indexChanges(EntityIndexingServiceImpl.java:78)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerComponent.synchronizeRoots(ProjectRootManagerComponent.java:298)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerComponent.fireRootsChangedEvent(ProjectRootManagerComponent.java:211)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.fireRootsChanged(ProjectRootManagerImpl.java:447)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$1.fireRootsChanged(ProjectRootManagerImpl.java:145)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$1.fireRootsChanged(ProjectRootManagerImpl.java:142)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$BatchSession.rootsChanged(ProjectRootManagerImpl.java:114)
+	at com.intellij.workspaceModel.ide.impl.legacyBridge.project.ProjectRootsChangeListener.changed(ProjectRootsChangeListener.kt:34)
+	at com.intellij.workspaceModel.ide.impl.legacyBridge.module.ModuleManagerComponentBridge$2.changed(ModuleManagerComponentBridge.kt:147)
+	at com.intellij.workspaceModel.ide.WorkspaceModelTopics$EventsDispatcher.changed(WorkspaceModelTopics.kt:118)
+	at com.intellij.util.messages.impl.MessageBusImpl.invokeMethod(MessageBusImpl.java:645)
+	at com.intellij.util.messages.impl.MessageBusImpl.invokeListener(MessageBusImpl.java:624)
+	at com.intellij.util.messages.impl.MessageBusImpl.deliverMessage(MessageBusImpl.java:417)
+	at com.intellij.util.messages.impl.MessageBusImpl.pumpWaitingBuses(MessageBusImpl.java:390)
+	at com.intellij.util.messages.impl.MessageBusImpl.pumpMessages(MessageBusImpl.java:372)
+	at com.intellij.util.messages.impl.MessageBusImpl.access$200(MessageBusImpl.java:33)
+	at com.intellij.util.messages.impl.MessageBusImpl$MessagePublisher.invoke(MessageBusImpl.java:179)
+	at com.sun.proxy.$Proxy72.changed(Unknown Source)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelImpl.onChanged(WorkspaceModelImpl.kt:112)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelImpl.access$onChanged(WorkspaceModelImpl.kt:19)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelImpl$updateProjectModel$2.invoke(WorkspaceModelImpl.kt:75)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelImpl$updateProjectModel$2.invoke(WorkspaceModelImpl.kt:19)
+	at com.intellij.workspaceModel.storage.impl.VersionedEntityStorageImpl.replace(VersionedEntityStorageImpl.kt:183)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelImpl.updateProjectModel(WorkspaceModelImpl.kt:75)
+	at com.intellij.workspaceModel.ide.impl.jps.serialization.JpsProjectModelSynchronizer$applyLoadedStorage$1.run(JpsProjectModelSynchronizer.kt:212)
+	at com.intellij.openapi.application.WriteAction.lambda$runAndWait$2(WriteAction.java:115)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteActionWithClass(ApplicationImpl.java:935)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteAction(ApplicationImpl.java:961)
+	at com.intellij.openapi.application.WriteAction.compute(WriteAction.java:96)
+	at com.intellij.openapi.application.WriteAction.lambda$computeAndWait$3(WriteAction.java:149)
+	at com.intellij.openapi.application.WriteThread.lambda$submit$0(WriteThread.java:27)
+	at com.intellij.openapi.application.WriteThread.lambda$submit$1(WriteThread.java:43)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:214)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$200(TransactionGuardImpl.java:21)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:196)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:805)
+	at com.intellij.openapi.application.impl.ApplicationImpl.lambda$invokeLaterOnWriteThread$10(ApplicationImpl.java:794)
+	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:82)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:131)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:47)
+	at com.intellij.openapi.application.impl.FlushQueue$FlushNow.run(FlushQueue.java:187)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:891)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:760)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:447)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:818)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:446)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:805)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:492)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+ 
+2021-12-23 00:16:58,928 [  31898]   INFO - ion.DelayedProjectSynchronizer - Workspace model loaded from cache. Syncing real project state into workspace model in 2663 ms. Thread[JobScheduler FJ pool 0/7,4,main] 
+2021-12-23 00:16:59,424 [  32394]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: OnDiskSharedIndexChunkLocator 
+2021-12-23 00:16:59,449 [  32419]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: UnindexedFilesUpdater[JBTestProject] 
+2021-12-23 00:16:59,522 [  32492]   INFO - ij.psi.search.LogFileTypeIndex - Loading file type index snapshot 
+2021-12-23 00:16:59,611 [  32581]   INFO -  #git4idea.commands.GitHandler - [.] git version 
+2021-12-23 00:16:59,758 [  32728]   INFO -  #git4idea.commands.GitHandler - git version 2.17.1 
+2021-12-23 00:16:59,833 [  32803]   INFO - indexing.UnindexedFilesUpdater - Started indexing of JBTestProject. Reason: On project open 
+2021-12-23 00:16:59,870 [  32840]   INFO - indexing.UnindexedFilesUpdater - Performing delayed pushing properties tasks for JBTestProject took 5ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-12-23 00:16:59,875 [  32845]   INFO - ea.config.GitExecutableManager - Git version for /usr/bin/git: 2.17.1.0 (UNIX) 
+2021-12-23 00:16:59,919 [  32889]   WARN - ctionSystem.impl.ActionUpdater - 895 ms to grab EDT for CWMTelephonyGroup#update (com.jetbrains.rd.platform.codeWithMe.telephony.CWMTelephonyGroup) 
+2021-12-23 00:17:00,139 [  33109]   INFO - indexing.UnindexedFilesUpdater - Scanning of JBTestProject uses 7 scanning threads 
+2021-12-23 00:17:02,119 [  35089]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.kotlin.idea.gradle.configuration.KotlinGradleProjectData` 
+2021-12-23 00:17:02,121 [  35091]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.kotlin.idea.gradle.configuration.KotlinGradleSourceSetData` 
+2021-12-23 00:17:02,121 [  35091]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.kotlin.idea.gradle.configuration.KotlinGradleSourceSetData` 
+2021-12-23 00:17:02,250 [  35220]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.kotlin.android.synthetic.idea.AndroidExtensionProperties` 
+2021-12-23 00:17:02,278 [  35248]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 2861 millis (read time: 2858) 
+2021-12-23 00:17:05,159 [  38129]   WARN - ctionSystem.impl.ActionUpdater - 647 ms to grab EDT for CWMTelephonyGroup#update (com.jetbrains.rd.platform.codeWithMe.telephony.CWMTelephonyGroup) 
+2021-12-23 00:17:05,161 [  38131]   WARN - ctionSystem.impl.ActionUpdater - 648 ms to grab EDT for TabListAction#update (com.intellij.ide.actions.TabListAction) 
+2021-12-23 00:17:05,185 [  38155]   INFO - ing.roots.GradleBuildRootIndex - /home/nick/JetBrainsProjects/JBTestTask/JBTestProject: null -> org.jetbrains.kotlin.idea.gradleJava.scripting.roots.Imported@7f0c4432 
+2021-12-23 00:17:05,227 [  38197]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] script definitions aren't loaded yet. They should be loaded by invoking GradleScriptDefinitionsContributor.reloadIfNeeded from KotlinDslSyncListener: workingDir=/home/nick/JetBrainsProjects/JBTestTask/JBTestProject gradleHome=/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1 
+2021-12-23 00:17:05,519 [  38489]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /usr/lib/jvm/java-1.11.0-openjdk-amd64 
+2021-12-23 00:17:05,564 [  38534]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinInitScript] using classpath: /home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-tooling-models-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-api-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-stdlib-1.4.31.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-compiler-embeddable-1.4.31-patched-for-gradle-7.1.jar 
+2021-12-23 00:17:05,893 [  38863]   INFO - napi.externalSystem.autoimport - [refreshChanges] Settings file status: SettingsFilesStatus(oldCRC={/home/nick/JetBrainsProjects/JBTestTask/JBTestProject/settings.gradle.kts=2120616036, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/gradle.properties=619183484, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/build.gradle.kts=2927418362, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/gradle/wrapper/gradle-wrapper.properties=1847016884}, newCRC={/home/nick/JetBrainsProjects/JBTestTask/JBTestProject/gradle.properties=619183484, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/gradle/wrapper/gradle-wrapper.properties=1847016884, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/build.gradle.kts=2927418362, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/settings.gradle.kts=2120616036}, updated=[], created=[], deleted=[]) 
+2021-12-23 00:17:05,929 [  38899]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /usr/lib/jvm/java-1.11.0-openjdk-amd64 
+2021-12-23 00:17:05,968 [  38938]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinSettingsScript] using classpath: /home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-tooling-models-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-api-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-stdlib-1.4.31.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-compiler-embeddable-1.4.31-patched-for-gradle-7.1.jar 
+2021-12-23 00:17:06,062 [  39032]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /usr/lib/jvm/java-1.11.0-openjdk-amd64 
+2021-12-23 00:17:06,063 [  39033]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinBuildScript] using classpath: /home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-tooling-models-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-api-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-stdlib-1.4.31.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-compiler-embeddable-1.4.31-patched-for-gradle-7.1.jar 
+2021-12-23 00:17:06,229 [  39199]   WARN - ctionSystem.impl.ActionUpdater - 210 ms to grab EDT for TabListAction#update (com.intellij.ide.actions.TabListAction) 
+2021-12-23 00:17:06,300 [  39270]   INFO - til.indexing.RootChangesLogger - New rootsChanged event for "JBTestProject" project with full reindex with trace_hash = 1868841671:
+java.lang.Throwable
+	at com.intellij.util.indexing.RootChangesLogger.info(RootChangesLogger.java:27)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.logRootChanges(EntityIndexingServiceImpl.java:99)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.runFullReindex(EntityIndexingServiceImpl.java:84)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.indexChanges(EntityIndexingServiceImpl.java:46)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerComponent.synchronizeRoots(ProjectRootManagerComponent.java:298)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerComponent.fireRootsChangedEvent(ProjectRootManagerComponent.java:211)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.fireRootsChanged(ProjectRootManagerImpl.java:447)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$1.fireRootsChanged(ProjectRootManagerImpl.java:145)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$1.fireRootsChanged(ProjectRootManagerImpl.java:142)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$BatchSession.rootsChanged(ProjectRootManagerImpl.java:114)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$BatchSession.rootsChanged(ProjectRootManagerImpl.java:122)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.makeRootsChange(ProjectRootManagerImpl.java:419)
+	at org.jetbrains.kotlin.idea.core.script.ucache.ScriptClassRootsUpdater$notifyRootsChanged$$inlined$runInEdt$1$lambda$1.invoke(ScriptClassRootsUpdater.kt:240)
+	at org.jetbrains.kotlin.idea.core.script.ucache.ScriptClassRootsUpdater$notifyRootsChanged$$inlined$runInEdt$1$lambda$1.invoke(ScriptClassRootsUpdater.kt:51)
+	at org.jetbrains.kotlin.idea.util.application.ApplicationUtilsKt$sam$com_intellij_openapi_util_Computable$0.compute(ApplicationUtils.kt)
+	at com.intellij.openapi.application.impl.ApplicationImpl.lambda$runWriteAction$15(ApplicationImpl.java:956)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteActionWithClass(ApplicationImpl.java:935)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteAction(ApplicationImpl.java:956)
+	at org.jetbrains.kotlin.idea.util.application.ApplicationUtilsKt.runWriteAction(ApplicationUtils.kt:24)
+	at org.jetbrains.kotlin.idea.core.script.ucache.ScriptClassRootsUpdater$notifyRootsChanged$$inlined$runInEdt$1.run(actions.kt:60)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:214)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$200(TransactionGuardImpl.java:21)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:196)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:805)
+	at com.intellij.openapi.application.impl.ApplicationImpl.lambda$invokeLater$4(ApplicationImpl.java:348)
+	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:82)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:131)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:47)
+	at com.intellij.openapi.application.impl.FlushQueue$FlushNow.run(FlushQueue.java:187)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:891)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:760)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:447)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:818)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:446)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:805)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:492)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+ 
+2021-12-23 00:17:06,300 [  39270]   INFO - penapi.project.DumbServiceImpl - cancel UnindexedFilesUpdater[JBTestProject] 
+2021-12-23 00:17:06,703 [  39673]   WARN - ctionSystem.impl.ActionUpdater - 230 ms to call on EDT RunConfigurationsComboBoxAction#update (com.intellij.execution.actions.RunConfigurationsComboBoxAction) - speed it up and/or implement UpdateInBackground. 
+2021-12-23 00:17:06,714 [  39684]   WARN - ctionSystem.impl.ActionUpdater - 241 ms to grab EDT for ShowRecentFilesAction#update (com.intellij.ide.actions.ShowRecentFilesAction) 
+2021-12-23 00:17:06,800 [  39770]   WARN - vdmanager.AvdManagerConnection - No Android SDK Found 
+2021-12-23 00:17:07,332 [  40302]   WARN - ctionSystem.impl.ActionUpdater - 133 ms to call on EDT SwitchTaskAction#update (com.intellij.tasks.actions.SwitchTaskAction) - speed it up and/or implement UpdateInBackground. 
+2021-12-23 00:17:07,954 [  40924]   INFO - .imports.GMavenIndexRepository - HTTP not modified since the last request for URL: https://dl.google.com/android/studio/gmaven/index/release/v0.1/classes-v0.1.json.gz (etag: "b4aad3"). 
+2021-12-23 00:17:07,954 [  40924]   INFO - .imports.GMavenIndexRepository - Kept the old disk cache with an old ETag header: "b4aad3". 
+2021-12-23 00:17:08,026 [  40996]   WARN - ctionSystem.impl.ActionUpdater - 498 ms to grab EDT for CodeCompletionGroup#update (com.intellij.codeInsight.completion.actions.CodeCompletionGroup) 
+2021-12-23 00:17:08,167 [  41137]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Code' preloaded at 'MainMenu' in 1123 ms 
+2021-12-23 00:17:08,245 [  41215]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Build' preloaded at 'MainMenu' in 1200 ms 
+2021-12-23 00:17:08,671 [  41641]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Run' preloaded at 'MainMenu' in 1626 ms 
+2021-12-23 00:17:08,901 [  41871]   INFO - ectsystem.ProjectSystemService - GradleProjectSystem project system has been detected 
+2021-12-23 00:17:08,996 [  41966]   WARN - ctionSystem.impl.ActionUpdater - 224 ms to call on EDT DefaultCompactActionGroup#getChildren (com.intellij.openapi.actionSystem.DefaultCompactActionGroup) - speed it up and/or implement UpdateInBackground. 
+2021-12-23 00:17:09,029 [  41999]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Refactor' preloaded at 'MainMenu' in 1984 ms 
+2021-12-23 00:17:09,193 [  42163]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Tools' preloaded at 'MainMenu' in 2148 ms 
+2021-12-23 00:17:09,197 [  42167]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Git' preloaded at 'MainMenu' in 2151 ms 
+2021-12-23 00:17:09,216 [  42186]  ERROR - pection.InspectionProfileEntry - class builderUsagesInspection.BuilderUsagesInspector: group display name should be overridden or configured via XML  [Plugin: com.ktpsi.KotlinPsi] 
+com.intellij.diagnostic.PluginException: class builderUsagesInspection.BuilderUsagesInspector: group display name should be overridden or configured via XML  [Plugin: com.ktpsi.KotlinPsi]
+	at com.intellij.ide.plugins.PluginManagerCore.createPluginException(PluginManagerCore.java:270)
+	at com.intellij.diagnostic.PluginProblemReporterImpl.createPluginExceptionByClass(PluginProblemReporterImpl.java:12)
+	at com.intellij.diagnostic.PluginException.createByClass(PluginException.java:83)
+	at com.intellij.diagnostic.PluginException.logPluginError(PluginException.java:100)
+	at com.intellij.codeInspection.InspectionProfileEntry.getGroupDisplayName(InspectionProfileEntry.java:244)
+	at com.intellij.codeInspection.ex.InspectionToolWrapper.getGroupDisplayName(InspectionToolWrapper.java:169)
+	at com.intellij.ide.ui.ToolOptionDescription.<init>(ToolOptionDescription.java:20)
+	at com.intellij.ide.ui.InspectionsTopHitProvider.getOptions(InspectionsTopHitProvider.java:31)
+	at com.intellij.ide.ui.TopHitCache.lambda$getCachedOptions$0(TopHitCache.java:63)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at com.intellij.ide.ui.TopHitCache.getCachedOptions(TopHitCache.java:58)
+	at com.intellij.ide.ui.OptionsTopHitProvider.getCachedOptions(OptionsTopHitProvider.java:52)
+	at com.intellij.ide.ui.OptionsTopHitProvider$Activity.lambda$cacheAll$1(OptionsTopHitProvider.java:203)
+	at com.intellij.openapi.extensions.impl.ExtensionPointImpl.processWithPluginDescriptor(ExtensionPointImpl.java:299)
+	at com.intellij.openapi.extensions.ExtensionPointName.processWithPluginDescriptor(ExtensionPointName.java:144)
+	at com.intellij.ide.ui.OptionsTopHitProvider$Activity.cacheAll(OptionsTopHitProvider.java:198)
+	at com.intellij.ide.ui.OptionsTopHitProvider$Activity.runActivity(OptionsTopHitProvider.java:182)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runStartupActivity(StartupManagerImpl.kt:308)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivityAndMeasureDuration(StartupManagerImpl.kt:289)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivityAndMeasureDuration$default(StartupManagerImpl.kt:284)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$1$1.run(StartupManagerImpl.kt:244)
+	at com.intellij.openapi.project.DumbServiceImpl.runWithWaitForSmartModeDisabled(DumbServiceImpl.java:645)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$1.accept(StartupManagerImpl.kt:243)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$1.accept(StartupManagerImpl.kt:61)
+	at com.intellij.openapi.extensions.impl.ExtensionPointImpl.processWithPluginDescriptor(ExtensionPointImpl.java:299)
+	at com.intellij.openapi.extensions.ExtensionPointName.processWithPluginDescriptor(ExtensionPointName.java:144)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:238)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:61)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$projectOpened$3$1.run(StartupManagerImpl.kt:188)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:188)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$12(CoreProgressManager.java:624)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:698)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:646)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:623)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:66)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:175)
+	at com.intellij.openapi.progress.util.BackgroundTaskUtil.runUnderDisposeAwareIndicator(BackgroundTaskUtil.java:277)
+	at com.intellij.openapi.progress.util.BackgroundTaskUtil.runUnderDisposeAwareIndicator(BackgroundTaskUtil.java:255)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$projectOpened$3.run(StartupManagerImpl.kt:188)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2021-12-23 00:17:09,265 [  42235]  ERROR - pection.InspectionProfileEntry - IntelliJ IDEA 2021.3  Build #IC-213.5744.223 
+2021-12-23 00:17:09,266 [  42236]  ERROR - pection.InspectionProfileEntry - JDK: 11.0.13; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-12-23 00:17:09,266 [  42236]  ERROR - pection.InspectionProfileEntry - OS: Linux 
+2021-12-23 00:17:09,267 [  42237]  ERROR - pection.InspectionProfileEntry - Plugin to blame: KTPSI version: 1.0-SNAPSHOT 
+2021-12-23 00:17:09,267 [  42237]  ERROR - pection.InspectionProfileEntry - Last Action:  
+2021-12-23 00:17:09,354 [  42324]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Window' preloaded at 'MainMenu' in 2308 ms 
+2021-12-23 00:17:09,623 [  42593]   INFO - .script.IdeScriptEngineManager - javax.script.ScriptEngineManager initialized in 841 ms 
+2021-12-23 00:17:09,625 [  42595]  ERROR - pection.InspectionProfileEntry - class dataClassBuilderInspection.DataClassInspector: group display name should be overridden or configured via XML  [Plugin: com.ktpsi.KotlinPsi] 
+com.intellij.diagnostic.PluginException: class dataClassBuilderInspection.DataClassInspector: group display name should be overridden or configured via XML  [Plugin: com.ktpsi.KotlinPsi]
+	at com.intellij.ide.plugins.PluginManagerCore.createPluginException(PluginManagerCore.java:270)
+	at com.intellij.diagnostic.PluginProblemReporterImpl.createPluginExceptionByClass(PluginProblemReporterImpl.java:12)
+	at com.intellij.diagnostic.PluginException.createByClass(PluginException.java:83)
+	at com.intellij.diagnostic.PluginException.logPluginError(PluginException.java:100)
+	at com.intellij.codeInspection.InspectionProfileEntry.getGroupDisplayName(InspectionProfileEntry.java:244)
+	at com.intellij.codeInspection.ex.InspectionToolWrapper.getGroupDisplayName(InspectionToolWrapper.java:169)
+	at com.intellij.ide.ui.ToolOptionDescription.<init>(ToolOptionDescription.java:20)
+	at com.intellij.ide.ui.InspectionsTopHitProvider.getOptions(InspectionsTopHitProvider.java:31)
+	at com.intellij.ide.ui.TopHitCache.lambda$getCachedOptions$0(TopHitCache.java:63)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at com.intellij.ide.ui.TopHitCache.getCachedOptions(TopHitCache.java:58)
+	at com.intellij.ide.ui.OptionsTopHitProvider.getCachedOptions(OptionsTopHitProvider.java:52)
+	at com.intellij.ide.ui.OptionsTopHitProvider$Activity.lambda$cacheAll$1(OptionsTopHitProvider.java:203)
+	at com.intellij.openapi.extensions.impl.ExtensionPointImpl.processWithPluginDescriptor(ExtensionPointImpl.java:299)
+	at com.intellij.openapi.extensions.ExtensionPointName.processWithPluginDescriptor(ExtensionPointName.java:144)
+	at com.intellij.ide.ui.OptionsTopHitProvider$Activity.cacheAll(OptionsTopHitProvider.java:198)
+	at com.intellij.ide.ui.OptionsTopHitProvider$Activity.runActivity(OptionsTopHitProvider.java:182)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runStartupActivity(StartupManagerImpl.kt:308)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivityAndMeasureDuration(StartupManagerImpl.kt:289)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivityAndMeasureDuration$default(StartupManagerImpl.kt:284)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$1$1.run(StartupManagerImpl.kt:244)
+	at com.intellij.openapi.project.DumbServiceImpl.runWithWaitForSmartModeDisabled(DumbServiceImpl.java:645)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$1.accept(StartupManagerImpl.kt:243)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$1.accept(StartupManagerImpl.kt:61)
+	at com.intellij.openapi.extensions.impl.ExtensionPointImpl.processWithPluginDescriptor(ExtensionPointImpl.java:299)
+	at com.intellij.openapi.extensions.ExtensionPointName.processWithPluginDescriptor(ExtensionPointName.java:144)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:238)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:61)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$projectOpened$3$1.run(StartupManagerImpl.kt:188)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:188)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$12(CoreProgressManager.java:624)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:698)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:646)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:623)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:66)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:175)
+	at com.intellij.openapi.progress.util.BackgroundTaskUtil.runUnderDisposeAwareIndicator(BackgroundTaskUtil.java:277)
+	at com.intellij.openapi.progress.util.BackgroundTaskUtil.runUnderDisposeAwareIndicator(BackgroundTaskUtil.java:255)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$projectOpened$3.run(StartupManagerImpl.kt:188)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2021-12-23 00:17:09,626 [  42596]  ERROR - pection.InspectionProfileEntry - IntelliJ IDEA 2021.3  Build #IC-213.5744.223 
+2021-12-23 00:17:09,626 [  42596]  ERROR - pection.InspectionProfileEntry - JDK: 11.0.13; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-12-23 00:17:09,626 [  42596]  ERROR - pection.InspectionProfileEntry - OS: Linux 
+2021-12-23 00:17:09,643 [  42613]  ERROR - pection.InspectionProfileEntry - Plugin to blame: KTPSI version: 1.0-SNAPSHOT 
+2021-12-23 00:17:09,644 [  42614]  ERROR - pection.InspectionProfileEntry - Last Action:  
+2021-12-23 00:17:09,994 [  42964]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Help' preloaded at 'MainMenu' in 2948 ms 
+2021-12-23 00:17:11,422 [  44392]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2021-12-23 00:17:11,445 [  44415]   INFO - indexing.UnindexedFilesUpdater - Scanning completed for JBTestProject. Number of scanned files: 33992; Number of files for indexing: 2 took 11567ms; general responsiveness: ok; EDT responsiveness: 2/12 sluggish, 2/12 very slow 
+2021-12-23 00:17:11,579 [  44549]   INFO - indexing.UnindexedFilesUpdater - Use 4 indexing threads for indexing of JBTestProject 
+2021-12-23 00:17:12,045 [  45015]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 33105 ms 
+2021-12-23 00:17:12,071 [  45041]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/addons_list-4.xml 
+2021-12-23 00:17:12,224 [  45194]   INFO - gnostic.PerformanceWatcherImpl - Post-startup activities under progress took 15986ms; general responsiveness: ok; EDT responsiveness: 3/16 sluggish, 4/16 very slow 
+2021-12-23 00:17:12,234 [  45204]   WARN - ctionSystem.impl.ActionUpdater - 1506 ms to call on BGT GenerateAction#update (com.intellij.codeInsight.generation.actions.GenerateAction) 
+2021-12-23 00:17:12,345 [  45315]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/repository2-1.xml 
+2021-12-23 00:17:12,345 [  45315]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android-wear/sys-img2-2.xml 
+2021-12-23 00:17:12,345 [  45315]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/repository2-2.xml 
+2021-12-23 00:17:12,345 [  45315]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android-wear-cn/sys-img2-2.xml 
+2021-12-23 00:17:12,345 [  45315]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android/sys-img2-2.xml 
+2021-12-23 00:17:12,345 [  45315]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android-automotive/sys-img2-2.xml 
+2021-12-23 00:17:12,345 [  45315]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android-tv/sys-img2-2.xml 
+2021-12-23 00:17:12,346 [  45316]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/aosp_atd/sys-img2-2.xml 
+2021-12-23 00:17:12,350 [  45320]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/google_atd/sys-img2-2.xml 
+2021-12-23 00:17:12,350 [  45320]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/google-tv/sys-img2-2.xml 
+2021-12-23 00:17:12,352 [  45322]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/google_apis/sys-img2-2.xml 
+2021-12-23 00:17:12,357 [  45327]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/google_apis_playstore/sys-img2-2.xml 
+2021-12-23 00:17:12,357 [  45327]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/addon2-2.xml 
+2021-12-23 00:17:12,357 [  45327]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/glass/addon2-2.xml 
+2021-12-23 00:17:12,357 [  45327]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/extras/intel/addon2-2.xml 
+2021-12-23 00:17:13,519 [  46489]   INFO - indexing.UnindexedFilesUpdater - Finished for JBTestProject. Unindexed files update took 2020ms; general responsiveness: ok; EDT responsiveness: 1/2 sluggish 
+2021-12-23 00:17:13,520 [  46490]   INFO - ij.psi.search.LogFileTypeIndex - File type index snapshot dropped 
+2021-12-23 00:17:13,526 [  46496]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: UnindexedFilesUpdater[JBTestProject] 
+2021-12-23 00:17:13,526 [  46496]   INFO - ij.psi.search.LogFileTypeIndex - Loading file type index snapshot 
+2021-12-23 00:17:13,645 [  46615]   INFO - indexing.UnindexedFilesUpdater - Started indexing of JBTestProject. Reason: Reindex requested by project root model changes 
+2021-12-23 00:17:13,649 [  46619]   INFO - indexing.UnindexedFilesUpdater - Performing delayed pushing properties tasks for JBTestProject took 4ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-12-23 00:17:13,653 [  46623]   INFO - indexing.UnindexedFilesUpdater - Scanning of JBTestProject uses 7 scanning threads 
+2021-12-23 00:17:14,290 [  47260]   WARN - ctionSystem.impl.ActionUpdater - 1176 ms to call on BGT RunContextAction#update (com.intellij.execution.actions.RunContextAction) 
+2021-12-23 00:17:14,706 [  47676]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Project View Popup Menu' preloaded at 'ProjectViewPopup' in 1635 ms 
+2021-12-23 00:17:14,914 [  47884]   WARN - ctionSystem.impl.ActionUpdater - 1569 ms to call on BGT RunContextAction#update (com.intellij.execution.actions.RunContextAction) 
+2021-12-23 00:17:15,019 [  47989]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Editor Popup Menu' preloaded at 'EditorPopup' in 1931 ms 
+2021-12-23 00:17:17,665 [  50635]   INFO - indexing.UnindexedFilesUpdater - Scanning completed for JBTestProject. Number of scanned files: 135969; Number of files for indexing: 0 took 4015ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-12-23 00:17:17,668 [  50638]   INFO - indexing.UnindexedFilesUpdater - Finished for JBTestProject. No files to index with loading content. 
+2021-12-23 00:17:17,668 [  50638]   INFO - ij.psi.search.LogFileTypeIndex - File type index snapshot dropped 
+2021-12-23 00:17:17,670 [  50640]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$PruneTask@65437026 
+2021-12-23 00:17:17,713 [  50683]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$ManageLruProjectFilesTask@1fecb6b0 
+2021-12-23 00:17:17,808 [  50778]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.intellij.openapi.roots.impl.PushedFilePropertiesUpdaterImpl$3@480827f5 
+2021-12-23 00:17:17,837 [  50807]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.intellij.util.indexing.FileBasedIndexProjectHandler$ProjectChangedFilesIndexingTask@2f332404 [Project(name=JBTestProject, containerState=COMPONENT_CREATED, componentStore=/home/nick/JetBrainsProjects/JBTestTask/JBTestProject), %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../, %project_path%/../../../../../] 
+2021-12-23 00:17:17,847 [  50817]   INFO - g.FileBasedIndexProjectHandler - Reindexing refreshed files of JBTestProject : 64 to update, calculated in 1ms 
+2021-12-23 00:17:17,847 [  50817]   INFO - ij.psi.search.LogFileTypeIndex - Loading file type index snapshot 
+2021-12-23 00:17:17,871 [  50841]   INFO - m.codeWithMe.CodeWithMeCleanup - running activity to cleanup old thin clients... Root path is '/home/nick/.cache/JetBrains' 
+2021-12-23 00:17:17,874 [  50844]   INFO - m.codeWithMe.CodeWithMeCleanup - found 0 Code With Me client system folders to check 
+2021-12-23 00:17:17,875 [  50845]   INFO - m.codeWithMe.CodeWithMeCleanup - found 0 Code With Me client config folders to check 
+2021-12-23 00:17:17,901 [  50871]   INFO - m.codeWithMe.CodeWithMeCleanup - keep only [] major versions 
+2021-12-23 00:17:17,977 [  50947]   INFO - g.FileBasedIndexProjectHandler - Using 4 threads for indexing 
+2021-12-23 00:17:17,990 [  50960]   INFO - ij.psi.search.LogFileTypeIndex - File type index snapshot dropped 
+2021-12-23 00:17:17,990 [  50960]   INFO - gnostic.PerformanceWatcherImpl - Reindexing refreshed files of JBTestProject took 143ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-12-23 00:17:18,003 [  50973]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2021-12-23 00:17:18,014 [  50984]   INFO - tFileBasedIndexStartupActivity - Has changed files: false; project=Project(name=JBTestProject, containerState=COMPONENT_CREATED, componentStore=/home/nick/JetBrainsProjects/JBTestTask/JBTestProject) 
+2021-12-23 00:17:18,655 [  51625]   INFO - .services.SpaceKtsFileDetector - SpaceKtsFileDetector 
+2021-12-23 00:17:18,930 [  51900]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRegistry$PopulateCachesTask@5760e034 
+2021-12-23 00:17:18,948 [  51918]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2021-12-23 00:17:18,950 [  51920]   INFO - tFileBasedIndexStartupActivity - Has changed files: false; project=Project(name=JBTestProject, containerState=COMPONENT_CREATED, componentStore=/home/nick/JetBrainsProjects/JBTestTask/JBTestProject) 
+2021-12-23 00:17:20,214 [  53184]   INFO - .packagesearch.intellij-plugin - PackageSearchToolWindowFactory#packageSearchModulesChangesFlow - Setting toolWindow.isAvailable = true 
+2021-12-23 00:17:20,781 [  53751]   WARN - ctionSystem.impl.ActionUpdater - 1465 ms to grab EDT for CWMTelephonyGroup#update (com.jetbrains.rd.platform.codeWithMe.telephony.CWMTelephonyGroup) 
+2021-12-23 00:17:20,782 [  53752]   WARN - ctionSystem.impl.ActionUpdater - 1465 ms to grab EDT for TabListAction#update (com.intellij.ide.actions.TabListAction) 
+2021-12-23 00:17:21,079 [  54049]   WARN - ctionSystem.impl.ActionUpdater - 297 ms to grab EDT for CodeWithMeUsersAction#update (com.jetbrains.rd.platform.codeWithMe.toolbar.CodeWithMeUsersAction) 
+2021-12-23 00:17:21,395 [  54365]   WARN - ctionSystem.impl.ActionUpdater - 313 ms to grab EDT for CWMHostShowPopupAction#update (com.jetbrains.rdserver.toolbar.CWMHostShowPopupAction) 
+2021-12-23 00:17:21,396 [  54366]   WARN - ctionSystem.impl.ActionUpdater - 312 ms to grab EDT for TabListAction#update (com.intellij.ide.actions.TabListAction) 
+2021-12-23 00:17:30,597 [  63567]   INFO - CompilerWorkspaceConfiguration - Available processors: 8 
+2021-12-23 00:17:34,030 [  67000]   INFO - ta.index.VcsLogPersistentIndex - Indexing 1 commits in JBTestTask 
+2021-12-23 00:17:35,821 [  68791]   INFO - ta.index.VcsLogPersistentIndex - 1.782s for indexing 1 new commits out of 1 in JBTestTask 
+2021-12-23 00:17:35,841 [  68811]   INFO - ta.index.VcsLogPersistentIndex - Indexing 1 commits in JBTestTask 
+2021-12-23 00:17:35,842 [  68812]   INFO - ta.index.VcsLogPersistentIndex - 1ms for indexing 0 new commits out of 1 in JBTestTask 
+2021-12-23 00:17:42,350 [  75320]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:42,361 [  75331]   INFO -                         STDOUT - println("BEGIN") 
+2021-12-23 00:17:42,380 [  75350]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: println("BEGIN") 
+2021-12-23 00:17:42,381 [  75351]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:42,391 [  75361]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:42,400 [  75370]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:42,433 [  75403]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:42,433 [  75403]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:42,433 [  75403]   INFO -                         STDOUT - DataABuilder() 
+2021-12-23 00:17:42,434 [  75404]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: DataABuilder() 
+2021-12-23 00:17:42,434 [  75404]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:42,435 [  75405]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:42,435 [  75405]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:42,435 [  75405]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:42,435 [  75405]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:42,438 [  75408]   INFO -                         STDOUT - build() 
+2021-12-23 00:17:42,439 [  75409]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: build() 
+2021-12-23 00:17:42,451 [  75421]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:42,459 [  75429]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:42,459 [  75429]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:42,460 [  75430]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:42,460 [  75430]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:42,460 [  75430]   INFO -                         STDOUT - DataA(1f, null) 
+2021-12-23 00:17:42,460 [  75430]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: DataA(1f, null) 
+2021-12-23 00:17:42,461 [  75431]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:42,545 [  75515]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:42,545 [  75515]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:42,545 [  75515]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:42,546 [  75516]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:42,553 [  75523]   INFO -                         STDOUT - DataA(2f, 2) 
+2021-12-23 00:17:42,553 [  75523]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: DataA(2f, 2) 
+2021-12-23 00:17:42,554 [  75524]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:42,554 [  75524]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:42,554 [  75524]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:42,555 [  75525]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:42,555 [  75525]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:42,555 [  75525]   INFO -                         STDOUT - listOf<DataA>(DataA(1f, null), DataA(2f, 2)) 
+2021-12-23 00:17:42,556 [  75526]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: listOf<DataA>(DataA(1f, null), DataA(2f, 2)) 
+2021-12-23 00:17:42,556 [  75526]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:42,557 [  75527]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:42,557 [  75527]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:42,557 [  75527]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:42,558 [  75528]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:42,558 [  75528]   INFO -                         STDOUT - println("END") 
+2021-12-23 00:17:42,558 [  75528]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: println("END") 
+2021-12-23 00:17:42,559 [  75529]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:42,559 [  75529]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:42,560 [  75530]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:42,560 [  75530]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:45,320 [  78290]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:45,328 [  78298]   INFO -                         STDOUT - println("BEGIN") 
+2021-12-23 00:17:45,328 [  78298]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: println("BEGIN") 
+2021-12-23 00:17:45,328 [  78298]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:45,328 [  78298]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:45,328 [  78298]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:45,328 [  78298]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - DataABuilder() 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: DataABuilder() 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - build() 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: build() 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:45,329 [  78299]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:45,330 [  78300]   INFO -                         STDOUT - DataA(1f, null) 
+2021-12-23 00:17:45,330 [  78300]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: DataA(1f, null) 
+2021-12-23 00:17:45,330 [  78300]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:45,334 [  78304]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:45,334 [  78304]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:45,334 [  78304]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:45,334 [  78304]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:45,334 [  78304]   INFO -                         STDOUT - DataA(2f, 2) 
+2021-12-23 00:17:45,335 [  78305]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: DataA(2f, 2) 
+2021-12-23 00:17:45,335 [  78305]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:45,335 [  78305]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:45,335 [  78305]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:45,335 [  78305]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:45,338 [  78308]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:45,338 [  78308]   INFO -                         STDOUT - listOf<DataA>(DataA(1f, null), DataA(2f, 2)) 
+2021-12-23 00:17:45,338 [  78308]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: listOf<DataA>(DataA(1f, null), DataA(2f, 2)) 
+2021-12-23 00:17:45,338 [  78308]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:45,339 [  78309]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:45,339 [  78309]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:45,339 [  78309]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:17:45,339 [  78309]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:17:45,339 [  78309]   INFO -                         STDOUT - println("END") 
+2021-12-23 00:17:45,339 [  78309]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: println("END") 
+2021-12-23 00:17:45,339 [  78309]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:17:45,339 [  78309]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@9534ac3 
+2021-12-23 00:17:45,345 [  78315]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:17:45,346 [  78316]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:18:15,407 [ 108377]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:18:15,408 [ 108378]   INFO -                         STDOUT - println("BEGIN") 
+2021-12-23 00:18:15,408 [ 108378]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: println("BEGIN") 
+2021-12-23 00:18:15,409 [ 108379]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:18:15,409 [ 108379]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@74a9011 
+2021-12-23 00:18:15,410 [ 108380]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:18:15,410 [ 108380]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:18:15,410 [ 108380]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:18:15,410 [ 108380]   INFO -                         STDOUT - DataABuilder() 
+2021-12-23 00:18:15,411 [ 108381]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: DataABuilder() 
+2021-12-23 00:18:15,411 [ 108381]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:18:15,412 [ 108382]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@74a9011 
+2021-12-23 00:18:15,412 [ 108382]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:18:15,412 [ 108382]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:18:15,412 [ 108382]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:18:15,413 [ 108383]   INFO -                         STDOUT - build() 
+2021-12-23 00:18:15,413 [ 108383]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: build() 
+2021-12-23 00:18:15,413 [ 108383]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:18:15,414 [ 108384]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@74a9011 
+2021-12-23 00:18:15,425 [ 108395]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:18:15,425 [ 108395]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:18:15,425 [ 108395]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:18:15,426 [ 108396]   INFO -                         STDOUT - DataA(1f, null) 
+2021-12-23 00:18:15,426 [ 108396]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: DataA(1f, null) 
+2021-12-23 00:18:15,426 [ 108396]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:18:15,427 [ 108397]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@74a9011 
+2021-12-23 00:18:15,427 [ 108397]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:18:15,427 [ 108397]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:18:15,428 [ 108398]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:18:15,428 [ 108398]   INFO -                         STDOUT - DataA(2f, 2) 
+2021-12-23 00:18:15,429 [ 108399]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: DataA(2f, 2) 
+2021-12-23 00:18:15,429 [ 108399]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:18:15,429 [ 108399]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@74a9011 
+2021-12-23 00:18:15,429 [ 108399]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:18:15,429 [ 108399]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:18:15,429 [ 108399]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:18:15,429 [ 108399]   INFO -                         STDOUT - listOf<DataA>(DataA(1f, null), DataA(2f, 2)) 
+2021-12-23 00:18:15,429 [ 108399]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: listOf<DataA>(DataA(1f, null), DataA(2f, 2)) 
+2021-12-23 00:18:15,430 [ 108400]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:18:15,430 [ 108400]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@74a9011 
+2021-12-23 00:18:15,430 [ 108400]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:18:15,430 [ 108400]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:18:15,431 [ 108401]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:18:15,431 [ 108401]   INFO -                         STDOUT - println("END") 
+2021-12-23 00:18:15,431 [ 108401]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: println("END") 
+2021-12-23 00:18:15,431 [ 108401]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:18:15,431 [ 108401]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@74a9011 
+2021-12-23 00:18:15,431 [ 108401]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:18:15,431 [ 108401]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:18:15,431 [ 108401]   INFO -                         STDOUT - #########SPLIT########## 
+2021-12-23 00:18:15,431 [ 108401]   INFO -                         STDOUT - DataA(valueA!!, valueB) 
+2021-12-23 00:18:15,432 [ 108402]   INFO -                         STDOUT - MainRef KtInvokeFunctionReferenceDescriptorsImpl: DataA(valueA!!, valueB) 
+2021-12-23 00:18:15,432 [ 108402]   INFO -                         STDOUT - Resolve null 
+2021-12-23 00:18:15,432 [ 108402]   INFO -                         STDOUT - analyze org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager$LockProtectedContext@60b92b82 
+2021-12-23 00:18:15,432 [ 108402]   INFO -                         STDOUT - resolveDesc [] 
+2021-12-23 00:18:15,432 [ 108402]   INFO -                         STDOUT - resolvedTo null 
+2021-12-23 00:18:16,462 [ 109432]   INFO - rationStore.ComponentStoreImpl - Saving appCodeInsightSettings took 12 ms, FileTypeManager took 21 ms, LearnProjectState took 19 ms, RemoteServers took 17 ms, Vcs.Log.App.Settings took 19 ms 
+2021-12-23 00:18:17,008 [ 109978]   INFO - rationStore.ComponentStoreImpl - Saving Project(name=JBTestProject, containerState=COMPONENT_CREATED, componentStore=/home/nick/JetBrainsProjects/JBTestTask/JBTestProject)MavenCompilerTasksManager took 16 ms, ProjectStartupSharedConfiguration took 19 ms, RunManager took 30 ms, deploymentTargetDropDown took 12 ms 
+2021-12-23 00:21:49,269 [ 322239]   INFO - il.indexing.FileBasedIndexImpl - Health check heartbeat 
+2021-12-23 00:26:49,328 [ 622298]   INFO - il.indexing.FileBasedIndexImpl - Health check heartbeat 
