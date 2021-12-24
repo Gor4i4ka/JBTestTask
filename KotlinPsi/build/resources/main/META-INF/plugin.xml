@@ -14,7 +14,7 @@
   <depends>org.jetbrains.kotlin</depends>
   <extensions defaultExtensionNs="com.intellij">
     <localInspection implementationClass="dataClassBuilderInspection.DataClassInspection" language="kotlin" level="WARNING" enabledByDefault="true" displayName="THE INSPECTION" />
-    <localInspection implementationClass="builderUsagesInspection.BuilderUsagesInspector" language="kotlin" level="WARNING" enabledByDefault="true" displayName="OTHER INSPECTION" />
+    <localInspection implementationClass="builderUsagesInspection.BuilderUsagesInspection" language="kotlin" level="WARNING" enabledByDefault="true" displayName="OTHER INSPECTION" />
     <!-- Add your extensions here -->
   </extensions>
   <actions>

@@ -1,7 +1,31 @@
 <application>
   <component name="ActionsLocalSummary">
+    <e n="$Undo">
+      <i c="7" l="1640361894474" />
+    </e>
     <e n="EditorBackSpace">
-      <i c="8" l="1640348221474" />
+      <i c="137" l="1640361904264" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="9" l="1640361845475" />
+    </e>
+    <e n="EditorDown">
+      <i c="1" l="1640361862323" />
+    </e>
+    <e n="EditorEnter">
+      <i c="4" l="1640361837833" />
+    </e>
+    <e n="EditorEscape">
+      <i c="1" l="1640361876950" />
+    </e>
+    <e n="EditorLeft">
+      <i c="49" l="1640361859031" />
+    </e>
+    <e n="EditorRight">
+      <i c="62" l="1640361864136" />
+    </e>
+    <e n="ShowIntentionActions">
+      <i c="1" l="1640361851393" />
     </e>
     <e n="WelcomeScreen.OpenProject">
       <i c="2" l="1640188733174" />
@@ -10,7 +34,7 @@
       <i c="1" l="1640274083632" />
     </e>
     <e n="com.intellij.notification.NotificationAction$Simple">
-      <i c="1" l="1640274038152" />
+      <i c="3" l="1640357495680" />
     </e>
   </component>
 </application>

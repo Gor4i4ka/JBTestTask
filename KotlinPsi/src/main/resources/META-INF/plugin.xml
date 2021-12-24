@@ -22,7 +22,7 @@
                 displayName="THE INSPECTION"
             />
         <localInspection
-                implementationClass="builderUsagesInspection.BuilderUsagesInspector"
+                implementationClass="builderUsagesInspection.BuilderUsagesInspection"
                 language="kotlin"
                 level="WARNING"
                 enabledByDefault="true"

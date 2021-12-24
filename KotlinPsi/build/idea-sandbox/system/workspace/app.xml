@@ -767,7 +767,7 @@
             </plugins>
           </entry>
         </featureMap>
-        <option name="lastUpdateTime" value="1640274037799" />
+        <option name="lastUpdateTime" value="1640361492382" />
       </features>
     </option>
     <option name="extensions">
@@ -9499,6 +9499,7 @@
               <dataSet>
                 <plugin pluginId="studio.edaphic.sv" />
                 <plugin pluginId="com.levses" />
+                <plugin pluginId="io.verik.intellij" />
               </dataSet>
             </plugins>
           </entry>
@@ -9536,6 +9537,7 @@
               <dataSet>
                 <plugin pluginId="studio.edaphic.sv" />
                 <plugin pluginId="com.levses" />
+                <plugin pluginId="io.verik.intellij" />
               </dataSet>
             </plugins>
           </entry>
@@ -10496,6 +10498,7 @@
               <dataSet>
                 <plugin pluginId="studio.edaphic.sv" />
                 <plugin pluginId="com.levses" />
+                <plugin pluginId="io.verik.intellij" />
               </dataSet>
             </plugins>
           </entry>
@@ -10538,6 +10541,7 @@
             <plugins>
               <dataSet>
                 <plugin pluginId="studio.edaphic.sv" />
+                <plugin pluginId="io.verik.intellij" />
               </dataSet>
             </plugins>
           </entry>
@@ -12248,7 +12252,7 @@
             </plugins>
           </entry>
         </featureMap>
-        <option name="lastUpdateTime" value="1640274037689" />
+        <option name="lastUpdateTime" value="1640361492231" />
       </features>
     </option>
   </component>
