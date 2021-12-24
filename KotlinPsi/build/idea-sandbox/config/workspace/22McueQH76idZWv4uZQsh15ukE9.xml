@@ -11,8 +11,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/stuff/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="242">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -21,7 +21,7 @@
   </component>
   <component name="FileTypeUsageLocalSummary">
     <fileType name="Kotlin">
-      <summary usageCount="2" lastUsed="1640274025170" />
+      <summary usageCount="4" lastUsed="1640348697337" />
     </fileType>
   </component>
   <component name="IdeDocumentHistory">
@@ -85,8 +85,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/stuff/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        <state relative-caret-position="242">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>

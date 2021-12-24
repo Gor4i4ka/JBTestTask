@@ -1,7 +1,9 @@
 package stuff
-data class DataA(val valueA: Float, var valueB: Int?) {
+
+data class DataA(val valueA: Float, var valueB: Int?, val valueC: String, var valueD: Boolean?) {
 
 }
+
 
 class ClassA(val valueA: Int, var variableB: Float?) {
 
@@ -10,6 +12,7 @@ class ClassA(val valueA: Int, var variableB: Float?) {
 data class DataB(val valueB: Int) {
 
 }
+
 
 class ClassB(val valueB: Int) {
 
@@ -26,4 +29,3 @@ fun main(args: Array<String>) {
     val b = listOf<DataA>(DataA(1f, null), DataA(2f, 2))
     println("END")
 }
-

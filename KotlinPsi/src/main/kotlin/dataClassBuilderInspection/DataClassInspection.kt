@@ -8,7 +8,7 @@ import org.jetbrains.kotlin.idea.stubindex.KotlinClassShortNameIndex
 import org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex
 import org.jetbrains.kotlin.psi.*
 
-class DataClassInspection: LocalInspectionTool() {
+class DataClassInspection : LocalInspectionTool() {
 
     private val inspectionDescription = "HERE GOES THE DESCRIPTION BOIZ"
     private val inspectionFix = DataClassFix
@@ -32,7 +32,7 @@ class DataClassInspection: LocalInspectionTool() {
 //    }
 
     override fun buildVisitor(holder: ProblemsHolder, isOnTheFly: Boolean) =
-        object: KtVisitorVoid() {
+        object : KtVisitorVoid() {
 
             override fun visitClass(clazz: KtClass) {
 
