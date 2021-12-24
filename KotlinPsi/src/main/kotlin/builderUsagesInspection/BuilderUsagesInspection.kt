@@ -23,7 +23,7 @@ class BuilderUsagesInspection : AbstractApplicabilityBasedInspection<KtCallEleme
     private lateinit var dataClassPointer: SmartPsiElementPointer<KtClass>
 
     override val defaultFixText: String
-        get() = "The default fix text"
+        get() = "Wrap the constructor call with the builder"
 
     override fun applyTo(element: KtCallElement, project: Project, editor: Editor?) {
         val kotlinFactory = KtPsiFactory(project)
@@ -66,7 +66,7 @@ class BuilderUsagesInspection : AbstractApplicabilityBasedInspection<KtCallEleme
 
 
     override fun inspectionText(element: KtCallElement): String {
-        return "The inspection text"
+        return "Wraps data class' primary constructor call with a Java-style builder if one is present in the project."
     }
 
     override fun isApplicable(element: KtCallElement): Boolean {

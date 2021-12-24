@@ -29,7 +29,7 @@ object DataClassFix : LocalQuickFix {
     private lateinit var dataValueParamListIsNullable: ArrayList<Boolean>
 
     override fun getFamilyName(): String {
-        return "Build the builder!!"
+        return "Generate a Java-style builder"
     }
 
     override fun applyFix(project: Project, descriptor: ProblemDescriptor) {

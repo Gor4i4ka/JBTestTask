@@ -195,8 +195,25 @@
     <runAccess>Readonly</runAccess>
     <toolWindowAccess>Disabled</toolWindowAccess>
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>General</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>BuilderUsages</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="VcsLogIndexCollector">
-    <option name="indexTime" value="17" />
+    <option name="indexTime" value="109" />
   </component>
   <component name="sourceFolderManager">
     <sourceFolders>
