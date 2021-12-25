@@ -2,7 +2,7 @@ package legacy
 
 import com.intellij.codeInspection.ProblemsHolder
 import com.intellij.psi.PsiElement
-import dataClassBuilderInspection.DataClassFix
+import dslStyle.dataClassBuilderInspection.DataClassFix
 import org.jetbrains.kotlin.psi.KtClass
 import org.jetbrains.kotlin.psi.KtVisitorVoid
 

@@ -9,10 +9,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/stuff/Main.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/javaStyleChecks/MainJava.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="35" column="82" selection-start-line="35" selection-start-column="82" selection-end-line="35" selection-end-column="82" />
+            <state relative-caret-position="418">
+              <caret line="19" column="75" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -21,12 +21,13 @@
   </component>
   <component name="FileTypeUsageLocalSummary">
     <fileType name="Kotlin">
-      <summary usageCount="10" lastUsed="1640362494231" />
+      <summary usageCount="12" lastUsed="1640442157644" />
     </fileType>
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/src/main/kotlin/stuff/Main.kt" />
+      <option value="$PROJECT_DIR$/src/main/kotlin/javaStyleChecks/MainJava.kt" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -39,13 +40,48 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JBTestProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBTestProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBTestProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBTestProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBTestProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBTestProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBTestProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBTestProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBTestProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBTestProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="javaStyleChecks" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="ToolWindowManager">
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1825" />
       <window_info id="Structure" order="1" side_tool="true" />
@@ -70,8 +106,10 @@
       <window_info anchor="right" id="Space Automation" order="1" />
       <window_info anchor="right" id="documentation.v2" order="2" side_tool="true" />
       <window_info anchor="right" id="Layout Validation" order="3" />
+      <window_info anchor="right" id="Hierarchy" order="7" visible="true" weight="0.33035713" />
     </layout>
     <recentWindows>
+      <value>Hierarchy</value>
       <value>Project</value>
     </recentWindows>
   </component>
@@ -87,10 +125,11 @@
     <state x="576" y="287" width="824" height="532" key="IDE.errors.dialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1640274091230" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/stuff/Main.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/stuff/Main.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/javaStyleChecks/MainJava.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="35" column="82" selection-start-line="35" selection-start-column="82" selection-end-line="35" selection-end-column="82" />
+        <state relative-caret-position="198">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>

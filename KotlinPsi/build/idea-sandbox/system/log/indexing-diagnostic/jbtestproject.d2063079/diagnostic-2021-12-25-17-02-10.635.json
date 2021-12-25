@@ -1,0 +1,218 @@
+{
+  "appInfo" : {
+    "build" : "213.5744.223",
+    "buildDate" : "2021-11-27T07:14:18.845Z[UTC]",
+    "productCode" : "IC",
+    "generated" : "2021-12-25T14:02:10.635285Z",
+    "os" : "Linux 5.4.0-91-generic",
+    "runtime" : "JetBrains s.r.o. 11.0.13 11.0.13+7-b1751.19"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "JBTestProject",
+    "times" : {
+      "indexingReason" : "On refresh of 190 files",
+      "totalUpdatingTime" : 812172547,
+      "indexingTime" : 786150000,
+      "contentLoadingTime" : 4552388,
+      "scanFilesTime" : 970485,
+      "pushPropertiesTime" : 0,
+      "indexExtensionsTime" : 0,
+      "updatingStart" : "2021-12-25T14:02:07.809656Z",
+      "updatingEnd" : "2021-12-25T14:02:08.621828Z",
+      "totalSuspendedTime" : 0,
+      "wasInterrupted" : false
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 190,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 190,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 190
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "Kotlin",
+      "partOfTotalProcessingTime" : {
+        "part" : 1957248719,
+        "total" : 3089168316
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 1296889,
+        "total" : 17890560
+      },
+      "totalNumberOfFiles" : 3,
+      "totalFilesSize" : 3033,
+      "indexingSpeed" : {
+        "totalBytes" : 3033,
+        "totalTime" : 1957248719
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 3033,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1957248719,
+          "total" : 1957248719
+        }
+      } ]
+    }, {
+      "fileType" : "UNKNOWN",
+      "partOfTotalProcessingTime" : {
+        "part" : 1131919597,
+        "total" : 3089168316
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 16593671,
+        "total" : 17890560
+      },
+      "totalNumberOfFiles" : 187,
+      "totalFilesSize" : 0,
+      "indexingSpeed" : {
+        "totalBytes" : 0,
+        "totalTime" : 1131919597
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 187,
+        "totalFilesSize" : 0,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1131919597,
+          "total" : 1131919597
+        }
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 1283681086,
+        "total" : 1803443600
+      },
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3033,
+      "indexingSpeed" : {
+        "totalBytes" : 3033,
+        "totalTime" : 1283681086
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 321683887,
+        "total" : 1803443600
+      },
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3033,
+      "indexingSpeed" : {
+        "totalBytes" : 3033,
+        "totalTime" : 321683887
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 188073918,
+        "total" : 1803443600
+      },
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3033,
+      "indexingSpeed" : {
+        "totalBytes" : 3033,
+        "totalTime" : 188073918
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 8838491,
+        "total" : 1803443600
+      },
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3033,
+      "indexingSpeed" : {
+        "totalBytes" : 3033,
+        "totalTime" : 8838491
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinPackageSourcesMemberNamesIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 1166218,
+        "total" : 1803443600
+      },
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3033,
+      "indexingSpeed" : {
+        "totalBytes" : 3033,
+        "totalTime" : 1166218
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    } ],
+    "scanningStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "numberOfScannedFiles" : 190,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 190,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 970485,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "totalNumberOfIndexedFiles" : 190,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingTime" : 786062328,
+      "contentLoadingTime" : 4552388,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "MainJava.kt",
+        "processingTime" : 546638364,
+        "indexingTime" : 529209291,
+        "contentLoadingTime" : 837370
+      }, {
+        "fileName" : "MainDsl.kt",
+        "processingTime" : 727471189,
+        "indexingTime" : 668451763,
+        "contentLoadingTime" : 157405
+      }, {
+        "fileName" : "TestDsl.kt",
+        "processingTime" : 683139166,
+        "indexingTime" : 605782546,
+        "contentLoadingTime" : 302114
+      } ]
+    } ]
+  }
+}

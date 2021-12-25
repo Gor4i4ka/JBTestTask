@@ -17,14 +17,14 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <localInspection
-                implementationClass="dataClassBuilderInspection.DataClassInspection"
+                implementationClass="dslStyle.dataClassBuilderInspection.DataClassInspection"
                 language="kotlin"
                 level="WARNING"
                 enabledByDefault="true"
                 displayName="Data class builder inspection"
             />
         <localInspection
-                implementationClass="builderUsagesInspection.BuilderUsagesInspection"
+                implementationClass="dslStyle.builderUsagesInspection.BuilderUsagesInspection"
                 language="kotlin"
                 level="WARNING"
                 enabledByDefault="true"
