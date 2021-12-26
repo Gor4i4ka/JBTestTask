@@ -1,4 +1,4 @@
-package dslStyle.builderUsagesInspection
+package javaStyle.builderUsagesInspection
 
 import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.project.Project

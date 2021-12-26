@@ -23,12 +23,6 @@ data class DataB(val valueB: Int) {
 
 }
 
-class DataBBuilder {
-    var valueB: Int? = null
-    fun build(): DataB? {
-        return if (valueB == null) null else DataB(valueB!!)
-    }
-}
 
 data class DataC(val valueA: Int, var valueB: Float?, val complexA: String,
                  val complexB: String?, val dataA: DataA, val collectionA: List<Int>, val collectionB: List<DataA>)
@@ -74,6 +68,7 @@ fun main(args: Array<String>) {
             valueD =  null
         }
     }
+    val data = DataB(1)
     println(BOI)
     println("END")
 }
