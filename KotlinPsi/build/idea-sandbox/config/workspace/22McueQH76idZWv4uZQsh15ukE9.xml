@@ -11,8 +11,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/javaStyleChecks/MainJava.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="75" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
+            <state relative-caret-position="1606">
+              <caret line="100" column="22" lean-forward="true" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -21,7 +21,7 @@
   </component>
   <component name="FileTypeUsageLocalSummary">
     <fileType name="Kotlin">
-      <summary usageCount="12" lastUsed="1640442157644" />
+      <summary usageCount="13" lastUsed="1640617875023" />
     </fileType>
   </component>
   <component name="IdeDocumentHistory">
@@ -40,6 +40,7 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -77,11 +78,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="ToolWindowManager">
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1825" />
       <window_info id="Structure" order="1" side_tool="true" />
@@ -106,11 +107,11 @@
       <window_info anchor="right" id="Space Automation" order="1" />
       <window_info anchor="right" id="documentation.v2" order="2" side_tool="true" />
       <window_info anchor="right" id="Layout Validation" order="3" />
-      <window_info anchor="right" id="Hierarchy" order="7" visible="true" weight="0.33035713" />
+      <window_info anchor="right" id="Hierarchy" order="4" visible="true" weight="0.33035713" />
     </layout>
     <recentWindows>
-      <value>Hierarchy</value>
       <value>Project</value>
+      <value>Hierarchy</value>
     </recentWindows>
   </component>
   <component name="Trusted.Project.Settings" hasCheckedIfOldProject="true" trusted="YES" />
@@ -128,8 +129,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/stuff/Main.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/javaStyleChecks/MainJava.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="1606">
+          <caret line="100" column="22" lean-forward="true" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
         </state>
       </provider>
     </entry>

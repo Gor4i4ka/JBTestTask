@@ -766,8 +766,36 @@
               </dataSet>
             </plugins>
           </entry>
+          <entry key="java:org.springframework:graphql-spring-boot-starter">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="nl.jrdie.idea.springql" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="java:org.springframework.experimental:graphql-spring-boot-starter">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="nl.jrdie.idea.springql" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="java:org.springframework.graphql:spring-graphql">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="nl.jrdie.idea.springql" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="java:org.springframework.graphql:spring-graphql-test">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="nl.jrdie.idea.springql" />
+              </dataSet>
+            </plugins>
+          </entry>
         </featureMap>
-        <option name="lastUpdateTime" value="1640361492382" />
+        <option name="lastUpdateTime" value="1640617890816" />
       </features>
     </option>
     <option name="extensions">
@@ -12251,8 +12279,15 @@
               </dataSet>
             </plugins>
           </entry>
+          <entry key="*.odt">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="com.misset.OMT" />
+              </dataSet>
+            </plugins>
+          </entry>
         </featureMap>
-        <option name="lastUpdateTime" value="1640361492231" />
+        <option name="lastUpdateTime" value="1640617889386" />
       </features>
     </option>
   </component>

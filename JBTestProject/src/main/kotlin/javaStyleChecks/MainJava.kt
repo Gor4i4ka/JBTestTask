@@ -19,13 +19,26 @@ class DataABuilder {
         DataA(valueA, valueB, valueC, valueD)
 }
 
+
 data class DataB(val valueB: Int) {
 
 }
 
+fun buildDataB(init: DataBBuilder.() -> Unit): DataB =
+    DataBBuilder().apply(init).build()
 
-data class DataC(val valueA: Int, var valueB: Float?, val complexA: String,
-                 val complexB: String?, val dataA: DataA, val collectionA: List<Int>, val collectionB: List<DataA>)
+class DataBBuilder {
+    var valueB by Delegates.notNull<Int>()
+
+    fun build(): DataB =
+        DataB(valueB)
+}
+
+
+data class DataC(
+    val valueA: Int, var valueB: Float?, val complexA: String,
+    val complexB: String?, val dataA: DataA, val collectionA: List<Int>, val collectionB: List<DataA>
+)
 
 fun buildDataC(init: DataCBuilder.() -> Unit): DataC =
     DataCBuilder().apply(init).build()
@@ -48,6 +61,19 @@ class DataCBuilder {
 }
 
 
+data class DataD(val valueA: Int, val dataB: DataB)
+
+fun buildDataD(init: DataDBuilder.() -> Unit): DataD =
+    DataDBuilder().apply(init).build()
+
+class DataDBuilder {
+    var valueA by Delegates.notNull<Int>()
+    lateinit var dataB: DataB
+
+    fun build(): DataD =
+        DataD(valueA, dataB)
+}
+
 fun main(args: Array<String>) {
     println("BEGIN")
     val BOI = buildDataC {
@@ -58,17 +84,46 @@ fun main(args: Array<String>) {
             valueA = 2f
             valueB = 1
             valueC = "kek"
-            valueD =  null
+            valueD = null
         }
 
         collectionBElement {
             valueA = 1f
             valueB = null
             valueC = "NOBRAINS"
-            valueD =  null
+            valueD = null
         }
     }
     val data = DataB(1)
+    //DataD(1, DataB(2))
+    val dataD = DataD(1, DataB(2))
+
+//    val dataC = DataC(1, null, "Boi", "Voi", DataA(1f, null, "Brains",
+//    true), listOf(1, 2), listOf(DataA(1f, null, "Brains",
+//        true))
+//    )
+
+    val dataC = DataC(1, null, "Boi", "Voi", DataA(1f, null, "Brains",
+        true), listOf(1, 2), listOf(DataA(1f, null, "Brains",
+        true))
+    )
+
+
+//    val dataC = buildDataC {
+//        valueA = 1
+//        valueB = null
+//        complexA = "Boi"
+//        complexB = "Voi"
+//        dataA = buildDataA {
+//            valueA = 1f
+//            valueB = null
+//            valueC = "Brains"
+//            valueD = true
+//        }
+//        collectionA = buildCollection {}
+//        collectionB = buildCollection {}
+//    }
+
     println(BOI)
     println("END")
 }

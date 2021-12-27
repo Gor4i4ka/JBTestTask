@@ -51,7 +51,7 @@ class DataClassFix : LocalQuickFix {
     private val collectionsHandled = setOf<String>("List")
 
     override fun getFamilyName(): String {
-        return "Generate a Java-style builder"
+        return "Generate a DSL-style builder"
     }
 
     override fun applyFix(project: Project, descriptor: ProblemDescriptor) {

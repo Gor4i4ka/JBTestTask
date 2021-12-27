@@ -1,58 +1,102 @@
 package localTests
+import kotlin.properties.Delegates
 
-// Data Classes
-data class Person(
-    val name: String,
-    val favouriteMovies: List<Movie>,
-)
-data class Movie(
-    val title: String,
-)
+data class DataA(val valueA: Float, var valueB: Int?, val valueC: String, var valueD: Boolean?) {
 
-// Use cite BEFORE
-val personBefore = Person(
-    "John",
-    favouriteMovies = listOf(
-        Movie("The Lord of the Rings"),
-        Movie("Pulp Fiction"),
-    ))
-
-// Person builders
-
-fun buildPerson(init: PersonBuilder.() -> Unit): Person =
-    PersonBuilder().apply(init).build()
-
-class PersonBuilder() {
-
-    lateinit var name: String
-    private val favouriteMovies = mutableListOf<Movie>()
-    fun favouriteMovie(init: MovieBuilder.() -> Unit) {
-        //favouriteMovies += MovieBuilder().apply(init).build()
-        favouriteMovies += buildMovie(init)
-    }
-    fun build(): Person = Person(name, favouriteMovies)
 }
 
-// Movie builders
-fun buildMovie(init: MovieBuilder.() -> Unit): Movie =
-    MovieBuilder().apply(init).build()
+fun buildDataA(init: DataABuilder.() -> Unit): DataA =
+    DataABuilder().apply(init).build()
 
-class MovieBuilder {
-    lateinit var title: String
-    fun build(): Movie = Movie(title)
+class DataABuilder {
+    var valueA by Delegates.notNull<Float>()
+    var valueB: Int? = null
+    lateinit var valueC: String
+    var valueD: Boolean? = null
+
+    fun build(): DataA =
+        DataA(valueA, valueB, valueC, valueD)
 }
 
-val personAfter: Person = buildPerson {
-    name = "John"
-    favouriteMovie {
-        title = "The Lord of the Rings"
-    }
-    favouriteMovie {
-        title = "Pulp Fiction"
-    }
+data class DataB(val valueB: Int) {
+
 }
 
-fun main() {
+fun buildDataB(init: DataBBuilder.() -> Unit): DataB =
+    DataBBuilder().apply(init).build()
 
-    println(personAfter)
+class DataBBuilder {
+    var valueB by Delegates.notNull<Int>()
+
+    fun build(): DataB =
+        DataB(valueB)
+}
+
+
+data class DataC(val valueA: Int, var valueB: Float?, val complexA: String,
+                 val complexB: String?, val dataA: DataA, val collectionA: List<Int>, val collectionB: List<DataA>)
+
+fun buildDataC(init: DataCBuilder.() -> Unit): DataC =
+    DataCBuilder().apply(init).build()
+
+class DataCBuilder {
+    var valueA by Delegates.notNull<Int>()
+    var valueB: Float? = null
+    lateinit var complexA: String
+    var complexB: String? = null
+    lateinit var dataA: DataA
+    private val collectionA = mutableListOf<Int>()
+    private val collectionB = mutableListOf<DataA>()
+
+    fun collectionBElement(init: DataABuilder.() -> Unit) {
+        collectionB.add(buildDataA(init))
+    }
+
+    fun build(): DataC =
+        DataC(valueA, valueB, complexA, complexB, dataA, collectionA, collectionB)
+}
+
+
+data class DataD(val valueA: Int, val dataB: DataB)
+
+fun buildDataD(init: DataDBuilder.() -> Unit): DataD =
+    DataDBuilder().apply(init).build()
+
+class DataDBuilder {
+    var valueA by Delegates.notNull<Int>()
+    lateinit var dataB: DataB
+
+    fun build(): DataD =
+        DataD(valueA, dataB)
+}
+
+fun main(args: Array<String>) {
+    println("BEGIN")
+    val BOI = buildDataC {
+        valueA = 2
+        valueB = null
+        complexA = "HOLA BOIZ"
+        dataA = buildDataA {
+            valueA = 2f
+            valueB = 1
+            valueC = "kek"
+            valueD =  null
+        }
+
+        collectionBElement {
+            valueA = 1f
+            valueB = null
+            valueC = "NOBRAINS"
+            valueD =  null
+        }
+    }
+    val data = DataB(1)
+    //DataD(1, DataB(2))
+    val dataD = buildDataD {
+        valueA = 1
+        dataB = DataB(2)
+    }
+
+    println(BOI)
+    println("END")
 }
