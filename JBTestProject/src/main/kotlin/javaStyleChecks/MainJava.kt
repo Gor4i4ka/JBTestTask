@@ -49,11 +49,11 @@ class DataCBuilder {
     lateinit var complexA: String
     var complexB: String? = null
     lateinit var dataA: DataA
-    private val collectionA = mutableListOf<Int>()
-    private val collectionB = mutableListOf<DataA>()
+    var collectionA = mutableListOf<Int>()
+    var collectionB = mutableListOf<DataA>()
 
-    fun collectionBElement(init: DataABuilder.() -> Unit) {
-        collectionB.add(buildDataA(init))
+    fun collectionBElement(dataA: DataA) {
+        collectionB.add(dataA)
     }
 
     fun build(): DataC =
@@ -76,38 +76,56 @@ class DataDBuilder {
 
 fun main(args: Array<String>) {
     println("BEGIN")
-    val BOI = buildDataC {
-        valueA = 2
-        valueB = null
-        complexA = "HOLA BOIZ"
-        dataA = buildDataA {
-            valueA = 2f
-            valueB = 1
-            valueC = "kek"
-            valueD = null
-        }
-
-        collectionBElement {
-            valueA = 1f
-            valueB = null
-            valueC = "NOBRAINS"
-            valueD = null
-        }
-    }
-    val data = DataB(1)
-    //DataD(1, DataB(2))
-    val dataD = DataD(1, DataB(2))
+//    val BOI = buildDataC {
+//        valueA = 2
+//        valueB = null
+//        complexA = "HOLA BOIZ"
+//        dataA = buildDataA {
+//            valueA = 2f
+//            valueB = 1
+//            valueC = "kek"
+//            valueD = null
+//        }
+//
+//        collectionBElement {
+//            valueA = 1f
+//            valueB = null
+//            valueC = "NOBRAINS"
+//            valueD = null
+//        }
+//    }
+//    val data = DataB(1)
+//    //DataD(1, DataB(2))
+//    val dataD = DataD(1, DataB(2))
 
 //    val dataC = DataC(1, null, "Boi", "Voi", DataA(1f, null, "Brains",
 //    true), listOf(1, 2), listOf(DataA(1f, null, "Brains",
 //        true))
 //    )
 
-    val dataC = DataC(1, null, "Boi", "Voi", DataA(1f, null, "Brains",
-        true), listOf(1, 2), listOf(DataA(1f, null, "Brains",
-        true))
-    )
+    val dataC = buildDataC {
+        valueA = 1
+        valueB = null
+        complexA = "Boi"
+        complexB = "Voi"
+        dataA = buildDataA {
+            valueA = 1f
+            valueB = null
+            valueC = "Brains"
+            valueD = true
 
+        }
+        collectionA = mutableListOf(1, 2)
+        collectionBElement(
+            buildDataA {
+                valueA = 1f
+                valueB = null
+                valueC = "Brains"
+                valueD = true
+
+            }
+        )
+    }
 
 //    val dataC = buildDataC {
 //        valueA = 1
@@ -124,6 +142,6 @@ fun main(args: Array<String>) {
 //        collectionB = buildCollection {}
 //    }
 
-    println(BOI)
+    println(dataC)
     println("END")
 }

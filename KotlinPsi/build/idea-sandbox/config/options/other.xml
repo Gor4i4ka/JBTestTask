@@ -12,12 +12,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="CWM_LOGGING_VERSION" value="1" />
+    <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="bundled.plugins.list.saved.version" value="IC-213.5744.223" />
     <property name="completion.ml.enabled.notification.shown" value="true" />
+    <property name="debugger.smart.chooser.counter" value="3" />
     <property name="eclipse.projects.detected" value="" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/JetBrainsProjects/JBTestTask/JBTestProject" />
-    <property name="file.gist.reindex.count" value="12" />
+    <property name="file.gist.reindex.count" value="15" />
     <property name="fileTypeChangedCounter" value="1" />
     <property name="fileTypeDetectors" value="com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector:com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector" />
     <property name="got.it.tooltip.cwm.invitation.notification" value="1" />

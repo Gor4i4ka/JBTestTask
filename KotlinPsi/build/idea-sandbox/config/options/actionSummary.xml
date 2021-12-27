@@ -3,17 +3,23 @@
     <e n="$Undo">
       <i c="10" l="1640618273408" />
     </e>
+    <e n="CommentByLineComment">
+      <i c="2" l="1640634174188" />
+    </e>
+    <e n="Debug">
+      <i c="4" l="1640634277578" />
+    </e>
     <e n="EditorBackSpace">
-      <i c="160" l="1640618228965" />
+      <i c="196" l="1640634374801" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="15" l="1640618211507" />
+      <i c="17" l="1640634115730" />
     </e>
     <e n="EditorCopy">
       <i c="2" l="1640618217378" />
     </e>
     <e n="EditorDown">
-      <i c="2" l="1640442481387" />
+      <i c="16" l="1640634364005" />
     </e>
     <e n="EditorEnter">
       <i c="7" l="1640618184809" />
@@ -31,13 +37,31 @@
       <i c="80" l="1640618176284" />
     </e>
     <e n="EditorUp">
-      <i c="1" l="1640618122534" />
+      <i c="2" l="1640634364427" />
     </e>
     <e n="ReformatCode">
       <i c="2" l="1640618185530" />
     </e>
+    <e n="Run">
+      <i c="5" l="1640634377403" />
+    </e>
+    <e n="RunClass">
+      <i c="1" l="1640633977439" />
+    </e>
     <e n="ShowIntentionActions">
       <i c="1" l="1640361851393" />
+    </e>
+    <e n="StepInto">
+      <i c="5" l="1640634331879" />
+    </e>
+    <e n="StepOver">
+      <i c="9" l="1640634307168" />
+    </e>
+    <e n="Stop">
+      <i c="1" l="1640634342373" />
+    </e>
+    <e n="ToggleLineBreakpoint">
+      <i c="2" l="1640634247901" />
     </e>
     <e n="WelcomeScreen.OpenProject">
       <i c="2" l="1640188733174" />
@@ -46,7 +70,10 @@
       <i c="1" l="1640274083632" />
     </e>
     <e n="com.intellij.notification.NotificationAction$Simple">
-      <i c="3" l="1640357495680" />
+      <i c="4" l="1640633794259" />
+    </e>
+    <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
+      <i c="1" l="1640634149421" />
     </e>
   </component>
 </application>

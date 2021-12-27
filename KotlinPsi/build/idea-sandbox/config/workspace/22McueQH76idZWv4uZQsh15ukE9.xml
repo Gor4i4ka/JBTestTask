@@ -11,8 +11,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/javaStyleChecks/MainJava.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1606">
-              <caret line="100" column="22" lean-forward="true" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
+            <state relative-caret-position="166">
+              <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -21,7 +21,7 @@
   </component>
   <component name="FileTypeUsageLocalSummary">
     <fileType name="Kotlin">
-      <summary usageCount="13" lastUsed="1640617875023" />
+      <summary usageCount="16" lastUsed="1640635124233" />
     </fileType>
   </component>
   <component name="IdeDocumentHistory">
@@ -94,10 +94,10 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3304124" />
       <window_info anchor="bottom" id="TODO" order="4" />
       <window_info anchor="bottom" id="Problems View" order="5" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.40051547" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Services" order="9" show_stripe_button="false" />
@@ -110,7 +110,9 @@
       <window_info anchor="right" id="Hierarchy" order="4" visible="true" weight="0.33035713" />
     </layout>
     <recentWindows>
+      <value>Run</value>
       <value>Project</value>
+      <value>Debug</value>
       <value>Hierarchy</value>
     </recentWindows>
   </component>
@@ -129,8 +131,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/stuff/Main.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/javaStyleChecks/MainJava.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="100" column="22" lean-forward="true" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
+        <state relative-caret-position="166">
+          <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
         </state>
       </provider>
     </entry>

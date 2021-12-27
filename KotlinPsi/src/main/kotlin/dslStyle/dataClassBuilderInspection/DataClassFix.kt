@@ -12,6 +12,7 @@ import org.jetbrains.kotlin.psi.*
 import org.jetbrains.kotlin.psi.psiUtil.createSmartPointer
 import org.jetbrains.kotlin.types.KotlinType
 import org.jetbrains.kotlin.types.typeUtil.isPrimitiveNumberType
+import org.jetbrains.kotlin.util.capitalizeDecapitalize.toLowerCaseAsciiOnly
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashSet
@@ -99,7 +100,6 @@ class DataClassFix : LocalQuickFix {
             val typeName: String = type.toString()
             val isNullable: Boolean = typeName.endsWith("?")
             val isPrimitive: Boolean = type.isPrimitiveNumberType()
-            //TODO: remove kostil with isCollection
             val collectionParameterTypeName = Regex("<.*>").find(typeName)?.value?.drop(1)?.dropLast(1)
             val collectionShortName = Regex(".*<").find(typeName)?.value?.dropLast(1)
             val isCollection: Boolean = collectionShortName in collectionsHandled
@@ -203,7 +203,7 @@ class DataClassFix : LocalQuickFix {
                     // Collection parameter field generation
                     else if (parameter.isCollection) {
                         append(
-                            "private val ${parameter.parameterName} = " +
+                            "var ${parameter.parameterName} = " +
                                     "mutable${parameter.collectionShortName}Of" +
                                     "<${parameter.collectionParameterTypeName}>()\n"
                         )
