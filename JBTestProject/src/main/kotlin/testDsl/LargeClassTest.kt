@@ -1,11 +1,9 @@
 package testDsl
 
-import kotlin.properties.Delegates
-
 data class Crowd(
     val crowdName: String,
     val people: List<Person>,
-    val forMovies: List<Movie>
+    val forMovies: Set<Movie>
 )
 
 data class Person(
@@ -74,7 +72,7 @@ val crowdUsage = Crowd(
             )
         )
     ),
-    listOf(
+    setOf(
         Movie("Titanic", 123f),
         Movie("Tonunik", 123f)
     )

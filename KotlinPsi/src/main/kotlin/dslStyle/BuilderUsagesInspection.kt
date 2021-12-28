@@ -1,8 +1,9 @@
-package dslStyle.builderUsagesInspection
+package dslStyle
 
 import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.project.Project
 import com.intellij.psi.search.GlobalSearchScope
+import org.jetbrains.kotlin.fir.resolve.dfa.stackOf
 import org.jetbrains.kotlin.idea.inspections.AbstractApplicabilityBasedInspection
 import org.jetbrains.kotlin.idea.stubindex.KotlinClassShortNameIndex
 import org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex
@@ -19,11 +20,14 @@ class BuilderUsagesInspection :
     private lateinit var project: Project
 
     private var debugFlag: Boolean? = null
-    private val handledCollectionsOf = setOf<String>("listOf")
-    private val handledCollections = setOf<String>("List")
+    private val handledCollectionsOf = setOf<String>("listOf", "setOf", "stackOf")
 
     override val defaultFixText: String
-        get() = "Wrap the constructor call with the DSL-style builder"
+        get() = "Wrap this data class usage in a DSL-style builder"
+
+    override fun inspectionText(element: KtNameReferenceExpression): String {
+        return "Generates DSL-builders for the data class and wraps this usage"
+    }
 
     override fun applyTo(element: KtNameReferenceExpression, project: Project, editor: Editor?) {
         kotlinFactory = KtPsiFactory(project)
@@ -130,10 +134,6 @@ class BuilderUsagesInspection :
                 child.replace(applyTo(child))
             visitChildren(child as KtElement)
         }
-    }
-
-    override fun inspectionText(element: KtNameReferenceExpression): String {
-        return "Wraps data class' primary constructor call with a DSL-style builder if one is present in the project."
     }
 
     override fun isApplicable(element: KtNameReferenceExpression): Boolean {

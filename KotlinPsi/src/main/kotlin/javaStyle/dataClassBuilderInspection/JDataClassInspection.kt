@@ -10,7 +10,7 @@ import org.jetbrains.kotlin.psi.*
 class JDataClassInspection : LocalInspectionTool() {
 
     private val inspectionDescription = "Generates a Java-style builder class to construct data class instances' step by step."
-    private val inspectionFix = DataClassFix()
+    private val inspectionFix = JDataClassFix
 
 /*TODO: Add GUI Swing panel
 

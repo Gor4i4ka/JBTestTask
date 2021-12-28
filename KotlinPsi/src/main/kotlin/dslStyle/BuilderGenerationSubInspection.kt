@@ -1,4 +1,4 @@
-package dslStyle.builderUsagesInspection
+package dslStyle
 
 import com.intellij.openapi.project.Project
 import com.intellij.psi.search.GlobalSearchScope
@@ -14,7 +14,7 @@ class BuilderGenerationSubInspection(private val call: KtCallElement, val projec
 
     private val allUsedDataClassesSet = HashSet<DataClassInfo>()
     private val kotlinFactory = KtPsiFactory(project)
-    private val collectionsHandled = listOf("List")
+    private val collectionsHandled = listOf("List", "Set", "Stack")
 
     fun launchBuilderGeneration() {
         analyzeChildren(call)

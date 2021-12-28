@@ -16,19 +16,12 @@
     <depends>org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-<!--        <localInspection-->
-<!--                implementationClass="dslStyle.dataClassBuilderInspection.DataClassInspection"-->
-<!--                language="kotlin"-->
-<!--                level="WARNING"-->
-<!--                enabledByDefault="true"-->
-<!--                displayName="Data class builder inspection"-->
-<!--            />-->
         <localInspection
-                implementationClass="dslStyle.builderUsagesInspection.BuilderUsagesInspection"
+                implementationClass="dslStyle.BuilderUsagesInspection"
                 language="kotlin"
                 level="WARNING"
                 enabledByDefault="true"
-                displayName="Builder usages inspection"
+                displayName="DSL-style builders inspection"
                 />
         <!-- Add your extensions here -->
     </extensions>

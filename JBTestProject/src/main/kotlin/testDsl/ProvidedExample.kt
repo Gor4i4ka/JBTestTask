@@ -1,4 +1,4 @@
-package dslStyleChecks
+package testDsl
 
 //data class Person(
 //    val name: String,

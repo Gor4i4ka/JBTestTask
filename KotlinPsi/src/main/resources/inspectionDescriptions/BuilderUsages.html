@@ -1,9 +1,12 @@
 <html>
 <body>
 
-Wraps data class' primary constructor call with a DSL-style builder if one is present in the project.
+The inspection allows users to generate DSL-style builders for instantiating Kotlin data
+classes. DSL builders will be generated for data classes from the user project. The
+user may choose for which data classes one wants to generate builders,
+however all data classes used in the one the user wants to wrap will be processed as well.
 
-<p>Usage of a builder helps to increase the level of abstraction to easier create instances of complex classes.</p>
+<p>Usage of a DSL-style builder helps to increase the level of abstraction to easier create instances of complex classes.</p>
 
 <!-- tooltip end -->
 

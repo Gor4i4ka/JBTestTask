@@ -20818,3 +20818,373 @@ com.intellij.diagnostic.PluginException: class dslStyle.builderUsagesInspection.
 2021-12-28 13:31:33,376 [ 485139]   INFO - fs.persistent.PersistentFSImpl - VFS dispose completed 
 2021-12-28 13:31:33,376 [ 485139]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
 2021-12-28 13:31:33,379 [ 485142]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2021-12-28 13:42:24,760 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2021-12-28 13:42:24,851 [     91]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-213.5744.223, 27 Nov 2021 10:14) 
+2021-12-28 13:42:24,859 [     99]   INFO -        #com.intellij.idea.Main - OS: Linux (5.4.0-91-generic, amd64) 
+2021-12-28 13:42:24,872 [    112]   INFO -        #com.intellij.idea.Main - JRE: 11.0.13+7-b1751.19 (JetBrains s.r.o.) 
+2021-12-28 13:42:24,886 [    126]   INFO -        #com.intellij.idea.Main - JVM: 11.0.13+7-b1751.19 (OpenJDK 64-Bit Server VM) 
+2021-12-28 13:42:24,890 [    130]   INFO -        #com.intellij.idea.Main - JVM options: [-Didea.auto.reload.plugins=true, -Didea.classpath.index.enabled=false, -Didea.config.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/config, -Didea.is.internal=true, -Didea.platform.prefix=Idea, -Didea.plugins.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/plugins, -Didea.required.plugins.id=com.ktpsi.KotlinPsi, -Didea.system.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/system, -Dsun.awt.disablegrab=true, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant, -ea] 
+2021-12-28 13:42:24,890 [    130]   INFO -        #com.intellij.idea.Main - args: [] 
+2021-12-28 13:42:24,890 [    130]   INFO -        #com.intellij.idea.Main - library path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib 
+2021-12-28 13:42:24,891 [    131]   INFO -        #com.intellij.idea.Main - boot library path: /home/nick/.gradle/caches/modules-2/files-2.1/com.jetbrains/jbre/jbr_jcef-11_0_13-linux-x64-b1751.19/extracted/jbr/lib 
+2021-12-28 13:42:24,963 [    203]   INFO -        #com.intellij.idea.Main - locale=en_US JNU=UTF-8 file.encoding=UTF-8
+  idea.config.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/config
+  idea.system.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/system
+  idea.plugins.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/plugins
+  idea.log.path=/home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/system/log 
+2021-12-28 13:42:24,991 [    231]   INFO -        #com.intellij.idea.Main - CPU cores: 8; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@4a689e7d[Running, parallelism = 7, size = 7, active = 3, running = 3, steals = 4, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@aa8b627 
+2021-12-28 13:42:25,032 [    272]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 40 ms 
+2021-12-28 13:42:25,175 [    415]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, descriptorPath=plugin.xml, path=~/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.3/75777e10a0e2880bc02945066dda2480a696c3d9/ideaIC-2021.3/plugins/Groovy, version=213.5744.223, package=org.jetbrains.plugins.groovy, isBundled=true) misses optional descriptor duplicates-groovy.xml 
+2021-12-28 13:42:25,175 [    415]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, descriptorPath=plugin.xml, path=~/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.3/75777e10a0e2880bc02945066dda2480a696c3d9/ideaIC-2021.3/plugins/Groovy, version=213.5744.223, package=org.jetbrains.plugins.groovy, isBundled=true) misses optional descriptor duplicates-detection-groovy.xml 
+2021-12-28 13:42:25,451 [    691]   INFO - llij.ide.plugins.PluginManager - Module intellij.space.index is not enabled because dependency intellij.indexing.shared is not available 
+2021-12-28 13:42:25,484 [    724]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: IDEA CORE (213.5744.223), IDE Features Trainer (213.5744.223), Grazie (213.5744.223), Settings Repository (213.5744.223), YAML (213.5744.223), WSL File System Support (213.5744.223), TextMate Bundles (213.5744.223), Terminal (213.5744.223), Emoji Picker (213.5744.223), JetBrains maven model api classes (213.5744.223), JetBrains Repository Search (213.5744.223), Qodana (213.5744.223), EditorConfig (213.5744.223), WebP Support (213.5744.223), Mercurial (213.5744.223), Shell Script (213.5744.223), Projector Libraries for Code With Me and Remote Development (213.5744.223), JetBrains Marketplace Licensing Support (213.5744.223), Windows 10 Light Theme (213.5744.223), macOS Light Theme (213.5744.223), Dependency Management Api for External Build Tools (213.5744.223), Copyright (213.5744.223), Properties (213.5744.223), Gradle (213.5744.223), Images (213.5744.223), Java (213.5744.223), JavaFX (213.5744.223), Kotlin (213-1.5.10-release-949-IJ5744.223), Java Bytecode Decompiler (213.5744.223), Eclipse Interoperability (213.5744.223), Java Stream Debugger (213.5744.223), Package Search (213.5744.223), Code With Me (213.5744.223), com.intellij.tracing.ide (213.5744.223), Java IDE Customization (213.5744.223), Java Internationalization (213.5744.223), UI Designer (213.5744.223), Configuration Script (213.5744.223), Shared Indexes (213.5744.223), Machine Learning Code Completion (213.5744.223), Smali Support (213.5744.223), XPathView + XSLT (213.5744.223), IntelliLang (213.5744.223), Markdown (213.5744.223), Task Management (213.5744.223), XSLT Debugger (213.5744.223), TestNG (213.5744.223), Subversion (213.5744.223), Perforce Helix Core (213.5744.223), Lombok (213.5744.223), JUnit (213.5744.223), GitHub (213.5744.223), Space (213.5744.223), Git (213.5744.223), IDE Features Trainer: Git Lessons (213.5744.223), ChangeReminder (213.5744.223), Machine Learning in Search Everywhere (213.5744.223), Code Coverage for Java (213.5744.223), Bytecode Viewer (213.5744.223), Groovy (213.5744.223), Ant (213.5744.223), Maven (213.5744.223), Gradle-Java (213.5744.223), Gradle-Maven (213.5744.223), Gradle DSL API (213.5744.223), Gradle Dependency Updater Implementation (213.5744.223), Android (2020.3.1 Final.213.5744.223), Plugin DevKit (213.5744.223) 
+2021-12-28 13:42:25,484 [    724]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: KTPSI (1.0-SNAPSHOT) 
+2021-12-28 13:42:25,889 [   1129]   INFO -        #com.intellij.idea.Main - WM detected: GNOME Shell, desktop: ubuntu:GNOME 
+2021-12-28 13:42:27,038 [   2278]   INFO - ication.options.PathMacrosImpl - Loaded path macros: {MAVEN_REPOSITORY=/home/nick/.m2/repository, KOTLIN_BUNDLED=/home/nick/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.3/75777e10a0e2880bc02945066dda2480a696c3d9/ideaIC-2021.3/plugins/Kotlin/kotlinc} 
+2021-12-28 13:42:27,086 [   2326]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2021-12-28 13:42:27,130 [   2370]   WARN - j.internal.DebugAttachDetector - Unable to start DebugAttachDetector, please add `--add-exports java.base/jdk.internal.vm=ALL-UNNAMED` to VM options 
+2021-12-28 13:42:27,146 [   2386]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2021-12-28 13:42:27,221 [   2461]   INFO - intellij.diagnostic.JitWatcher - JIT compilation state checking enabled 
+2021-12-28 13:42:27,234 [   2474]   INFO - intellij.util.io.FilePageCache - lower=100; upper=492; buffer=10; max=492 
+2021-12-28 13:42:27,328 [   2568]   INFO - lors.impl.AppEditorFontOptions - Font setting migration: JetBrains Mono -> [JetBrains Mono, Regular, Bold] 
+2021-12-28 13:42:27,601 [   2841]   INFO - penapi.application.Experiments - Experimental features enabled for user: wsl.p9.support, wsl.prefer.p9.support, wsl.p9.show.roots.in.file.chooser, wsl.execute.with.wsl.exe, linux.native.menu, recent.and.edited.files.together, show.create.new.element.in.popup, search.everywhere.mixed.results, editor.reader.mode, new.large.text.file.viewer, wsl.fsd.content.loader, terminal.shell.command.handling 
+2021-12-28 13:42:27,650 [   2890]   INFO - lij.impl.ConversionServiceImpl - conversion will be performed because at least /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/.idea/uiDesigner.xml is changed (oldLastModified=-1, newLastModified=1640434331) 
+2021-12-28 13:42:27,695 [   2935]   INFO - penapi.wm.impl.GlobalMenuLinux - Start glib main loop in thread: GlobalMenuLinux loop 
+2021-12-28 13:42:27,710 [   2950]   INFO - penapi.wm.impl.GlobalMenuLinux - Closed dbus-service 'com.canonical.AppMenu.Registrar' 
+2021-12-28 13:42:27,740 [   2980]   INFO - BridgeArtifactManagerRedefiner - Using workspace model to open project 
+2021-12-28 13:42:28,139 [   3379]   INFO - impl.SharedIndexMainZipStorage - Shared Indexes Storage is opened: 1 chunk(s), 46.2 MB, chunks: [11.0.13-corretto-11.0.13-4a7633dee6d7add44952dcbafa2e285cb0fa6b654ab1830c4c5491cddf877053-9f3d714d9357] 
+2021-12-28 13:42:28,328 [   3568]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: /home/nick/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.3/75777e10a0e2880bc02945066dda2480a696c3d9/ideaIC-2021.3/bin/linux/fsnotifier 
+2021-12-28 13:42:28,329 [   3569]   INFO -                         STDOUT - Info  | RdCoroutineScope          | 14:JobScheduler FJ pool 2/7 | RdCoroutineHost overridden  
+2021-12-28 13:42:28,348 [   3588]   INFO - penapi.wm.impl.GlobalMenuLinux - created instance of GlobalMenuLinux for xid=0x2e0002e 
+2021-12-28 13:42:28,383 [   3623]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2021-12-28 13:42:28,460 [   3700]   INFO - tests.impl.DistributedTestHost - Host address=localhost/127.0.0.1 
+2021-12-28 13:42:28,505 [   3745]   WARN - l.NotificationGroupManagerImpl - Notification group CodeWithMe is already registered (group=com.intellij.notification.NotificationGroup@451770db). Plugin descriptor: PluginDescriptor(name=Code With Me, id=com.jetbrains.codeWithMe, descriptorPath=plugin.xml, path=~/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.3/75777e10a0e2880bc02945066dda2480a696c3d9/ideaIC-2021.3/plugins/cwm-plugin, version=213.5744.223, package=null, isBundled=true) 
+2021-12-28 13:42:28,694 [   3934]   INFO - pl.projectlevelman.NewMappings - VCS Root: [Git] - [/home/nick/JetBrainsProjects/JBTestTask] 
+2021-12-28 13:42:28,824 [   4064]   INFO - .intellij.openapi.wm.StatusBar - Factory is not registered as `com.intellij.statusBarWidgetFactory` extension: com.intellij.openapi.vcs.changes.committed.IncomingChangesIndicatorFactory 
+2021-12-28 13:42:29,068 [   4308]   INFO - rojectCodeStyleSettingsManager - Loading Project code style 
+2021-12-28 13:42:29,086 [   4326]   INFO - eStyle.CustomCodeStyleSettings - Loaded org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings 
+2021-12-28 13:42:29,089 [   4329]   INFO - eStyle.CustomCodeStyleSettings - Loaded org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings 
+2021-12-28 13:42:29,093 [   4333]   INFO - eStyle.CommonCodeStyleSettings - Loaded Kotlin common code style settings 
+2021-12-28 13:42:29,093 [   4333]   INFO - eStyle.CommonCodeStyleSettings - Loaded Kotlin common code style settings 
+2021-12-28 13:42:29,095 [   4335]   INFO - rojectCodeStyleSettingsManager - Project code style loaded 
+2021-12-28 13:42:29,272 [   4512]   INFO - el.ide.impl.WorkspaceModelImpl - Load workspace model from cache in 1122 ms 
+2021-12-28 13:42:29,676 [   4916]   INFO - ins.rd.platform.codeWithMe.f.S - sessionStatus: null 
+2021-12-28 13:42:29,677 [   4917]   INFO - ins.rd.platform.codeWithMe.f.S - freeSessionRemainingTimeMs: null null 
+2021-12-28 13:42:29,934 [   5174]   INFO - leBasedIndexDataInitialization - Index data initialization done: 2439 ms. Initialized indexes: [FilenameIndex, FrameworkDetectionIndex, TodoIndex, IdIndex, filetypes, Stubs, Trigram.Index, fileIncludes, DomFileIndex, RelaxSymbolIndex, XmlTagNames, XmlNamespaces, html5.custom.attributes.index, SchemaTypeInheritance, json.file.root.values, yaml.keys.name, editorconfig.index.name, xmlProperties, bytecodeAnalysis, java.auto.module.name, java.source.module.name, java.null.method.argument, java.fun.expression, java.binary.plus.expression, JavaFxControllerClassIndex, javafx.id.name, javafx.custom.component, org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex, org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinJavaScriptMetaFileIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFilePackageIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinPackageSourcesMemberNamesIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinBuiltInsMetadataIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinStdlibIndex, org.jetbrains.kotlin.idea.vfilefinder.KlibMetaFileIndex, com.intellij.uiDesigner.FormClassIndex, XsltSymbolIndex, groovy.trait.fields, groovy.trait.methods, LombokConfigIndex, ant-imports, com.android.tools.idea.model.AndroidManifestIndex$Companion$NAME$1.NAME, BindingXmlIndex, MlModelFileIndex, NavXmlIndex, IdeaPluginRegistrationIndex, PluginIdModuleIndex, PluginIdDependenciesIndex, devkit.ExtensionPointIndex, devkit.ExtensionPointClassIndex]. 
+2021-12-28 13:42:30,026 [   5266]   INFO - exImpl$StubIndexInitialization - Index data initialization done: 92 ms. Initialized stub indexes: {kotlin.primeIndexKey, org.jetbrains.kotlin.idea.stubindex.KotlinSubclassObjectNameIndex, jvm.static.member.type, dom.namespaceKey, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyFqnNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasFqNameIndex, gr.class.super, org.jetbrains.kotlin.idea.stubindex.KotlinClassShortNameIndex, gr.annot.members, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasByPackageIndex, java.anonymous.baseref, dom.elementClass, jvm.static.member.name, properties.index, java.method.parameter.types, java.class.extlist, org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex, java.class.fqn, org.jetbrains.kotlin.idea.stubindex.KotlinAnnotationsIndex, java.module.name, gr.method.name, gr.field.name, gr.script.fqn, org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinPropertyShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinExactPackagesIndex, java.annotations, java.class.shortname, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionByPackageIndex, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelClassByPackageIndex, java.field.name, java.method.name, gr.anonymous.class, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyByPackageIndex, gr.annot.method.name, org.jetbrains.kotlin.idea.stubindex.KotlinFullClassNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinSuperClassIndex, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex, markdown.header, gr.class.fqn, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionFqnNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingPropertyShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingFunctionShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinProbablyContractedFunctionShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinJvmNameAnnotationIndex, org.jetbrains.kotlin.idea.stubindex.KotlinExtensionsInObjectsByReceiverTypeIndex, org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinScriptFqnIndex, org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinFilePartClassIndex, org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeClassByPackageIndex, org.jetbrains.kotlin.idea.stubindex.KotlinMultifileClassPartIndex, org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeShortNameIndex, gr.script.class}. 
+2021-12-28 13:42:30,742 [   5982]   INFO - al.NewToolbarRootPaneExtension - Show old main toolbar: false; show old navigation bar: true 
+2021-12-28 13:42:30,742 [   5982]   INFO - al.NewToolbarRootPaneExtension - Show new main toolbar: false 
+2021-12-28 13:42:33,912 [   9152]   INFO - ings.impl.UpdateCheckerService - channel: release 
+2021-12-28 13:42:35,093 [  10333]   INFO - erver.followMe.FollowMeManager - Register new user 0:'nick' with ClientId=ClientId(value=Host) 
+2021-12-28 13:42:35,233 [  10473]   INFO - til.indexing.RootChangesLogger - New rootsChanged event for "JBTestProject" project with full reindex with trace_hash = 160559781:
+java.lang.Throwable
+	at com.intellij.util.indexing.RootChangesLogger.info(RootChangesLogger.java:27)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.logRootChanges(EntityIndexingServiceImpl.java:99)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.runFullReindex(EntityIndexingServiceImpl.java:84)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.indexChanges(EntityIndexingServiceImpl.java:46)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerComponent.synchronizeRoots(ProjectRootManagerComponent.java:298)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerComponent.fireRootsChangedEvent(ProjectRootManagerComponent.java:211)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.fireRootsChanged(ProjectRootManagerImpl.java:447)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$1.fireRootsChanged(ProjectRootManagerImpl.java:145)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$1.fireRootsChanged(ProjectRootManagerImpl.java:142)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$BatchSession.lambda$levelDown$0(ProjectRootManagerImpl.java:90)
+	at com.intellij.openapi.application.WriteAction.lambda$run$1(WriteAction.java:86)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteActionWithClass(ApplicationImpl.java:935)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteAction(ApplicationImpl.java:961)
+	at com.intellij.openapi.application.WriteAction.run(WriteAction.java:85)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$BatchSession.levelDown(ProjectRootManagerImpl.java:90)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.mergeRootsChangesDuring(ProjectRootManagerImpl.java:393)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.projectJdkChanged(ProjectRootManagerImpl.java:318)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.lambda$loadState$1(ProjectRootManagerImpl.java:359)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteAction(ApplicationImpl.java:947)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.lambda$loadState$2(ProjectRootManagerImpl.java:359)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:214)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$200(TransactionGuardImpl.java:21)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:196)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:805)
+	at com.intellij.openapi.application.impl.ApplicationImpl.lambda$invokeLater$4(ApplicationImpl.java:348)
+	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:82)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:131)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:47)
+	at com.intellij.openapi.application.impl.FlushQueue$FlushNow.run(FlushQueue.java:187)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:891)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:760)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:447)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:818)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:446)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:805)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:492)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+ 
+2021-12-28 13:42:35,234 [  10474]   INFO - penapi.project.DumbServiceImpl - cancel UnindexedFilesUpdater[JBTestProject] 
+2021-12-28 13:42:35,419 [  10659]   INFO - til.indexing.RootChangesLogger - New rootsChanged event for "JBTestProject" project with partial reindex with trace_hash = 2024467476:
+java.lang.Throwable
+	at com.intellij.util.indexing.RootChangesLogger.info(RootChangesLogger.java:27)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.logRootChanges(EntityIndexingServiceImpl.java:99)
+	at com.intellij.util.indexing.EntityIndexingServiceImpl.indexChanges(EntityIndexingServiceImpl.java:78)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerComponent.synchronizeRoots(ProjectRootManagerComponent.java:298)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerComponent.fireRootsChangedEvent(ProjectRootManagerComponent.java:211)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl.fireRootsChanged(ProjectRootManagerImpl.java:447)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$1.fireRootsChanged(ProjectRootManagerImpl.java:145)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$1.fireRootsChanged(ProjectRootManagerImpl.java:142)
+	at com.intellij.openapi.roots.impl.ProjectRootManagerImpl$BatchSession.rootsChanged(ProjectRootManagerImpl.java:114)
+	at com.intellij.workspaceModel.ide.impl.legacyBridge.project.ProjectRootsChangeListener.changed(ProjectRootsChangeListener.kt:34)
+	at com.intellij.workspaceModel.ide.impl.legacyBridge.module.ModuleManagerComponentBridge$2.changed(ModuleManagerComponentBridge.kt:147)
+	at com.intellij.workspaceModel.ide.WorkspaceModelTopics$EventsDispatcher.changed(WorkspaceModelTopics.kt:118)
+	at com.intellij.util.messages.impl.MessageBusImpl.invokeMethod(MessageBusImpl.java:645)
+	at com.intellij.util.messages.impl.MessageBusImpl.invokeListener(MessageBusImpl.java:624)
+	at com.intellij.util.messages.impl.MessageBusImpl.deliverMessage(MessageBusImpl.java:417)
+	at com.intellij.util.messages.impl.MessageBusImpl.pumpWaitingBuses(MessageBusImpl.java:390)
+	at com.intellij.util.messages.impl.MessageBusImpl.pumpMessages(MessageBusImpl.java:372)
+	at com.intellij.util.messages.impl.MessageBusImpl.access$200(MessageBusImpl.java:33)
+	at com.intellij.util.messages.impl.MessageBusImpl$MessagePublisher.invoke(MessageBusImpl.java:179)
+	at com.sun.proxy.$Proxy71.changed(Unknown Source)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelImpl.onChanged(WorkspaceModelImpl.kt:112)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelImpl.access$onChanged(WorkspaceModelImpl.kt:19)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelImpl$updateProjectModel$2.invoke(WorkspaceModelImpl.kt:75)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelImpl$updateProjectModel$2.invoke(WorkspaceModelImpl.kt:19)
+	at com.intellij.workspaceModel.storage.impl.VersionedEntityStorageImpl.replace(VersionedEntityStorageImpl.kt:183)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelImpl.updateProjectModel(WorkspaceModelImpl.kt:75)
+	at com.intellij.workspaceModel.ide.impl.jps.serialization.JpsProjectModelSynchronizer$applyLoadedStorage$1.run(JpsProjectModelSynchronizer.kt:212)
+	at com.intellij.openapi.application.WriteAction.lambda$runAndWait$2(WriteAction.java:115)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteActionWithClass(ApplicationImpl.java:935)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteAction(ApplicationImpl.java:961)
+	at com.intellij.openapi.application.WriteAction.compute(WriteAction.java:96)
+	at com.intellij.openapi.application.WriteAction.lambda$computeAndWait$3(WriteAction.java:149)
+	at com.intellij.openapi.application.WriteThread.lambda$submit$0(WriteThread.java:27)
+	at com.intellij.openapi.application.WriteThread.lambda$submit$1(WriteThread.java:43)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:214)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$200(TransactionGuardImpl.java:21)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:196)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:805)
+	at com.intellij.openapi.application.impl.ApplicationImpl.lambda$invokeLaterOnWriteThread$10(ApplicationImpl.java:794)
+	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:82)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:131)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:47)
+	at com.intellij.openapi.application.impl.FlushQueue$FlushNow.run(FlushQueue.java:187)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:891)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:760)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:447)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:818)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:446)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:805)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:492)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+ 
+2021-12-28 13:42:35,423 [  10663]   INFO - ion.DelayedProjectSynchronizer - Workspace model loaded from cache. Syncing real project state into workspace model in 1476 ms. Thread[JobScheduler FJ pool 2/7,4,main] 
+2021-12-28 13:42:35,593 [  10833]   INFO -  #git4idea.commands.GitHandler - [.] git version 
+2021-12-28 13:42:35,613 [  10853]   INFO -  #git4idea.commands.GitHandler - git version 2.17.1 
+2021-12-28 13:42:35,649 [  10889]   INFO - ea.config.GitExecutableManager - Git version for /usr/bin/git: 2.17.1.0 (UNIX) 
+2021-12-28 13:42:35,767 [  11007]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: OnDiskSharedIndexChunkLocator 
+2021-12-28 13:42:35,778 [  11018]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: UnindexedFilesUpdater[JBTestProject] 
+2021-12-28 13:42:35,797 [  11037]   INFO - ij.psi.search.LogFileTypeIndex - Loading file type index snapshot 
+2021-12-28 13:42:35,878 [  11118]   INFO - indexing.UnindexedFilesUpdater - Started indexing of JBTestProject. Reason: On project open 
+2021-12-28 13:42:35,905 [  11145]   INFO - indexing.UnindexedFilesUpdater - Performing delayed pushing properties tasks for JBTestProject took 1ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-12-28 13:42:35,988 [  11228]   INFO - indexing.UnindexedFilesUpdater - Scanning of JBTestProject uses 7 scanning threads 
+2021-12-28 13:42:36,418 [  11658]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.kotlin.idea.gradle.configuration.KotlinGradleProjectData` 
+2021-12-28 13:42:36,419 [  11659]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.kotlin.idea.gradle.configuration.KotlinGradleSourceSetData` 
+2021-12-28 13:42:36,420 [  11660]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.kotlin.idea.gradle.configuration.KotlinGradleSourceSetData` 
+2021-12-28 13:42:36,629 [  11869]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.kotlin.android.synthetic.idea.AndroidExtensionProperties` 
+2021-12-28 13:42:36,674 [  11914]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 1060 millis (read time: 1058) 
+2021-12-28 13:42:37,392 [  12632]   INFO - ing.roots.GradleBuildRootIndex - /home/nick/JetBrainsProjects/JBTestTask/JBTestProject: null -> org.jetbrains.kotlin.idea.gradleJava.scripting.roots.New@71f29ef6 
+2021-12-28 13:42:37,536 [  12776]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /usr/lib/jvm/java-1.11.0-openjdk-amd64 
+2021-12-28 13:42:37,541 [  12781]   WARN - ctionSystem.impl.ActionUpdater - 269 ms to grab EDT for CWMTelephonyGroup#update (com.jetbrains.rd.platform.codeWithMe.telephony.CWMTelephonyGroup) 
+2021-12-28 13:42:37,543 [  12783]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /usr/lib/jvm/java-1.11.0-openjdk-amd64 
+2021-12-28 13:42:37,548 [  12788]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinInitScript] using classpath: /home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-tooling-models-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-api-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-stdlib-1.4.31.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-compiler-embeddable-1.4.31-patched-for-gradle-7.1.jar 
+2021-12-28 13:42:37,550 [  12790]   WARN - ctionSystem.impl.ActionUpdater - 294 ms to grab EDT for TabListAction#update (com.intellij.ide.actions.TabListAction) 
+2021-12-28 13:42:37,677 [  12917]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /usr/lib/jvm/java-1.11.0-openjdk-amd64 
+2021-12-28 13:42:37,678 [  12918]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinSettingsScript] using classpath: /home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-tooling-models-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-api-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-stdlib-1.4.31.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-compiler-embeddable-1.4.31-patched-for-gradle-7.1.jar 
+2021-12-28 13:42:37,703 [  12943]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /usr/lib/jvm/java-1.11.0-openjdk-amd64 
+2021-12-28 13:42:37,704 [  12944]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinBuildScript] using classpath: /home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-kotlin-dsl-tooling-models-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-api-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/gradle-core-7.1.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-stdlib-1.4.31.jar:/home/nick/.gradle/wrapper/dists/gradle-7.1-bin/4pslxx9lrxt5svtz5wbnb6tkz/gradle-7.1/lib/kotlin-compiler-embeddable-1.4.31-patched-for-gradle-7.1.jar 
+2021-12-28 13:42:37,756 [  12996]   INFO - redIndexChunkConfigurationImpl - Chunk 11.0.13-corretto-11.0.13-4a7633dee6d7add44952dcbafa2e285cb0fa6b654ab1830c4c5491cddf877053-9f3d714d9357 is registered for project 'JBTestProject: matching: (fb=50, stub=55), incompatible: (fb=0, stub=0), unknown: (fb=10, stub=25),  
+2021-12-28 13:42:37,961 [  13201]   INFO - napi.externalSystem.autoimport - [refreshChanges] Settings file status: SettingsFilesStatus(oldCRC={/home/nick/JetBrainsProjects/JBTestTask/JBTestProject/settings.gradle.kts=2120616036, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/gradle.properties=619183484, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/build.gradle.kts=2927418362, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/gradle/wrapper/gradle-wrapper.properties=1847016884}, newCRC={/home/nick/JetBrainsProjects/JBTestTask/JBTestProject/gradle.properties=619183484, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/gradle/wrapper/gradle-wrapper.properties=1847016884, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/build.gradle.kts=2927418362, /home/nick/JetBrainsProjects/JBTestTask/JBTestProject/settings.gradle.kts=2120616036}, updated=[], created=[], deleted=[]) 
+2021-12-28 13:42:38,152 [  13392]   WARN - vdmanager.AvdManagerConnection - No Android SDK Found 
+2021-12-28 13:42:39,088 [  14328]   INFO - .imports.GMavenIndexRepository - HTTP not modified since the last request for URL: https://dl.google.com/android/studio/gmaven/index/release/v0.1/classes-v0.1.json.gz (etag: "b4aad3"). 
+2021-12-28 13:42:39,089 [  14329]   INFO - .imports.GMavenIndexRepository - Kept the old disk cache with an old ETag header: "b4aad3". 
+2021-12-28 13:42:39,180 [  14420]   INFO - System.impl.PopupMenuPreloader - Popup menu 'File' preloaded at 'MainMenu' in 1318 ms 
+2021-12-28 13:42:39,842 [  15082]  ERROR - pection.InspectionProfileEntry - class dslStyle.BuilderUsagesInspection: group display name should be overridden or configured via XML  [Plugin: com.ktpsi.KotlinPsi] 
+com.intellij.diagnostic.PluginException: class dslStyle.BuilderUsagesInspection: group display name should be overridden or configured via XML  [Plugin: com.ktpsi.KotlinPsi]
+	at com.intellij.ide.plugins.PluginManagerCore.createPluginException(PluginManagerCore.java:270)
+	at com.intellij.diagnostic.PluginProblemReporterImpl.createPluginExceptionByClass(PluginProblemReporterImpl.java:12)
+	at com.intellij.diagnostic.PluginException.createByClass(PluginException.java:83)
+	at com.intellij.diagnostic.PluginException.logPluginError(PluginException.java:100)
+	at com.intellij.codeInspection.InspectionProfileEntry.getGroupDisplayName(InspectionProfileEntry.java:244)
+	at com.intellij.codeInspection.ex.InspectionToolWrapper.getGroupDisplayName(InspectionToolWrapper.java:169)
+	at com.intellij.ide.ui.ToolOptionDescription.<init>(ToolOptionDescription.java:20)
+	at com.intellij.ide.ui.InspectionsTopHitProvider.getOptions(InspectionsTopHitProvider.java:31)
+	at com.intellij.ide.ui.TopHitCache.lambda$getCachedOptions$0(TopHitCache.java:63)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at com.intellij.ide.ui.TopHitCache.getCachedOptions(TopHitCache.java:58)
+	at com.intellij.ide.ui.OptionsTopHitProvider.getCachedOptions(OptionsTopHitProvider.java:52)
+	at com.intellij.ide.ui.OptionsTopHitProvider$Activity.lambda$cacheAll$1(OptionsTopHitProvider.java:203)
+	at com.intellij.openapi.extensions.impl.ExtensionPointImpl.processWithPluginDescriptor(ExtensionPointImpl.java:299)
+	at com.intellij.openapi.extensions.ExtensionPointName.processWithPluginDescriptor(ExtensionPointName.java:144)
+	at com.intellij.ide.ui.OptionsTopHitProvider$Activity.cacheAll(OptionsTopHitProvider.java:198)
+	at com.intellij.ide.ui.OptionsTopHitProvider$Activity.runActivity(OptionsTopHitProvider.java:182)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runStartupActivity(StartupManagerImpl.kt:308)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivityAndMeasureDuration(StartupManagerImpl.kt:289)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivityAndMeasureDuration$default(StartupManagerImpl.kt:284)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$1$1.run(StartupManagerImpl.kt:244)
+	at com.intellij.openapi.project.DumbServiceImpl.runWithWaitForSmartModeDisabled(DumbServiceImpl.java:645)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$1.accept(StartupManagerImpl.kt:243)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$1.accept(StartupManagerImpl.kt:61)
+	at com.intellij.openapi.extensions.impl.ExtensionPointImpl.processWithPluginDescriptor(ExtensionPointImpl.java:299)
+	at com.intellij.openapi.extensions.ExtensionPointName.processWithPluginDescriptor(ExtensionPointName.java:144)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:238)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:61)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$projectOpened$3$1.run(StartupManagerImpl.kt:188)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:188)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$12(CoreProgressManager.java:624)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:698)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:646)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:623)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:66)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:175)
+	at com.intellij.openapi.progress.util.BackgroundTaskUtil.runUnderDisposeAwareIndicator(BackgroundTaskUtil.java:277)
+	at com.intellij.openapi.progress.util.BackgroundTaskUtil.runUnderDisposeAwareIndicator(BackgroundTaskUtil.java:255)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$projectOpened$3.run(StartupManagerImpl.kt:188)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2021-12-28 13:42:39,850 [  15090]  ERROR - pection.InspectionProfileEntry - IntelliJ IDEA 2021.3  Build #IC-213.5744.223 
+2021-12-28 13:42:39,850 [  15090]  ERROR - pection.InspectionProfileEntry - JDK: 11.0.13; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-12-28 13:42:39,850 [  15090]  ERROR - pection.InspectionProfileEntry - OS: Linux 
+2021-12-28 13:42:39,862 [  15102]  ERROR - pection.InspectionProfileEntry - Plugin to blame: KTPSI version: 1.0-SNAPSHOT 
+2021-12-28 13:42:39,862 [  15102]  ERROR - pection.InspectionProfileEntry - Last Action:  
+2021-12-28 13:42:40,450 [  15690]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2021-12-28 13:42:40,644 [  15884]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 12929 ms 
+2021-12-28 13:42:40,840 [  16080]   INFO - gnostic.PerformanceWatcherImpl - Post-startup activities under progress took 6931ms; general responsiveness: ok; EDT responsiveness: 1/7 sluggish, 1/7 very slow 
+2021-12-28 13:42:41,168 [  16408]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/addons_list-4.xml 
+2021-12-28 13:42:41,340 [  16580]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/repository2-2.xml 
+2021-12-28 13:42:41,341 [  16581]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android/sys-img2-2.xml 
+2021-12-28 13:42:41,344 [  16584]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/repository2-1.xml 
+2021-12-28 13:42:41,345 [  16585]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android-automotive/sys-img2-2.xml 
+2021-12-28 13:42:41,349 [  16589]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android-wear/sys-img2-2.xml 
+2021-12-28 13:42:41,349 [  16589]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android-wear-cn/sys-img2-2.xml 
+2021-12-28 13:42:41,355 [  16595]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android-tv/sys-img2-2.xml 
+2021-12-28 13:42:41,355 [  16595]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/aosp_atd/sys-img2-2.xml 
+2021-12-28 13:42:41,356 [  16596]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/google_atd/sys-img2-2.xml 
+2021-12-28 13:42:41,363 [  16603]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/google-tv/sys-img2-2.xml 
+2021-12-28 13:42:41,365 [  16605]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/google_apis/sys-img2-2.xml 
+2021-12-28 13:42:41,376 [  16616]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/google_apis_playstore/sys-img2-2.xml 
+2021-12-28 13:42:41,396 [  16636]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/addon2-2.xml 
+2021-12-28 13:42:41,397 [  16637]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/extras/intel/addon2-2.xml 
+2021-12-28 13:42:41,397 [  16637]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/glass/addon2-2.xml 
+2021-12-28 13:42:43,738 [  18978]   INFO - indexing.UnindexedFilesUpdater - Scanning completed for JBTestProject. Number of scanned files: 33994; Number of files for indexing: 0 took 7829ms; general responsiveness: ok; EDT responsiveness: 1/8 sluggish 
+2021-12-28 13:42:43,749 [  18989]   INFO - indexing.UnindexedFilesUpdater - Finished for JBTestProject. No files to index with loading content. 
+2021-12-28 13:42:43,749 [  18989]   INFO - ij.psi.search.LogFileTypeIndex - File type index snapshot dropped 
+2021-12-28 13:42:43,754 [  18994]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: UnindexedFilesUpdater[JBTestProject] 
+2021-12-28 13:42:43,774 [  19014]   INFO - ij.psi.search.LogFileTypeIndex - Loading file type index snapshot 
+2021-12-28 13:42:43,775 [  19015]   INFO - red.download.SharedIndexLookup - Selected pre-built shared index SharedIndexResult(request='JdkIndexRequest(sdkName=11, hash=f9afe15f2398336ac0f31972868cbb9ac4991d74, aliases=[11.0.13, 11], kind=jdk)', url='https://index-cdn.jetbrains.com/v2/data/jdk/6f7e41764d683229ad9828af3172247415d7f7a1/11.0.13-corretto-11.0.13-linux-4a7633dee6d7add44952dcbafa2e285cb0fa6b654ab1830c4c5491cddf877053.ijx.xz', weakHash=9f3d714d9357, weakBaseVersionHash=e2a8ec1057a5, sha256='4a7633dee6d7add44952dcbafa2e285cb0fa6b654ab1830c4c5491cddf877053') from https://index-cdn.jetbrains.com/v2/jdk/-11.0.13 for JdkIndexRequest(sdkName=11, hash=f9afe15f2398336ac0f31972868cbb9ac4991d74, aliases=[11.0.13, 11], kind=jdk) 
+2021-12-28 13:42:43,782 [  19022]   INFO - indexing.UnindexedFilesUpdater - Started indexing of JBTestProject. Reason: changes in: "Module 'JBTestProject.test' (test)", "Module 'JBTestProject.main' (main)", "Module 'JBTestProject' (JBTestProject)", "Library Gradle: org.opentest4j:opentest4j:1.2.0", "Library Gradle: org.junit.platform:junit-platform-commons:1.6.0", "Library Gradle: org.junit.platform:junit-platform-engine:1.6.0", "Library Gradle: org.junit.jupiter:junit-jupiter-api:5.6.0", "Library Gradle: org.junit.jupiter:junit-jupiter-engine:5.6.0", "Library Gradle: org.jetbrains.kotlin:kotlin-test:1.6.10", "Library Gradle: org.jetbrains:annotations:13.0" and 6 iterators more 
+2021-12-28 13:42:43,782 [  19022]   INFO - indexing.UnindexedFilesUpdater - Performing delayed pushing properties tasks for JBTestProject took 0ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-12-28 13:42:43,783 [  19023]   INFO - indexing.UnindexedFilesUpdater - Scanning of JBTestProject uses 7 scanning threads 
+2021-12-28 13:42:43,799 [  19039]   INFO - indexing.UnindexedFilesUpdater - Scanning completed for JBTestProject. Number of scanned files: 2560; Number of files for indexing: 0 took 17ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-12-28 13:42:43,805 [  19045]   INFO - indexing.UnindexedFilesUpdater - Finished for JBTestProject. No files to index with loading content. 
+2021-12-28 13:42:43,806 [  19046]   INFO - ij.psi.search.LogFileTypeIndex - File type index snapshot dropped 
+2021-12-28 13:42:43,807 [  19047]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$PruneTask@53900a0f 
+2021-12-28 13:42:43,808 [  19048]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$ManageLruProjectFilesTask@1728137d 
+2021-12-28 13:42:43,812 [  19052]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2021-12-28 13:42:43,822 [  19062]   INFO - tFileBasedIndexStartupActivity - Has changed files: false; project=Project(name=JBTestProject, containerState=COMPONENT_CREATED, componentStore=/home/nick/JetBrainsProjects/JBTestTask/JBTestProject) 
+2021-12-28 13:42:43,874 [  19114]   INFO - .services.SpaceKtsFileDetector - SpaceKtsFileDetector 
+2021-12-28 13:42:43,980 [  19220]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRegistry$PopulateCachesTask@6a94c83d 
+2021-12-28 13:42:44,007 [  19247]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2021-12-28 13:42:44,008 [  19248]   INFO - tFileBasedIndexStartupActivity - Has changed files: false; project=Project(name=JBTestProject, containerState=COMPONENT_CREATED, componentStore=/home/nick/JetBrainsProjects/JBTestTask/JBTestProject) 
+2021-12-28 13:42:44,449 [  19689]   INFO - .packagesearch.intellij-plugin - PackageSearchToolWindowFactory#packageSearchModulesChangesFlow - Setting toolWindow.isAvailable = true 
+2021-12-28 13:42:44,652 [  19892]   INFO - redIndexChunkConfigurationImpl - Shared index (11.0.13-corretto-11.0.13-4a7633dee6d7add44952dcbafa2e285cb0fa6b654ab1830c4c5491cddf877053-9f3d714d9357) already exists 
+2021-12-28 13:42:45,499 [  20739]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.intellij.openapi.roots.impl.PushedFilePropertiesUpdaterImpl$3@30d41837 
+2021-12-28 13:42:45,525 [  20765]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.intellij.util.indexing.FileBasedIndexProjectHandler$ProjectChangedFilesIndexingTask@51ac9517 [Project(name=JBTestProject, containerState=COMPONENT_CREATED, componentStore=/home/nick/JetBrainsProjects/JBTestTask/JBTestProject), %project_path%/../KotlinPsi/build/classes/kotlin/main/localTests/BuilderGenerationSubInspectionOld.class, %project_path%/../KotlinPsi/build/classes/java/main-instrumented/localTests/BuilderGenerationSubInspectionOld.class, %project_path%/../KotlinPsi/build/classes/kotlin/main/localTests/BuilderGenerationSubInspectionOld$DataClassInfo.class, %project_path%/../KotlinPsi/build/classes/java/main-instrumented/localTests/BuilderGenerationSubInspectionOld$DataClassInfo.class, %project_path%/../KotlinPsi/build/classes/java/main-instrumented/dslStyle/dataClassBuilderInspection/DataClassFix.class, %project_path%/../.git/refs/heads/dev, %project_path%/../KotlinPsi/build/classes/java/main-instrumented/dslStyle/builderUsagesInspection/BuilderUsagesInspection.class, %project_path%/../KotlinPsi/build/classes/kotlin/main/dslStyle/builderUsagesInspection/BuilderUsagesInspection.class, %project_path%/../KotlinPsi/build/classes/kotlin/main/dslStyle/builderUsagesInspection/BuilderGenerationSubInspection$DataClassInfo.class, %project_path%/../KotlinPsi/build/classes/kotlin/main/dslStyle/builderUsagesInspection/BuilderGenerationSubInspection.class, %project_path%/../KotlinPsi/build/classes/java/main-instrumented/dslStyle/builderUsagesInspection/BuilderGenerationSubInspection$DataClassInfo.class, %project_path%/../KotlinPsi/build/classes/java/main-instrumented/dslStyle/builderUsagesInspection/BuilderGenerationSubInspection.class, %project_path%/../KotlinPsi/src/main/kotlin/dslStyle/builderUsagesInspection, %project_path%/../KotlinPsi/src/main/kotlin/dslStyle/builderUsagesInspection/BuilderGenerationSubInspection.kt, %project_path%/../KotlinPsi/src/main/kotlin/dslStyle/builderUsagesInspection/BuilderUsagesInspection.kt, %project_path%/../KotlinPsi/build/classes/java/main-instrumented/dslStyle/dataClassBuilderInspection/DataClassFix$ParameterInfoUnit.class, %project_path%/../KotlinPsi/src/main/kotlin/dslStyle/dataClassBuilderInspection, %project_path%/../KotlinPsi/src/main/kotlin/dslStyle/dataClassBuilderInspection/DataClassFix.kt, %project_path%/../KotlinPsi/src/main/kotlin/localTests/DataClassFixOld.kt, %project_path%/../KotlinPsi/build/classes/kotlin/main/dslStyle/dataClassBuilderInspection/DataClassFix$ParameterInfoUnit.class] 
+2021-12-28 13:42:45,613 [  20853]   INFO - g.FileBasedIndexProjectHandler - Reindexing refreshed files of JBTestProject : 486 to update, calculated in 80ms 
+2021-12-28 13:42:45,621 [  20861]   INFO - ij.psi.search.LogFileTypeIndex - Loading file type index snapshot 
+2021-12-28 13:42:45,637 [  20877]   INFO - g.FileBasedIndexProjectHandler - Using 4 threads for indexing 
+2021-12-28 13:42:45,809 [  21049]   INFO - ij.psi.search.LogFileTypeIndex - File type index snapshot dropped 
+2021-12-28 13:42:45,810 [  21050]   INFO - gnostic.PerformanceWatcherImpl - Reindexing refreshed files of JBTestProject took 197ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-12-28 13:42:45,811 [  21051]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.intellij.util.indexing.FileBasedIndexProjectHandler$ProjectChangedFilesIndexingTask@cdbde92 [Project(name=JBTestProject, containerState=COMPONENT_CREATED, componentStore=/home/nick/JetBrainsProjects/JBTestTask/JBTestProject), ] 
+2021-12-28 13:42:45,811 [  21051]   INFO - g.FileBasedIndexProjectHandler - Reindexing refreshed files of JBTestProject : 0 to update, calculated in 0ms 
+2021-12-28 13:42:45,829 [  21069]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2021-12-28 13:42:45,831 [  21071]   INFO - tFileBasedIndexStartupActivity - Has changed files: false; project=Project(name=JBTestProject, containerState=COMPONENT_CREATED, componentStore=/home/nick/JetBrainsProjects/JBTestTask/JBTestProject) 
+2021-12-28 13:42:45,868 [  21108]   INFO - ta.index.VcsLogPersistentIndex - Indexing 1 commits in JBTestTask 
+2021-12-28 13:42:46,055 [  21295]   INFO - m.codeWithMe.CodeWithMeCleanup - running activity to cleanup old thin clients... Root path is '/home/nick/.cache/JetBrains' 
+2021-12-28 13:42:46,056 [  21296]   INFO - m.codeWithMe.CodeWithMeCleanup - found 0 Code With Me client system folders to check 
+2021-12-28 13:42:46,056 [  21296]   INFO - m.codeWithMe.CodeWithMeCleanup - found 0 Code With Me client config folders to check 
+2021-12-28 13:42:46,062 [  21302]   INFO - m.codeWithMe.CodeWithMeCleanup - keep only [] major versions 
+2021-12-28 13:42:46,112 [  21352]   INFO - ectsystem.ProjectSystemService - GradleProjectSystem project system has been detected 
+2021-12-28 13:42:46,250 [  21490]   INFO - ta.index.VcsLogPersistentIndex - 371ms for indexing 1 new commits out of 1 in JBTestTask 
+2021-12-28 13:42:46,318 [  21558]   INFO - ta.index.VcsLogPersistentIndex - Indexing 1 commits in JBTestTask 
+2021-12-28 13:42:46,319 [  21559]   INFO - ta.index.VcsLogPersistentIndex - 0ms for indexing 0 new commits out of 1 in JBTestTask 
+2021-12-28 13:42:51,481 [  26721]   INFO - CompilerWorkspaceConfiguration - Available processors: 8 
+2021-12-28 13:42:57,333 [  32573]   INFO - t.javadoc.JavaDocInfoGenerator - Wrong navElement: PRIMARY_CONSTRUCTOR; original = KtUltraLightMethodForSourceDeclaration:Crowd of class class org.jetbrains.kotlin.asJava.classes.KtUltraLightMethodForSourceDeclaration 
+2021-12-28 13:43:24,095 [  59335]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Edit' preloaded at 'MainMenu' in 40 ms 
+2021-12-28 13:43:24,167 [  59407]   INFO - System.impl.PopupMenuPreloader - Popup menu 'View' preloaded at 'MainMenu' in 112 ms 
+2021-12-28 13:43:24,194 [  59434]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Navigate' preloaded at 'MainMenu' in 139 ms 
+2021-12-28 13:43:24,289 [  59529]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Code' preloaded at 'MainMenu' in 233 ms 
+2021-12-28 13:43:24,313 [  59553]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Build' preloaded at 'MainMenu' in 258 ms 
+2021-12-28 13:43:24,397 [  59637]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Run' preloaded at 'MainMenu' in 342 ms 
+2021-12-28 13:43:24,458 [  59698]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Refactor' preloaded at 'MainMenu' in 402 ms 
+2021-12-28 13:43:24,474 [  59714]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Tools' preloaded at 'MainMenu' in 418 ms 
+2021-12-28 13:43:24,493 [  59733]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Git' preloaded at 'MainMenu' in 438 ms 
+2021-12-28 13:43:24,497 [  59737]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Window' preloaded at 'MainMenu' in 441 ms 
+2021-12-28 13:43:24,673 [  59913]   INFO - .script.IdeScriptEngineManager - javax.script.ScriptEngineManager initialized in 244 ms 
+2021-12-28 13:43:24,902 [  60142]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Help' preloaded at 'MainMenu' in 847 ms 
+2021-12-28 13:43:24,949 [  60189]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Editor Popup Menu' preloaded at 'EditorPopup' in 893 ms 
+2021-12-28 13:43:24,960 [  60200]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Project View Popup Menu' preloaded at 'ProjectViewPopup' in 902 ms 
+2021-12-28 13:43:24,998 [  60238]   INFO - System.impl.PopupMenuPreloader - Popup menu 'Editor Popup Menu' preloaded at 'EditorPopup' in 939 ms 
+2021-12-28 13:43:58,782 [  94022]   INFO - t.javadoc.JavaDocInfoGenerator - Wrong navElement: PRIMARY_CONSTRUCTOR; original = KtUltraLightMethodForSourceDeclaration:Crowd of class class org.jetbrains.kotlin.asJava.classes.KtUltraLightMethodForSourceDeclaration 
+2021-12-28 13:44:09,906 [ 105146]   WARN - vdmanager.AvdManagerConnection - No Android SDK Found 
+2021-12-28 13:44:10,607 [ 105847]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /usr/lib/jvm/java-1.11.0-openjdk-amd64 
+2021-12-28 13:44:10,634 [ 105874]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /usr/lib/jvm/java-1.11.0-openjdk-amd64 
+2021-12-28 13:44:11,951 [ 107191]   INFO - xecution.GradleExecutionHelper - Passing command-line args to Gradle Tooling API: --init-script /tmp/ijmapper.gradle --init-script /tmp/ijresolvers.gradle 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.nio.channels.AsynchronousCloseException 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:61) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:41) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at org.gradle.util.internal.DisconnectableInputStream$1.run(DisconnectableInputStream.java:127) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at java.base/java.lang.Thread.run(Thread.java:829) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - Caused by: java.nio.channels.AsynchronousCloseException 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at java.base/sun.nio.ch.SourceChannelImpl.endRead(SourceChannelImpl.java:241) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at java.base/sun.nio.ch.SourceChannelImpl.read(SourceChannelImpl.java:259) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:59) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:107) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:101) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	at org.gradle.util.internal.DisconnectableInputStream$1.run(DisconnectableInputStream.java:98) 
+2021-12-28 13:44:19,591 [ 114831]   INFO -                         STDERR - 	... 1 more 
+2021-12-28 13:44:24,320 [ 119560]   INFO - rationStore.ComponentStoreImpl - Saving appFileTypeManager took 13 ms 
+2021-12-28 13:44:24,889 [ 120129]   INFO - rationStore.ComponentStoreImpl - Saving Project(name=JBTestProject, containerState=COMPONENT_CREATED, componentStore=/home/nick/JetBrainsProjects/JBTestTask/JBTestProject)RunManager took 33 ms 
+2021-12-28 13:44:41,377 [ 136617]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2021-12-28 13:44:41,546 [ 136786]   INFO - tellij.psi.stubs.StubIndexImpl - StubIndexExtension-s were unloaded 
+2021-12-28 13:44:41,666 [ 136906]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2021-12-28 13:44:41,669 [ 136909]   INFO - stubs.SerializationManagerImpl - Start shutting down /home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/system/index/rep.names 
+2021-12-28 13:44:41,670 [ 136910]   INFO - stubs.SerializationManagerImpl - Finished shutting down /home/nick/JetBrainsProjects/JBTestTask/KotlinPsi/build/idea-sandbox/system/index/rep.names 
+2021-12-28 13:44:41,670 [ 136910]   INFO - fs.persistent.PersistentFSImpl - VFS dispose started 
+2021-12-28 13:44:41,673 [ 136913]   INFO - fs.persistent.PersistentFSImpl - VFS dispose completed 
+2021-12-28 13:44:41,673 [ 136913]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2021-12-28 13:44:41,674 [ 136914]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
