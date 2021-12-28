@@ -1,5 +1,7 @@
 package testDsl
 
+import kotlin.properties.Delegates
+
 data class Crowd(
     val crowdName: String,
     val people: List<Person>,
