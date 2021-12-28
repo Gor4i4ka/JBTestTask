@@ -1,0 +1,14 @@
+{
+    "fileHashCode": 238,
+    "sha256": "cb383cf022f7db926ac05c97e8f4a5bb4038f099c1f5db307517cca1e203af8c",
+    "projectName": "JBTestProject",
+    "dependencies": [
+        {
+            "coordinates": {
+                "groupId": "org.jetbrains.kotlin",
+                "artifactId": "kotlin-test"
+            },
+            "scope": "testImplementation"
+        }
+    ]
+}

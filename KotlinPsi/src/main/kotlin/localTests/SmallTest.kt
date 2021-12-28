@@ -92,10 +92,7 @@ fun main(args: Array<String>) {
     }
     val data = DataB(1)
     //DataD(1, DataB(2))
-    val dataD = buildDataD {
-        valueA = 1
-        dataB = DataB(2)
-    }
+    val dataD = DataD(1, DataB(2))
 
     println(BOI)
     println("END")

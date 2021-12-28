@@ -8,11 +8,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/javaStyleChecks/MainJava.kt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/ForDevelopment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+            <state relative-caret-position="220">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/LargeClassTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/ProvidedExample.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/commentStorage.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="716">
+              <caret line="56" column="3" lean-forward="true" selection-start-line="2" selection-end-line="56" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -21,13 +48,17 @@
   </component>
   <component name="FileTypeUsageLocalSummary">
     <fileType name="Kotlin">
-      <summary usageCount="16" lastUsed="1640635124233" />
+      <summary usageCount="26" lastUsed="1640685371998" />
     </fileType>
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/src/main/kotlin/stuff/Main.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/javaStyleChecks/MainJava.kt" />
+      <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/TestDsl.kt" />
+      <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/BigTestDsl.kt" />
+      <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/ProvidedExample.kt" />
+      <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/LargeClassTest.kt" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -40,7 +71,6 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -72,12 +102,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="javaStyleChecks" type="462c0819:PsiDirectoryNode" />
+              <item name="dslStyleChecks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBTestProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBTestProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="testDsl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBTestProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBTestProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -110,8 +155,8 @@
       <window_info anchor="right" id="Hierarchy" order="4" visible="true" weight="0.33035713" />
     </layout>
     <recentWindows>
-      <value>Run</value>
       <value>Project</value>
+      <value>Run</value>
       <value>Debug</value>
       <value>Hierarchy</value>
     </recentWindows>
@@ -126,13 +171,45 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="576" y="287" width="824" height="532" key="IDE.errors.dialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1640274091230" />
+    <state x="656" y="272" width="672" height="686" key="search.everywhere.popup" timestamp="1640684415802">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="272" width="672" height="686" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1640684415802" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/stuff/Main.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/javaStyleChecks/MainJava.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dslStyleChecks/MainDsl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+        <state relative-caret-position="-76">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/ForDevelopment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/commentStorage.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="56" column="3" lean-forward="true" selection-start-line="2" selection-end-line="56" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/ProvidedExample.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/LargeClassTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
