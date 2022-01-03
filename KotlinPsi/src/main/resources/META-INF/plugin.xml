@@ -17,7 +17,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <localInspection
-                implementationClass="dslStyle.BuilderUsagesInspection"
+                implementationClass="org.nobrains.kotlin.dataClassBuilderInspection.BuilderUsagesInspection"
                 language="kotlin"
                 level="WARNING"
                 enabledByDefault="true"

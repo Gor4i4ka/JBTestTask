@@ -15,7 +15,7 @@
   <depends>com.intellij.java</depends>
   <depends>org.jetbrains.kotlin</depends>
   <extensions defaultExtensionNs="com.intellij">
-    <localInspection implementationClass="dslStyle.BuilderUsagesInspection" language="kotlin" level="WARNING" enabledByDefault="true" displayName="DSL-style builders inspection" />
+    <localInspection implementationClass="org.nobrains.kotlin.dataClassBuilderInspection.BuilderUsagesInspection" language="kotlin" level="WARNING" enabledByDefault="true" displayName="DSL-style builders inspection" />
     <!-- Add your extensions here -->
   </extensions>
 </idea-plugin>
