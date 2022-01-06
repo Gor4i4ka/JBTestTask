@@ -2,13 +2,14 @@ package org.nobrains.kotlin.dataClassBuilderInspection.fix.callWrapping
 
 import org.jetbrains.kotlin.nj2k.postProcessing.type
 import org.jetbrains.kotlin.psi.*
-import org.jetbrains.kotlin.psi.psiUtil.findFunctionByName
-import org.nobrains.kotlin.dataClassBuilderInspection.utils.findBuilderAndBuildForClass
-import org.nobrains.kotlin.dataClassBuilderInspection.utils.resolveConstructorOrNull
+import org.jetbrains.kotlin.psi.psiUtil.isInsideOf
+import org.nobrains.kotlin.dataClassBuilderInspection.utils.*
 
 object DataClassCallWrapper {
 
-    fun wrapConstructorCall(call: KtCallElement) {
+    private val handledCollectionsOf = setOf("listOf", "setOf", "stackOf")
+
+    fun wrapConstructorCall(call: KtCallElement): KtCallElement {
 
         val wrapperStringBuilder = StringBuilder()
 
@@ -48,45 +49,29 @@ object DataClassCallWrapper {
         }
     }
 
-    private fun applyTo(call: KtCallElement): KtCallElement {
+    fun isApplicable(call: KtCallElement): Boolean {
 
-        val wrapperStringBuilder = StringBuilder()
+        val potentialConstructor = resolveConstructorOrNull(call)
 
-        val resolvedConstructor = resolveConstructorOrNull(call)
+        if (potentialConstructor is KtPrimaryConstructor) {
+            val clazz = potentialConstructor.parent as? KtClass ?: return false
 
-        if (resolvedConstructor != null) {
-            val resolvedConstructorName = resolvedConstructor.nameAsSafeName.toString()
-            val resolvedConstructorParameters = resolvedConstructor.valueParameters
+            if (clazz.isData()) {
+                val potentialBuildingPair = findBuilderAndBuildForClass(
+                    clazz.nameAsSafeName.toString(),
+                    clazz.project
+                )
+                if (potentialBuildingPair != null) {
 
-            val resolvedBuildFunction = findBuilderAndBuildForClass(resolvedConstructorName, call.project)?.first
-
-            // Generating the wrapper
-
-            wrapperStringBuilder
-                .append("${resolvedBuildFunction?.nameAsSafeName}")
-                .append(" {\n")
-                .apply {
-                    for (argumentIndex in call.valueArguments.indices) {
-                        append(
-                            processField(
-                                resolvedConstructorParameters[argumentIndex],
-                                call.valueArguments[argumentIndex] as KtValueArgument
-                            )
-                        )
-                    }
+                    // Sanity check
+                    if (call.isInsideOf(listOf(potentialBuildingPair.second))
+                    )
+                        return false
                 }
-                .append("}")
-
-            // Creating the expression and processing children
-
-            val kotlinFactory = KtPsiFactory(call.project)
-            val wrapperExpression = kotlinFactory.createExpression(wrapperStringBuilder.toString()) as KtCallElement
-            visitChildren(wrapperExpression)
-            return wrapperExpression
-        } else {
-            visitChildren(call)
-            return call
+                return true
+            }
         }
+        return false
     }
 
     private fun processField(parameter: KtParameter, argument: KtValueArgument): String {
@@ -98,20 +83,19 @@ object DataClassCallWrapper {
 
             // We found collection call, - now handling it
             // Check if collection of data class type with builder
-            val parameterTypeString = parameter.type().toString()
-            val genericType = Regex("<.*>").find(parameterTypeString)?.value?.drop(1)?.dropLast(1)
 
+            val genericType = parameter.type()?.extractCollectionArgumentName()
             val potentialBuilderPair = findBuilderAndBuildForClass(genericType, parameter.project)
-            val potentialBuilder = potentialBuilderPair?.second as? KtClass
+            val potentialBuilder = potentialBuilderPair?.second
 
             // We are safe if building function is found
+            // WARNING: potentialBuilder.findFunctionByName("${parameter.nameAsSafeName}Element") != null not works? BUG
             if (potentialBuilder != null
-                && potentialBuilder.findFunctionByName("${parameter.nameAsSafeName}Element") != null
+                && resolveFunctionOrNull("${parameter.nameAsSafeName}Element", potentialBuilder.project) != null
             ) {
-
                 val collectionWrapper = StringBuilder("\n")
-
                 val collectionArgs = argumentExpression?.valueArguments
+
                 if (collectionArgs != null) {
                     for (collectionArgument in collectionArgs) {
                         val collectionArgumentWrapper = StringBuilder()
@@ -140,9 +124,10 @@ object DataClassCallWrapper {
     private fun visitChildren(parent: KtElement) {
         for (child in parent.children) {
             if (child is KtCallElement && isApplicable(child))
-                child.replace(applyTo(child))
+                child.replace(wrapConstructorCall(child))
             visitChildren(child as KtElement)
         }
     }
 
 }
+

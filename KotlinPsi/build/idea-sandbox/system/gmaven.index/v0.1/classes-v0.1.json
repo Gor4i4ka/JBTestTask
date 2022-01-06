@@ -9836,7 +9836,7 @@
     {
       "groupId": "com.google.ads.mediation",
       "artifactId": "unity",
-      "version": "3.7.5.0",
+      "version": "4.0.0.0",
       "ktxTargets": [],
       "fqcns": []
     },
@@ -10321,6 +10321,13 @@
       "fqcns": []
     },
     {
+      "groupId": "com.google.android.fhir",
+      "artifactId": "workflow",
+      "version": "0.1.0-alpha01",
+      "ktxTargets": [],
+      "fqcns": []
+    },
+    {
       "groupId": "com.google.android.flexbox",
       "artifactId": "flexbox",
       "version": "3.0.0",
@@ -10392,7 +10399,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-ads-identifier",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.ads.identifier.AdvertisingIdClient"
@@ -10531,7 +10538,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-afs-native",
-      "version": "19.0.2",
+      "version": "19.0.3",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.ads.afsn.AdListener",
@@ -10550,7 +10557,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-analytics",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.analytics.AnalyticsJobService",
@@ -10561,7 +10568,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-analytics-impl",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.analytics.CampaignTrackingReceiver",
@@ -10653,7 +10660,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-appset",
-      "version": "16.0.1",
+      "version": "16.0.2",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.appset.AppSet",
@@ -10678,7 +10685,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-auth",
-      "version": "20.0.0",
+      "version": "20.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.auth.api.Auth",
@@ -10718,7 +10725,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-auth-api-phone",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.auth.api.phone.SmsCodeAutofillClient",
@@ -10740,7 +10747,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-auth-base",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.auth.AccountChangeEvent",
@@ -10772,7 +10779,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-auth-blockstore",
-      "version": "16.0.3",
+      "version": "16.0.4",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.auth.blockstore.Blockstore",
@@ -10790,7 +10797,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-awareness",
-      "version": "19.0.0",
+      "version": "19.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.awareness.Awareness",
@@ -10989,7 +10996,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-cast",
-      "version": "21.0.0",
+      "version": "21.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.cast.AdBreakClipInfo",
@@ -11026,7 +11033,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-cast-framework",
-      "version": "21.0.0",
+      "version": "21.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.cast.framework.CastButtonFactory",
@@ -11084,7 +11091,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-cast-tv",
-      "version": "19.0.0",
+      "version": "19.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.cast.tv.CastLaunchRequest",
@@ -11136,7 +11143,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-cloud-messaging",
-      "version": "17.0.1",
+      "version": "17.0.2",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.cloudmessaging.CloudMessage",
@@ -11183,7 +11190,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-cronet",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.dynamite.descriptors.com.google.android.gms.cronet.dynamite.ModuleDescriptor",
@@ -11299,7 +11306,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-fitness",
-      "version": "21.0.0",
+      "version": "21.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.fitness.ConfigClient",
@@ -11362,7 +11369,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-flags",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.dynamite.descriptors.com.google.android.gms.flags.ModuleDescriptor",
@@ -11374,7 +11381,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-games",
-      "version": "22.0.0",
+      "version": "22.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.games.AchievementsClient",
@@ -11487,7 +11494,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-identity",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.identity.intents.Address",
@@ -11523,7 +11530,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-instantapps",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.instantapps.ActivityCompat",
@@ -11545,7 +11552,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-location",
-      "version": "19.0.0",
+      "version": "19.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.location.ActivityRecognition",
@@ -11589,7 +11596,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-maps",
-      "version": "18.0.1",
+      "version": "18.0.2",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.maps.CameraUpdate",
@@ -11790,7 +11797,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-nearby",
-      "version": "18.0.1",
+      "version": "18.0.2",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.nearby.Nearby",
@@ -11873,7 +11880,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-password-complexity",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.auth.managed.password.PasswordComplexityCheckResult",
@@ -11883,7 +11890,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-pay",
-      "version": "16.0.2",
+      "version": "16.0.3",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.pay.Pay",
@@ -11944,7 +11951,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-recaptcha",
-      "version": "17.0.0",
+      "version": "17.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.recaptcha.HttpStatusException",
@@ -11964,7 +11971,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-safetynet",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.safetynet.HarmfulAppsData",
@@ -11987,14 +11994,14 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-stats",
-      "version": "17.0.2",
+      "version": "17.0.3",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-streamprotect",
-      "version": "16.0.1",
+      "version": "16.0.2",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.streamprotect.ClockType",
@@ -12011,7 +12018,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-tagmanager",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.dynamite.descriptors.com.google.android.gms.tagmanager.ModuleDescriptor"
@@ -12020,7 +12027,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-tagmanager-api",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.tagmanager.CustomTagProvider",
@@ -12046,7 +12053,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-tagmanager-v4-impl",
-      "version": "18.0.0",
+      "version": "18.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.tagmanager.Container",
@@ -12186,7 +12193,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-wallet",
-      "version": "19.0.0",
+      "version": "19.0.1",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.wallet.AutoResolvableResult",

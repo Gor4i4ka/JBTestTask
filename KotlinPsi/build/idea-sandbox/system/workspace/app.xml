@@ -794,8 +794,15 @@
               </dataSet>
             </plugins>
           </entry>
+          <entry key="java:com.microsoft.azure.functions:azure-functions-java-library">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="com.microsoft.tooling.msservices.intellij.azure" />
+              </dataSet>
+            </plugins>
+          </entry>
         </featureMap>
-        <option name="lastUpdateTime" value="1640617890816" />
+        <option name="lastUpdateTime" value="1641403376289" />
       </features>
     </option>
     <option name="extensions">
@@ -1529,6 +1536,7 @@
             <plugins>
               <dataSet>
                 <plugin pluginId="JavaScript" pluginName="JavaScript Support" bundled="true" />
+                <plugin pluginId="com.angelscript-intellij" />
               </dataSet>
             </plugins>
           </entry>
@@ -2649,6 +2657,7 @@
                 <plugin pluginId="com.github.redfoos.logstash-intellij-plugin" />
                 <plugin pluginId="io.github.will7200.plugins.casbin" />
                 <plugin pluginId="dev.meanmail.plugin.nginx-intellij-plugin" />
+                <plugin pluginId="dev.meanmail.plugin.nginx-intellij-plugin-pro" />
               </dataSet>
             </plugins>
           </entry>
@@ -6954,6 +6963,7 @@
               <dataSet>
                 <plugin pluginId="ideanginx9" />
                 <plugin pluginId="dev.meanmail.plugin.nginx-intellij-plugin" />
+                <plugin pluginId="dev.meanmail.plugin.nginx-intellij-plugin-pro" />
               </dataSet>
             </plugins>
           </entry>
@@ -11915,6 +11925,7 @@
             <plugins>
               <dataSet>
                 <plugin pluginId="dev.meanmail.plugin.nginx-intellij-plugin" />
+                <plugin pluginId="dev.meanmail.plugin.nginx-intellij-plugin-pro" />
               </dataSet>
             </plugins>
           </entry>
@@ -12286,8 +12297,71 @@
               </dataSet>
             </plugins>
           </entry>
+          <entry key="*.bcfks">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="co.anbora.labs.kse" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="*.bks">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="co.anbora.labs.kse" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="*.jceks">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="co.anbora.labs.kse" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="*.jks">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="co.anbora.labs.kse" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="*.layerfile">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="org.webapp.plugins-layerfile" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="*.p12">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="co.anbora.labs.kse" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="*.taml">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="org.lukasj.idea.torquescript" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="*.uber">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="co.anbora.labs.kse" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="Layerfile">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="org.webapp.plugins-layerfile" />
+              </dataSet>
+            </plugins>
+          </entry>
         </featureMap>
-        <option name="lastUpdateTime" value="1640617889386" />
+        <option name="lastUpdateTime" value="1641403375983" />
       </features>
     </option>
   </component>

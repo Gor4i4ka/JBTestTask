@@ -12,7 +12,7 @@ fun resolveClassOrNull(className: String, project: Project): KtClass? {
     return KotlinClassShortNameIndex
         .getInstance()
         .get(className, project, GlobalSearchScope.allScope(project))
-        .firstOrNull() as KtClass?
+        .firstOrNull() as? KtClass
 }
 
 fun resolveFunctionOrNull(functionName: String, project: Project): KtNamedFunction? {
@@ -20,14 +20,15 @@ fun resolveFunctionOrNull(functionName: String, project: Project): KtNamedFuncti
         .getInstance()
         .get(functionName, project, GlobalSearchScope.allScope(project))
         .firstOrNull()
+
 }
 
 fun resolveConstructorOrNull(call: KtCallElement): KtPrimaryConstructor? {
     //return call.resolveToCall()?.resultingDescriptor?.findPsi() as? KtPrimaryConstructor
-    return (resolveClassOrNull(call.firstChild.text, call.project) as KtClass).primaryConstructor
+    return (resolveClassOrNull(call.firstChild.text, call.project))?.primaryConstructor
 }
 
-fun findBuilderAndBuildForClass(dataClassName: String?, project: Project): Pair<KtNamedFunction, KtClass?>? {
+fun findBuilderAndBuildForClass(dataClassName: String?, project: Project): Pair<KtNamedFunction, KtClass>? {
 
     if (dataClassName == null)
         return null
@@ -35,7 +36,7 @@ fun findBuilderAndBuildForClass(dataClassName: String?, project: Project): Pair<
     val potentialBuilder = resolveClassOrNull("${dataClassName}Builder", project)
     val potentialBuildFunction: KtNamedFunction? = resolveFunctionOrNull("build${dataClassName}", project)
 
-    return if (potentialBuildFunction != null)
+    return if (potentialBuildFunction != null && potentialBuilder != null)
         Pair(potentialBuildFunction, potentialBuilder)
     else
         null

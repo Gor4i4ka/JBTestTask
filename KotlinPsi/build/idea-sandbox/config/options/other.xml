@@ -12,6 +12,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="CWM_LOGGING_VERSION" value="1" />
+    <property name="NextRunPlatformUpdateBuild" value="IC-213.6461.79/2021.3.1" />
+    <property name="NextRunPlatformUpdateVersion" value="2021.3.1" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="bundled.plugins.list.saved.version" value="IC-213.5744.223" />
@@ -19,7 +21,7 @@
     <property name="debugger.smart.chooser.counter" value="3" />
     <property name="eclipse.projects.detected" value="" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/JetBrainsProjects/JBTestTask/JBTestProject" />
-    <property name="file.gist.reindex.count" value="19" />
+    <property name="file.gist.reindex.count" value="20" />
     <property name="fileTypeChangedCounter" value="1" />
     <property name="fileTypeDetectors" value="com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector:com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector" />
     <property name="got.it.tooltip.cwm.invitation.notification" value="1" />
@@ -32,7 +34,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/JetBrainsProjects/JBTestTask/JBTestProject" />
     <property name="packagesearch.endpoint.url.fulltext" value="https://package-search.services.jetbrains.com/api/search/idea/fulltext" />
     <property name="packagesearch.endpoint.url.suggest" value="https://package-search.services.jetbrains.com/api/search/idea/suggest" />
-    <property name="packagesearch.status.updated.ts" value="1640188753312" />
+    <property name="packagesearch.status.updated.ts" value="1641403338153" />
     <property name="registry.to.advanced.settings.migration.build" value="IC-213.5744.223" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
   </component>
