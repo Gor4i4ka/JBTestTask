@@ -9766,7 +9766,7 @@
     {
       "groupId": "com.google.ads.mediation",
       "artifactId": "fyber",
-      "version": "8.1.0.0",
+      "version": "8.1.2.0",
       "ktxTargets": [],
       "fqcns": []
     },
@@ -16769,28 +16769,28 @@
     {
       "groupId": "com.google.mediapipe",
       "artifactId": "facedetection",
-      "version": "0.8.9-alpha-3",
+      "version": "0.8.9-alpha-4",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.google.mediapipe",
       "artifactId": "facemesh",
-      "version": "0.8.9-alpha-3",
+      "version": "0.8.9-alpha-4",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.google.mediapipe",
       "artifactId": "hands",
-      "version": "0.8.9-alpha-3",
+      "version": "0.8.9-alpha-4",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.google.mediapipe",
       "artifactId": "solution-core",
-      "version": "0.8.9-alpha-3",
+      "version": "0.8.9-alpha-4",
       "ktxTargets": [],
       "fqcns": []
     },

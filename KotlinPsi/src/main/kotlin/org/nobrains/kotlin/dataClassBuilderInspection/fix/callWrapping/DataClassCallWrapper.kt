@@ -1,5 +1,6 @@
 package org.nobrains.kotlin.dataClassBuilderInspection.fix.callWrapping
 
+import org.jetbrains.kotlin.idea.debugger.sequence.psi.callName
 import org.jetbrains.kotlin.nj2k.postProcessing.type
 import org.jetbrains.kotlin.psi.*
 import org.jetbrains.kotlin.psi.psiUtil.isInsideOf
@@ -76,10 +77,10 @@ object DataClassCallWrapper {
 
     private fun processField(parameter: KtParameter, argument: KtValueArgument): String {
 
-        val argumentExpression: KtCallElement? = argument.getArgumentExpression() as? KtCallElement
+        val argumentExpression = argument.getArgumentExpression() as? KtCallExpression
 
         // Data class primary constructor expressions will be handled by children, we handle collections here
-        if (argumentExpression?.firstChild?.text in handledCollectionsOf) {
+        if (argumentExpression?.callName() in handledCollectionsOf) {
 
             // We found collection call, - now handling it
             // Check if collection of data class type with builder
@@ -109,6 +110,7 @@ object DataClassCallWrapper {
                         collectionWrapper.append(collectionArgumentWrapper)
                     }
                 }
+
                 return collectionWrapper.toString()
             }
 
