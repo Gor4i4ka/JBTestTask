@@ -16,7 +16,6 @@ object UsedDataClassesBuilderCreator {
                 attachSingleBuilder(infoUnit.clazz, kotlinFactory)
             if (!infoUnit.hasBuildFunction)
                 attachSingleBuildFunction(infoUnit.clazz, kotlinFactory)
-            //allUsedDataClassesSet.remove(infoUnit)
         }
     }
 
@@ -56,28 +55,32 @@ object UsedDataClassesBuilderCreator {
 
                     val parameterName = parameter.nameAsSafeName.toString()
                     val parameterType = parameter.type()
-                    val collectionParameterTypeName =
-                        Regex("<.*>").find(parameterType.toString())?.value?.drop(1)?.dropLast(1)
-                    val collectionShortName = Regex(".*<").find(parameterType.toString())?.value?.dropLast(1)
+                    val collectionShortName = parameterType?.extractCollectionNameOrNull()
+                    val collectionParameterTypeName = parameterType?.extractCollectionArgumentNameOrNull()
                     val isCollection = collectionShortName in collectionsHandled
 
+                    // Generate if this parameter is primitive
                     if (parameterType?.isPrimitiveNumberType() == true) {
                         if (parameterType.isMarkedNullable)
                             append("var ${parameterName}: $parameterType = null")
                         else
                             append("var $parameterName by Delegates.notNull<${parameterType}>()")
-                    } else if (isCollection) {
+                    }
+                    // Generate if this parameter is collection
+                    else if (isCollection) {
                         append(
                             "var $parameterName = " +
                                     "mutable${collectionShortName}Of" +
                                     "<${collectionParameterTypeName}>()\n"
                         )
 
-                        // TODO: MAKE ANOTHER RESOLVE
-                        val potentialDataClass = collectionParameterTypeName?.let { resolveClassOrNull(it, parameter.project) }
+                        val potentialDataClass =
+                            collectionParameterTypeName?.let { resolveClassOrNull(it, parameter.project) }
                         if (potentialDataClass != null && potentialDataClass.isData())
                             append(generateBuildForSingleField(parameter))
-                    } else {
+                    }
+                    // Generate if this parameter is something else
+                    else {
                         if (parameterType?.isMarkedNullable == true)
                             append("var ${parameterName}: $parameterType = null")
                         else
@@ -92,14 +95,9 @@ object UsedDataClassesBuilderCreator {
 
     private fun generateBuildForSingleField(parameter: KtParameter): String {
 
-        val collectionParameterTypeName = Regex("<.*>").find(parameter.type().toString())?.value?.drop(1)?.dropLast(1)
+        val collectionParameterTypeName = parameter.type()?.extractCollectionArgumentNameOrNull()
 
         return StringBuilder()
-//            .append(
-//                "fun ${parameter.nameAsSafeName}Element" +
-//                        "(init: ${collectionParameterTypeName}Builder.() -> Unit) {\n" +
-//                        "${parameter.nameAsSafeName}.add(build${collectionParameterTypeName}(init))}\n"
-//            )
             .append(
                 "fun ${parameter.nameAsSafeName}Element" +
                         "(element: ${collectionParameterTypeName}) {\n" +

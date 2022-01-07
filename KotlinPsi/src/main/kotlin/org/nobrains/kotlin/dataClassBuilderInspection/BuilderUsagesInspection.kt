@@ -2,16 +2,12 @@ package org.nobrains.kotlin.dataClassBuilderInspection
 
 import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.project.Project
+import org.jetbrains.kotlin.idea.debugger.sequence.psi.callName
 import org.jetbrains.kotlin.idea.inspections.AbstractApplicabilityBasedInspection
-import org.jetbrains.kotlin.nj2k.postProcessing.type
 import org.jetbrains.kotlin.psi.*
-import org.jetbrains.kotlin.psi.psiUtil.findFunctionByName
-import org.jetbrains.kotlin.psi.psiUtil.isInsideOf
 import org.nobrains.kotlin.dataClassBuilderInspection.fix.builderGeneration.UsedDataClassesAnalyzer
 import org.nobrains.kotlin.dataClassBuilderInspection.fix.builderGeneration.UsedDataClassesBuilderCreator
 import org.nobrains.kotlin.dataClassBuilderInspection.fix.callWrapping.DataClassCallWrapper
-import org.nobrains.kotlin.dataClassBuilderInspection.utils.findBuilderAndBuildForClass
-import org.nobrains.kotlin.dataClassBuilderInspection.utils.resolveConstructorOrNull
 
 class BuilderUsagesInspection :
     AbstractApplicabilityBasedInspection<KtNameReferenceExpression>(KtNameReferenceExpression::class.java) {
@@ -27,18 +23,22 @@ class BuilderUsagesInspection :
 
     override fun applyTo(element: KtNameReferenceExpression, project: Project, editor: Editor?) {
 
+        val call = element.parent as? KtCallExpression?: return
+
         // Firstly Generate all builders
-        val analysisResult = UsedDataClassesAnalyzer.analyze(element.parent as KtCallElement)
+        val analysisResult = UsedDataClassesAnalyzer.analyze(call)
         UsedDataClassesBuilderCreator.createDslBuilders(analysisResult)
 
-        element.parent.replace(DataClassCallWrapper.wrapConstructorCall(element.parent as KtCallElement))
+        // Secondly replace
+        call.replace(DataClassCallWrapper.wrapConstructorCall(call))
     }
 
     override fun isApplicable(element: KtNameReferenceExpression): Boolean {
 
-        val parent = element.parent
-        if (parent is KtCallElement && element.text !in handledCollectionsOf)
-            return DataClassCallWrapper.isApplicable(parent)
+        val call = element.parent
+        if (call is KtCallExpression && call.callName() !in handledCollectionsOf)
+            return DataClassCallWrapper.isApplicable(call)
         return false
     }
+
 }

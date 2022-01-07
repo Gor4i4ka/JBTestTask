@@ -10,7 +10,7 @@ object DataClassCallWrapper {
 
     private val handledCollectionsOf = setOf("listOf", "setOf", "stackOf")
 
-    fun wrapConstructorCall(call: KtCallElement): KtCallElement {
+    fun wrapConstructorCall(call: KtCallExpression): KtCallExpression {
 
         val wrapperStringBuilder = StringBuilder()
 
@@ -41,7 +41,7 @@ object DataClassCallWrapper {
             // Creating the expression and processing children
 
             val kotlinFactory = KtPsiFactory(call.project)
-            val wrapperExpression = kotlinFactory.createExpression(wrapperStringBuilder.toString()) as KtCallElement
+            val wrapperExpression = kotlinFactory.createExpression(wrapperStringBuilder.toString()) as KtCallExpression
             visitChildren(wrapperExpression)
             return wrapperExpression
         } else {
@@ -50,7 +50,7 @@ object DataClassCallWrapper {
         }
     }
 
-    fun isApplicable(call: KtCallElement): Boolean {
+    fun isApplicable(call: KtCallExpression): Boolean {
 
         val potentialConstructor = resolveConstructorOrNull(call)
 
@@ -77,15 +77,19 @@ object DataClassCallWrapper {
 
     private fun processField(parameter: KtParameter, argument: KtValueArgument): String {
 
-        val argumentExpression = argument.getArgumentExpression() as? KtCallExpression
+        //val argumentExpression = argument.getArgumentExpression() as? KtCallExpression
+        val argumentExpression = argument.getArgumentExpression()
 
+        // Field processing if "CollectionOf" call
         // Data class primary constructor expressions will be handled by children, we handle collections here
-        if (argumentExpression?.callName() in handledCollectionsOf) {
+        if (argumentExpression is KtCallExpression &&
+            argumentExpression.callName() in handledCollectionsOf
+        ) {
 
             // We found collection call, - now handling it
             // Check if collection of data class type with builder
 
-            val genericType = parameter.type()?.extractCollectionArgumentName()
+            val genericType = parameter.type()?.extractCollectionArgumentNameOrNull()
             val potentialBuilderPair = findBuilderAndBuildForClass(genericType, parameter.project)
             val potentialBuilder = potentialBuilderPair?.second
 
@@ -95,37 +99,35 @@ object DataClassCallWrapper {
                 && resolveFunctionOrNull("${parameter.nameAsSafeName}Element", potentialBuilder.project) != null
             ) {
                 val collectionWrapper = StringBuilder("\n")
-                val collectionArgs = argumentExpression?.valueArguments
+                val collectionArgs = argumentExpression.valueArguments
 
-                if (collectionArgs != null) {
-                    for (collectionArgument in collectionArgs) {
-                        val collectionArgumentWrapper = StringBuilder()
-                            .append("${parameter.nameAsSafeName}Element ")
-                            .append("(\n")
-                            .apply {
-                                append(collectionArgument.getArgumentExpression()?.text)
-                            }
-                            .append("\n)\n")
+                for (collectionArgument in collectionArgs) {
+                    val collectionArgumentWrapper = StringBuilder()
+                        .append("${parameter.nameAsSafeName}Element ")
+                        .append("(\n")
+                        .apply {
+                            append(collectionArgument.getArgumentExpression()?.text)
+                        }
+                        .append("\n)\n")
 
-                        collectionWrapper.append(collectionArgumentWrapper)
-                    }
+                    collectionWrapper.append(collectionArgumentWrapper)
                 }
 
                 return collectionWrapper.toString()
             }
 
-            var resultCollectionInvocation = argument.getArgumentExpression()?.text
-            resultCollectionInvocation =
-                "mutable${resultCollectionInvocation?.get(0)?.uppercase()}${resultCollectionInvocation?.drop(1)}\n"
-            return "${parameter.nameAsSafeName} = $resultCollectionInvocation"
+            // Getting info about the function call as String and transforming it
+            val mutableInstantiation = argumentExpression.text?.toMutableInstantiationByName()
+            return "${parameter.nameAsSafeName} = $mutableInstantiation"
         }
 
-        return "${parameter.nameAsSafeName} = ${argument.getArgumentExpression()?.text}\n"
+        // Default field processing
+        return "${parameter.nameAsSafeName} = ${argumentExpression?.text}\n"
     }
 
     private fun visitChildren(parent: KtElement) {
         for (child in parent.children) {
-            if (child is KtCallElement && isApplicable(child))
+            if (child is KtCallExpression && isApplicable(child))
                 child.replace(wrapConstructorCall(child))
             visitChildren(child as KtElement)
         }
