@@ -5,9 +5,7 @@ import kotlinx.collections.immutable.toImmutableList
 import org.jetbrains.kotlin.idea.debugger.sequence.psi.callName
 import org.jetbrains.kotlin.psi.KtCallExpression
 import org.jetbrains.kotlin.psi.KtElement
-import org.nobrains.kotlin.dataClassBuilderInspection.utils.findReferenceBuilderAndBuildForClass
-import org.nobrains.kotlin.dataClassBuilderInspection.utils.resolveIndexClassOrNull
-import org.nobrains.kotlin.dataClassBuilderInspection.utils.resolveIndexFunctionOrNull
+import org.nobrains.kotlin.dataClassBuilderInspection.utils.findLocalBuilderAndBuildForClass
 import org.nobrains.kotlin.dataClassBuilderInspection.utils.resolveReferenceClassOrNull
 
 object UsedDataClassesAnalyzer {
@@ -41,7 +39,7 @@ object UsedDataClassesAnalyzer {
 //            val hasPotentialBuilder = resolveIndexClassOrNull("${callName}Builder", project) != null
 //            val hasPotentialBuild = resolveIndexFunctionOrNull("build${callName}", project) != null
 
-            val builderMechanism = findReferenceBuilderAndBuildForClass(correspondingDataClass)
+            val builderMechanism = findLocalBuilderAndBuildForClass(correspondingDataClass)
             val hasPotentialBuilder = builderMechanism?.first != null
             val hasPotentialBuild = builderMechanism?.second != null
 

@@ -6,7 +6,6 @@ import org.jetbrains.kotlin.idea.caches.resolve.resolveToCall
 import org.jetbrains.kotlin.idea.stubindex.KotlinClassShortNameIndex
 import org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex
 import org.jetbrains.kotlin.js.resolve.diagnostics.findPsi
-import org.jetbrains.kotlin.name.Name
 import org.jetbrains.kotlin.psi.*
 import org.jetbrains.kotlin.psi.psiUtil.containingClass
 
@@ -15,6 +14,20 @@ fun resolveIndexClassOrNull(className: String, project: Project): KtClass? {
         .getInstance()
         .get(className, project, GlobalSearchScope.allScope(project))
         .firstOrNull() as? KtClass
+}
+
+fun resolveIndexClassWithBuilderOrNull(className: String, project: Project): KtClass? {
+    val potentialClasses = KotlinClassShortNameIndex
+        .getInstance()
+        .get(className, project, GlobalSearchScope.allScope(project))
+
+    val potentialBuilder = findIndexBuilderAndBuildForClass(className, project)?.second
+
+    for (element in potentialClasses)
+        if (element.containingFile == potentialBuilder?.containingFile)
+            return element as? KtClass
+
+    return null
 }
 
 fun resolveIndexFunctionOrNull(functionName: String, project: Project): KtNamedFunction? {
@@ -26,6 +39,10 @@ fun resolveIndexFunctionOrNull(functionName: String, project: Project): KtNamedF
 
 fun resolveIndexConstructorOrNull(call: KtCallElement): KtPrimaryConstructor? {
     return (resolveIndexClassOrNull(call.firstChild.text, call.project))?.primaryConstructor
+}
+
+fun resolveIndexConstructorWithBuilderOrNull(call: KtCallExpression): KtPrimaryConstructor? {
+    return (resolveIndexClassWithBuilderOrNull(call.firstChild.text, call.project))?.primaryConstructor
 }
 
 fun findIndexBuilderAndBuildForClass(dataClassName: String?, project: Project): Pair<KtNamedFunction, KtClass>? {
@@ -56,7 +73,7 @@ fun resolveReferenceConstructorOrNull(call: KtCallExpression): KtPrimaryConstruc
     return primaryConstructorDeclaration
 }
 
-fun findReferenceBuilderAndBuildForClass(clazz: KtClass): Pair<KtNamedFunction, KtClass>? {
+fun findLocalBuilderAndBuildForClass(clazz: KtClass): Pair<KtNamedFunction, KtClass>? {
 
     val className = clazz.nameAsSafeName
     val buildFunctionName = "build${className}"
