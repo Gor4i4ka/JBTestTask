@@ -6,40 +6,83 @@ import org.jetbrains.kotlin.idea.caches.resolve.resolveToCall
 import org.jetbrains.kotlin.idea.stubindex.KotlinClassShortNameIndex
 import org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex
 import org.jetbrains.kotlin.js.resolve.diagnostics.findPsi
+import org.jetbrains.kotlin.name.Name
 import org.jetbrains.kotlin.psi.*
+import org.jetbrains.kotlin.psi.psiUtil.containingClass
 
-fun resolveClassOrNull(className: String, project: Project): KtClass? {
+fun resolveIndexClassOrNull(className: String, project: Project): KtClass? {
     return KotlinClassShortNameIndex
         .getInstance()
         .get(className, project, GlobalSearchScope.allScope(project))
         .firstOrNull() as? KtClass
 }
 
-fun resolveFunctionOrNull(functionName: String, project: Project): KtNamedFunction? {
+fun resolveIndexFunctionOrNull(functionName: String, project: Project): KtNamedFunction? {
     return KotlinFunctionShortNameIndex
         .getInstance()
         .get(functionName, project, GlobalSearchScope.allScope(project))
         .firstOrNull()
-
 }
 
-fun resolveConstructorOrNull(call: KtCallElement): KtPrimaryConstructor? {
-    //return call.resolveToCall()?.resultingDescriptor?.findPsi() as? KtPrimaryConstructor
-    return (resolveClassOrNull(call.firstChild.text, call.project))?.primaryConstructor
+fun resolveIndexConstructorOrNull(call: KtCallElement): KtPrimaryConstructor? {
+    return (resolveIndexClassOrNull(call.firstChild.text, call.project))?.primaryConstructor
 }
 
-fun findBuilderAndBuildForClass(dataClassName: String?, project: Project): Pair<KtNamedFunction, KtClass>? {
+fun findIndexBuilderAndBuildForClass(dataClassName: String?, project: Project): Pair<KtNamedFunction, KtClass>? {
 
     if (dataClassName == null)
         return null
 
-    val potentialBuilder = resolveClassOrNull("${dataClassName}Builder", project)
-    val potentialBuildFunction: KtNamedFunction? = resolveFunctionOrNull("build${dataClassName}", project)
+    val potentialBuilder = resolveIndexClassOrNull("${dataClassName}Builder", project)
+    val potentialBuildFunction: KtNamedFunction? = resolveIndexFunctionOrNull("build${dataClassName}", project)
 
     return if (potentialBuildFunction != null && potentialBuilder != null)
         Pair(potentialBuildFunction, potentialBuilder)
     else
         null
 
+}
+
+//
+
+fun resolveReferenceClassOrNull(call: KtCallExpression): KtClass? {
+    return resolveReferenceConstructorOrNull(call)?.containingClass()
+}
+
+fun resolveReferenceConstructorOrNull(call: KtCallExpression): KtPrimaryConstructor? {
+    val primaryConstructorDeclarationDescriptor = call.resolveToCall()?.resultingDescriptor
+    val primaryConstructorDeclaration = primaryConstructorDeclarationDescriptor?.findPsi() as? KtPrimaryConstructor
+
+    return primaryConstructorDeclaration
+}
+
+fun findReferenceBuilderAndBuildForClass(clazz: KtClass): Pair<KtNamedFunction, KtClass>? {
+
+    val className = clazz.nameAsSafeName
+    val buildFunctionName = "build${className}"
+    val builderClassName = "${className}Builder"
+
+    var buildFunction: KtNamedFunction? = null
+    var builderClass: KtClass? = null
+
+    val containingKtElement = clazz.parent
+
+    for (element in containingKtElement.children) {
+        // Checking for "build" Function
+        if (element is KtNamedFunction && element.nameAsSafeName.toString() == buildFunctionName) {
+            buildFunction = element
+            continue
+        }
+
+        if (element is KtClass && element.nameAsSafeName.toString() == builderClassName) {
+            builderClass = element
+            continue
+        }
+    }
+
+    return if (buildFunction != null && builderClass != null)
+        Pair(buildFunction, builderClass)
+    else
+        null
 }
 

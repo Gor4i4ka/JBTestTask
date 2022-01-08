@@ -1,6 +1,4 @@
-package testDsl
-
-import kotlin.properties.Delegates
+package testDsl.namedTests
 
 data class Crowd(
     val crowdName: String,

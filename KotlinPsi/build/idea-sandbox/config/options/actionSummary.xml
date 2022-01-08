@@ -1,10 +1,16 @@
 <application>
   <component name="ActionsLocalSummary">
+    <e n="$Copy">
+      <i c="1" l="1641642368126" />
+    </e>
     <e n="$Delete">
-      <i c="4" l="1640687451360" />
+      <i c="5" l="1641642020214" />
+    </e>
+    <e n="$Paste">
+      <i c="1" l="1641642369846" />
     </e>
     <e n="$Undo">
-      <i c="31" l="1641404283689" />
+      <i c="48" l="1641648841992" />
     </e>
     <e n="CodeCompletion">
       <i c="1" l="1641404079048" />
@@ -16,37 +22,37 @@
       <i c="4" l="1640634277578" />
     </e>
     <e n="EditorBackSpace">
-      <i c="608" l="1641404222885" />
+      <i c="704" l="1641642992371" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="48" l="1641404138845" />
+      <i c="52" l="1641642101559" />
     </e>
     <e n="EditorCopy">
-      <i c="18" l="1641478124379" />
+      <i c="19" l="1641640734982" />
     </e>
     <e n="EditorCut">
       <i c="1" l="1641403889958" />
     </e>
     <e n="EditorDown">
-      <i c="455" l="1641404274195" />
+      <i c="461" l="1641642997689" />
     </e>
     <e n="EditorEnter">
-      <i c="81" l="1641404142931" />
+      <i c="87" l="1641642084614" />
     </e>
     <e n="EditorEscape">
-      <i c="8" l="1641404159450" />
+      <i c="14" l="1641642996666" />
     </e>
     <e n="EditorLeft">
-      <i c="162" l="1641404120393" />
+      <i c="195" l="1641642998012" />
     </e>
     <e n="EditorPageUp">
       <i c="5" l="1641478127885" />
     </e>
     <e n="EditorPaste">
-      <i c="24" l="1641478139860" />
+      <i c="25" l="1641640735872" />
     </e>
     <e n="EditorRight">
-      <i c="291" l="1641404142291" />
+      <i c="326" l="1641642083761" />
     </e>
     <e n="EditorTab">
       <i c="18" l="1641403988032" />
@@ -57,8 +63,14 @@
     <e n="FindNext">
       <i c="1" l="1641404080495" />
     </e>
+    <e n="GotoDeclaration">
+      <i c="2" l="1641642429006" />
+    </e>
     <e n="Kotlin.NewFile">
-      <i c="3" l="1641404189102" />
+      <i c="6" l="1641642027134" />
+    </e>
+    <e n="NewDir">
+      <i c="7" l="1641642289901" />
     </e>
     <e n="ReformatCode">
       <i c="8" l="1641404082670" />
@@ -107,6 +119,12 @@
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
       <i c="1" l="1640684415799" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$ListMoveDownAction">
+      <i c="3" l="1641640216755" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$ListMoveUpAction">
+      <i c="1" l="1641579371432" />
     </e>
     <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
       <i c="1" l="1640634149421" />

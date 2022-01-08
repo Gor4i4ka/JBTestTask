@@ -14,12 +14,13 @@ object DataClassCallWrapper {
 
         val wrapperStringBuilder = StringBuilder()
 
-        val resolvedConstructor = resolveConstructorOrNull(call)
+        val resolvedConstructor = resolveIndexConstructorOrNull(call)
+//        val resolvedConstructor = resolveReferenceConstructorOrNull(call)
 
         if (resolvedConstructor != null) {
             val resolvedConstructorName = resolvedConstructor.nameAsSafeName.toString()
             val resolvedConstructorParameters = resolvedConstructor.valueParameters
-            val resolvedBuildFunction = findBuilderAndBuildForClass(resolvedConstructorName, call.project)?.first
+            val resolvedBuildFunction = findIndexBuilderAndBuildForClass(resolvedConstructorName, call.project)?.first
 
             // Generating the wrapper
 
@@ -31,7 +32,7 @@ object DataClassCallWrapper {
                         append(
                             processField(
                                 resolvedConstructorParameters[argumentIndex],
-                                call.valueArguments[argumentIndex] as KtValueArgument
+                                call.valueArguments[argumentIndex]
                             )
                         )
                     }
@@ -52,16 +53,18 @@ object DataClassCallWrapper {
 
     fun isApplicable(call: KtCallExpression): Boolean {
 
-        val potentialConstructor = resolveConstructorOrNull(call)
+        val potentialConstructor = resolveIndexConstructorOrNull(call)
+//        val potentialConstructor = resolveReferenceConstructorOrNull(call)
 
         if (potentialConstructor is KtPrimaryConstructor) {
             val clazz = potentialConstructor.parent as? KtClass ?: return false
 
             if (clazz.isData()) {
-                val potentialBuildingPair = findBuilderAndBuildForClass(
+                val potentialBuildingPair = findIndexBuilderAndBuildForClass(
                     clazz.nameAsSafeName.toString(),
                     clazz.project
                 )
+//                val potentialBuildingPair = findReferenceBuilderAndBuildForClass(clazz)
                 if (potentialBuildingPair != null) {
 
                     // Sanity check
@@ -90,13 +93,13 @@ object DataClassCallWrapper {
             // Check if collection of data class type with builder
 
             val genericType = parameter.type()?.extractCollectionArgumentNameOrNull()
-            val potentialBuilderPair = findBuilderAndBuildForClass(genericType, parameter.project)
+            val potentialBuilderPair = findIndexBuilderAndBuildForClass(genericType, parameter.project)
             val potentialBuilder = potentialBuilderPair?.second
 
             // We are safe if building function is found
             // WARNING: potentialBuilder.findFunctionByName("${parameter.nameAsSafeName}Element") != null not works? BUG
             if (potentialBuilder != null
-                && resolveFunctionOrNull("${parameter.nameAsSafeName}Element", potentialBuilder.project) != null
+                && resolveIndexFunctionOrNull("${parameter.nameAsSafeName}Element", potentialBuilder.project) != null
             ) {
                 val collectionWrapper = StringBuilder("\n")
                 val collectionArgs = argumentExpression.valueArguments

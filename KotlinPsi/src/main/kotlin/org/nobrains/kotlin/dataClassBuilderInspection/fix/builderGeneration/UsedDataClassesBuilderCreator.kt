@@ -75,7 +75,7 @@ object UsedDataClassesBuilderCreator {
                         )
 
                         val potentialDataClass =
-                            collectionParameterTypeName?.let { resolveClassOrNull(it, parameter.project) }
+                            collectionParameterTypeName?.let { resolveIndexClassOrNull(it, parameter.project) }
                         if (potentialDataClass != null && potentialDataClass.isData())
                             append(generateBuildForSingleField(parameter))
                     }
