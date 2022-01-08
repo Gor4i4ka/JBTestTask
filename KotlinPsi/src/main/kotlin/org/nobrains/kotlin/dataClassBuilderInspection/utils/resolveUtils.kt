@@ -8,6 +8,7 @@ import org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex
 import org.jetbrains.kotlin.js.resolve.diagnostics.findPsi
 import org.jetbrains.kotlin.psi.*
 import org.jetbrains.kotlin.psi.psiUtil.containingClass
+import org.jetbrains.kotlin.psi.psiUtil.findFunctionByName
 
 fun resolveIndexClassOrNull(className: String, project: Project): KtClass? {
     return KotlinClassShortNameIndex
@@ -103,3 +104,9 @@ fun findLocalBuilderAndBuildForClass(clazz: KtClass): Pair<KtNamedFunction, KtCl
         null
 }
 
+fun functionPresentInFile(functionName: String, file: KtFile): Boolean {
+    return !KotlinFunctionShortNameIndex
+        .getInstance()
+        .get(functionName, file.project, GlobalSearchScope.fileScope(file))
+        .isEmpty()
+}

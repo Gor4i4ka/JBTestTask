@@ -4,6 +4,7 @@ import org.jetbrains.kotlin.idea.debugger.sequence.psi.callName
 import org.jetbrains.kotlin.nj2k.postProcessing.type
 import org.jetbrains.kotlin.psi.*
 import org.jetbrains.kotlin.psi.psiUtil.isInsideOf
+import org.jetbrains.kotlin.resolve.calls.callUtil.getCall
 import org.nobrains.kotlin.dataClassBuilderInspection.utils.*
 
 object DataClassCallWrapper {
@@ -14,8 +15,7 @@ object DataClassCallWrapper {
 
         val wrapperStringBuilder = StringBuilder()
 
-        val resolvedConstructor = resolveIndexConstructorOrNull(call)
-//        val resolvedConstructor = resolveReferenceConstructorOrNull(call)
+        val resolvedConstructor = resolveIndexConstructorWithBuilderOrNull(call)
 
         if (resolvedConstructor != null) {
             val resolvedConstructorName = resolvedConstructor.nameAsSafeName.toString()
@@ -32,7 +32,8 @@ object DataClassCallWrapper {
                         append(
                             processField(
                                 resolvedConstructorParameters[argumentIndex],
-                                call.valueArguments[argumentIndex]
+                                call.valueArguments[argumentIndex],
+                                resolvedConstructor.containingKtFile
                             )
                         )
                     }
@@ -51,10 +52,9 @@ object DataClassCallWrapper {
         }
     }
 
-    fun isApplicable(call: KtCallExpression): Boolean {
+    private fun isApplicable(call: KtCallExpression): Boolean {
 
-        val potentialConstructor = resolveIndexConstructorOrNull(call)
-//        val potentialConstructor = resolveReferenceConstructorOrNull(call)
+        val potentialConstructor = resolveIndexConstructorWithBuilderOrNull(call)
 
         if (potentialConstructor is KtPrimaryConstructor) {
             val clazz = potentialConstructor.parent as? KtClass ?: return false
@@ -64,7 +64,6 @@ object DataClassCallWrapper {
                     clazz.nameAsSafeName.toString(),
                     clazz.project
                 )
-//                val potentialBuildingPair = findReferenceBuilderAndBuildForClass(clazz)
                 if (potentialBuildingPair != null) {
 
                     // Sanity check
@@ -78,7 +77,11 @@ object DataClassCallWrapper {
         return false
     }
 
-    private fun processField(parameter: KtParameter, argument: KtValueArgument): String {
+    private fun processField(
+        parameter: KtParameter,
+        argument: KtValueArgument,
+        fileWithConstructorDeclaration: KtFile
+    ): String {
 
         //val argumentExpression = argument.getArgumentExpression() as? KtCallExpression
         val argumentExpression = argument.getArgumentExpression()
@@ -97,9 +100,8 @@ object DataClassCallWrapper {
             val potentialBuilder = potentialBuilderPair?.second
 
             // We are safe if building function is found
-            // WARNING: potentialBuilder.findFunctionByName("${parameter.nameAsSafeName}Element") != null not works? BUG
             if (potentialBuilder != null
-                && resolveIndexFunctionOrNull("${parameter.nameAsSafeName}Element", potentialBuilder.project) != null
+                && functionPresentInFile("${parameter.nameAsSafeName}Element", fileWithConstructorDeclaration)
             ) {
                 val collectionWrapper = StringBuilder("\n")
                 val collectionArgs = argumentExpression.valueArguments
