@@ -11,17 +11,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVal/singlePrimitive.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="132">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVal/singlePrimitiveNullable.kt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/namedTests/LargeClassTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="110">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -29,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVar/singlePrimitive.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="110">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -56,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/nVarVal/nPrimitives.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="176">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -75,16 +75,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/namedVarVals/correctlyPositionedNamed.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
+              <caret line="6" column="1" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/namedVarVals/mixPositionedNamed.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -102,7 +102,7 @@
   </component>
   <component name="FileTypeUsageLocalSummary">
     <fileType name="Kotlin">
-      <summary usageCount="109" lastUsed="1641665865349" />
+      <summary usageCount="120" lastUsed="1641722813527" />
     </fileType>
   </component>
   <component name="IdeDocumentHistory">
@@ -119,18 +119,20 @@
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/singlePrimitiveDefaultClass.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/singlePrimitiveNullableClass.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/singleVal/singlePrimitiveClass.kt" />
-      <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/namedTests/LargeClassTest.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/singleVar/singlePrimitiveDefaultClass.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/singleVar/singlePrimitiveClass.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/singleVar/singlePrimitiveNullableClass.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/nVarVal/singlePrimitiveClass.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/nVarVal/FourPrimitives.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/nVarVal/nPrimitives.kt" />
-      <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/nVarVal/nPrimitives.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/nVarValsNamed/nPrimitives.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/namedVarVals/singleNamedVal.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/namedVarVals/halfNamedVals.kt" />
       <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/namedVarVals/mixPositionedNamed.kt" />
+      <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/nVarVal/nPrimitives.kt" />
+      <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVar/singlePrimitive.kt" />
+      <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVal/singlePrimitive.kt" />
+      <option value="$PROJECT_DIR$/src/main/kotlin/testDsl/namedTests/LargeClassTest.kt" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -143,6 +145,7 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,7 +207,29 @@
               <item name="testDsl" type="462c0819:PsiDirectoryNode" />
               <item name="allCasesTests" type="462c0819:PsiDirectoryNode" />
               <item name="onlyPrimitives" type="462c0819:PsiDirectoryNode" />
-              <item name="namedVarVals" type="462c0819:PsiDirectoryNode" />
+              <item name="nVarVal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBTestProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBTestProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="testDsl" type="462c0819:PsiDirectoryNode" />
+              <item name="allCasesTests" type="462c0819:PsiDirectoryNode" />
+              <item name="onlyPrimitives" type="462c0819:PsiDirectoryNode" />
+              <item name="singleVal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBTestProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBTestProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="testDsl" type="462c0819:PsiDirectoryNode" />
+              <item name="allCasesTests" type="462c0819:PsiDirectoryNode" />
+              <item name="onlyPrimitives" type="462c0819:PsiDirectoryNode" />
+              <item name="singleVar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JBTestProject" type="b2602c69:ProjectViewProjectNode" />
@@ -225,7 +250,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -299,38 +323,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/namedTests/LargeClassTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVal/singlePrimitive.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVal/singlePrimitiveDefault.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/nVarValsNamed/nPrimitives.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVal/singlePrimitiveNullable.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVar/singlePrimitive.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -348,38 +345,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/nVarValsNamed/nPrimitives.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/nVarVal/nPrimitives.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/namedVarVals/singleNamedVal.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/namedVarVals/correctlyPositionedNamed.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVal/singlePrimitiveDefault.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/namedVarVals/mixPositionedNamed.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/nVarVal/nPrimitives.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVar/singlePrimitive.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/allCasesTests/onlyPrimitives/singleVal/singlePrimitive.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/testDsl/namedTests/LargeClassTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>

@@ -4,7 +4,6 @@ import org.jetbrains.kotlin.idea.debugger.sequence.psi.callName
 import org.jetbrains.kotlin.nj2k.postProcessing.type
 import org.jetbrains.kotlin.psi.*
 import org.jetbrains.kotlin.psi.psiUtil.isInsideOf
-import org.jetbrains.kotlin.resolve.calls.callUtil.getCall
 import org.nobrains.kotlin.dataClassBuilderInspection.utils.*
 
 object DataClassCallWrapper {
@@ -31,26 +30,30 @@ object DataClassCallWrapper {
                     for (argumentIndex in call.valueArguments.indices) {
 
                         val argument = call.valueArguments[argumentIndex]
+                        var correspondingParameter: KtParameter?
+
+                        // Processing Named arguments
                         if (argument.isNamed()) {
-                            val correspondingParameter =
-                                argument.getArgumentName()?.text?.let {
-                                    findParameterByName(
-                                        it,
-                                        resolvedConstructorParameters
-                                    )
-                                }
-
-                            if (correspondingParameter != null)
-                                append(
-                                    processField(
-                                        correspondingParameter,
-                                        argument,
-                                        resolvedConstructor.containingKtFile
-                                    )
+                            correspondingParameter = argument.getArgumentName()?.text?.let {
+                                findParameterByName(
+                                    it,
+                                    resolvedConstructorParameters
                                 )
+                            }
 
-                        } else {
-                            val correspondingParameter = resolvedConstructorParameters[argumentIndex]
+                            append(correspondingParameter?.let {
+                                processField(
+                                    it,
+                                    argument,
+                                    resolvedConstructor.containingKtFile
+                                )
+                            }
+                            )
+                        }
+
+                        // Processing arguments by default
+                        else {
+                            correspondingParameter = resolvedConstructorParameters[argumentIndex]
                             append(
                                 processField(
                                     correspondingParameter,
@@ -149,7 +152,7 @@ object DataClassCallWrapper {
             return "${parameter.nameAsSafeName} = $mutableInstantiation"
         }
 
-        // Default field processing
+        // Field processing by default
         return "${parameter.nameAsSafeName} = ${argumentExpression?.text}\n"
     }
 

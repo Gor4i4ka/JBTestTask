@@ -31,7 +31,7 @@
     <feature id="codeassists.javadoc.external" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.surroundwith.expression" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.recent.files" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="navigation.goto.declaration" count="8" last-shown="0" last-used="1641644617090" shown-count="0" />
+    <feature id="navigation.goto.declaration" count="9" last-shown="0" last-used="1641722713874" shown-count="0" />
     <feature id="scratch" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.completion.finishByDotEtc" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.goto.implementation" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -103,10 +103,10 @@
       <option name="lastDate" value="1641589200000" />
     </completionStatsTag>
     <fixesStatsTag>
-      <option name="invocations" value="91" />
+      <option name="invocations" value="96" />
       <option name="startDate" value="1640120400000" />
-      <option name="dayCount" value="9" />
-      <option name="lastDate" value="1641589200000" />
+      <option name="dayCount" value="10" />
+      <option name="lastDate" value="1641675600000" />
     </fixesStatsTag>
   </component>
 </application>
