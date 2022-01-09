@@ -1,4 +1,6 @@
-package testDsl.namedTests
+package testDsl.allCasesTests.recursive.collectionsWithData
+
+// An ugly duplicate of LargeTest
 
 data class Crowd(
     val crowdName: String,
@@ -9,7 +11,7 @@ data class Crowd(
 
 data class Person(
     val name: String,
-    var surname: String?,
+    var surname: StringBuilder?,
     val age: Int,
     var children: Int?,
     var bankAccountMoney: Float?,
@@ -31,14 +33,14 @@ val crowdUsage = Crowd(
     listOf(
         Person(
             "Den",
-            "Serditiy",
+            surname = StringBuilder("Serditiy"),
             23,
             null,
             -100f,
             listOf(
                 Movie(
-                    "Titanic",
-                    100f
+                    budget = 100f,
+                    title = "Titanic"
                 ),
                 Movie(
                     "slonik",
@@ -51,18 +53,14 @@ val crowdUsage = Crowd(
             )
         ),
         Person(
-            "AiWeeWee",
-            "drug",
-            20,
-            2,
-            1000f,
-            listOf(
-                Movie(
-                    "Anime",
-                    100f
-                ),
-            ),
-            listOf(
+
+            bankAccountMoney = 1000f,
+            surname = StringBuilder("Kozlov"),
+            age = 20,
+            favouriteMovies = listOf(),
+            name = "AiWeeWee",
+            children = null,
+            favouriteQuotes = listOf(
                 "kek",
             )
         )

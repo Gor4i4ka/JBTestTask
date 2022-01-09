@@ -1,4 +1,4 @@
-package testDsl.namedTests
+package testDsl.specialTests
 
 //data class Person(
 //    val name: String,

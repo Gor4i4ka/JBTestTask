@@ -1,4 +1,4 @@
-package testDsl.allCasesTests.onlyPrimitives.namedVarVals
+package testDsl.allCasesTests.nonRecursive.onlyPrimitives.namedVarVals
 
 data class MixPositioned(val value1: Int, val value2: Float?, val value3: Int?,
                          val value4: Long, val value5: Int, val value6: Float)

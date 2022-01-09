@@ -1,4 +1,4 @@
-package testDsl.allCasesTests.onlyPrimitives.singleVar
+package testDsl.allCasesTests.nonRecursive.onlyPrimitives.singleVar
 
 data class SinglePrimitiveClass(var value: Int)
 

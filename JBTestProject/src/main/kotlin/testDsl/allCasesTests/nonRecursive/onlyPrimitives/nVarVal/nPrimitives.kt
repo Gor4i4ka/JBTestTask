@@ -1,4 +1,4 @@
-package testDsl.allCasesTests.onlyPrimitives.nVarVal
+package testDsl.allCasesTests.nonRecursive.onlyPrimitives.nVarVal
 
 data class NPrimitivesClass(
     val value1: Int, val value2: Float?, val value3: Boolean? = null,
