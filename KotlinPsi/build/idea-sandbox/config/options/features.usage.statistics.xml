@@ -6,7 +6,7 @@
     <feature id="editing.clipboard.history" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.compare.editor.with.clipboard" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.surroundwith.statement" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="refactoring.rename" count="3" last-shown="0" last-used="1640683890465" shown-count="0" />
+    <feature id="refactoring.rename" count="18" last-shown="0" last-used="1641665831035" shown-count="0" />
     <feature id="navigation.popup.action" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.goto.file.line" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.show.quick.list" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -14,7 +14,7 @@
     <feature id="editing.completion.finishBySmartEnter" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.popup.symbol" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="find.recent.search" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="editing.completion.replace" count="0" last-shown="1641644499038" last-used="0" shown-count="644" />
+    <feature id="editing.completion.replace" count="0" last-shown="1641666291536" last-used="0" shown-count="907" />
     <feature id="switcher" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.complete.statement" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.goto.inspection" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -65,7 +65,7 @@
     <feature id="codeassists.highlight.throws" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.quickdefinition" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="find.completion" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="editing.completion.basic" count="59" last-shown="0" last-used="1641644494187" shown-count="0" />
+    <feature id="editing.completion.basic" count="79" last-shown="0" last-used="1641665956528" shown-count="0" />
     <feature id="tag.name.completion" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.completion.second.smarttype.array.member" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.completion.postfix" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -96,14 +96,14 @@
     <feature id="codeassists.quickdefinition.lookup" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.find.usages" count="0" last-shown="0" last-used="0" shown-count="0" />
     <completionStatsTag>
-      <option name="sparedCharacters" value="187" />
-      <option name="invocations" value="41" />
+      <option name="sparedCharacters" value="262" />
+      <option name="invocations" value="59" />
       <option name="startDate" value="1640293200000" />
       <option name="dayCount" value="6" />
       <option name="lastDate" value="1641589200000" />
     </completionStatsTag>
     <fixesStatsTag>
-      <option name="invocations" value="75" />
+      <option name="invocations" value="91" />
       <option name="startDate" value="1640120400000" />
       <option name="dayCount" value="9" />
       <option name="lastDate" value="1641589200000" />

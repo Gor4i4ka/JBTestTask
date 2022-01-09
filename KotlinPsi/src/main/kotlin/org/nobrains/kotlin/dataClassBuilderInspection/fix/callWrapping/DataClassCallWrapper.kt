@@ -29,13 +29,36 @@ object DataClassCallWrapper {
                 .append(" {\n")
                 .apply {
                     for (argumentIndex in call.valueArguments.indices) {
-                        append(
-                            processField(
-                                resolvedConstructorParameters[argumentIndex],
-                                call.valueArguments[argumentIndex],
-                                resolvedConstructor.containingKtFile
+
+                        val argument = call.valueArguments[argumentIndex]
+                        if (argument.isNamed()) {
+                            val correspondingParameter =
+                                argument.getArgumentName()?.text?.let {
+                                    findParameterByName(
+                                        it,
+                                        resolvedConstructorParameters
+                                    )
+                                }
+
+                            if (correspondingParameter != null)
+                                append(
+                                    processField(
+                                        correspondingParameter,
+                                        argument,
+                                        resolvedConstructor.containingKtFile
+                                    )
+                                )
+
+                        } else {
+                            val correspondingParameter = resolvedConstructorParameters[argumentIndex]
+                            append(
+                                processField(
+                                    correspondingParameter,
+                                    argument,
+                                    resolvedConstructor.containingKtFile
+                                )
                             )
-                        )
+                        }
                     }
                 }
                 .append("}")

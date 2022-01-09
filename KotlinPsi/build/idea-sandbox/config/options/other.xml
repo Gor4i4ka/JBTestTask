@@ -12,6 +12,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="CWM_LOGGING_VERSION" value="1" />
+    <property name="LayoutCode.optimizeImports" value="false" />
+    <property name="LayoutCode.processChangedText" value="false" />
     <property name="NextRunPlatformUpdateBuild" value="IC-213.6461.79/2021.3.1" />
     <property name="NextRunPlatformUpdateVersion" value="2021.3.1" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
@@ -21,7 +23,7 @@
     <property name="debugger.smart.chooser.counter" value="3" />
     <property name="eclipse.projects.detected" value="" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/JetBrainsProjects/JBTestTask/JBTestProject" />
-    <property name="file.gist.reindex.count" value="24" />
+    <property name="file.gist.reindex.count" value="40" />
     <property name="fileTypeChangedCounter" value="1" />
     <property name="fileTypeDetectors" value="com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector:com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector" />
     <property name="got.it.tooltip.cwm.invitation.notification" value="1" />

@@ -1,4 +1,4 @@
-package testDsl.allCasesTests.singleVar
+package testDsl.allCasesTests.onlyPrimitives.singleVal
 
 data class SinglePrimitiveDefaultClass(val value: Int = 0)
 

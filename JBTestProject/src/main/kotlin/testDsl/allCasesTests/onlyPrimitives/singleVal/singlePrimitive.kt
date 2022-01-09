@@ -1,6 +1,4 @@
-package testDsl.allCasesTests.singleVal
-
-import kotlin.properties.Delegates
+package testDsl.allCasesTests.onlyPrimitives.singleVal
 
 data class SinglePrimitiveClass(val value: Int)
 
