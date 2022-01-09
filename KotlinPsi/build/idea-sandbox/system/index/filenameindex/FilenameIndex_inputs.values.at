@@ -18,3 +18,7 @@ nCoplex.ktnComplex.ktcomplexWithPrimitives
 nArgumentsnMixComplexPrimitive.ktmixPositionedComplex.ktmixComplexPrimitive.ktspecialTestsnonRecursivecomplexWithPrimitivesonlyPrimitives
 nArgumentsnamedComplexsingleComplex
 nVarVal	singleVal	singleVarnamedVarValsrecursiveTestsnonRecursive	recursiveonlyDataClassescollectionsWithDatatwoDataClasses.ktmanyVariousDataClasses.ktNVariousDataClasses.ktSingleCollectionOf.ktMayCollectionsOf.ktManyCollectionsOf.kt
+varArgsvarArgsPrimitive.ktlargeClassTestCrowd.ktMovie.kt
+personPack
+goodPerson	badPerson	Person.kt	Person.kt
+classesusage.ktlargeClassTestLocal.kt

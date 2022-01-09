@@ -1,49 +1,49 @@
 <application>
   <component name="ActionsLocalSummary">
     <e n="$Copy">
-      <i c="3" l="1641665128299" />
+      <i c="7" l="1641742757414" />
     </e>
     <e n="$Delete">
-      <i c="7" l="1641665180288" />
+      <i c="9" l="1641742282971" />
     </e>
     <e n="$Paste">
-      <i c="3" l="1641665130577" />
+      <i c="5" l="1641742763095" />
     </e>
     <e n="$Undo">
-      <i c="160" l="1641736834928" />
+      <i c="183" l="1641742787479" />
     </e>
     <e n="CodeCompletion">
       <i c="1" l="1641404079048" />
     </e>
     <e n="CommentByLineComment">
-      <i c="12" l="1641735167684" />
+      <i c="15" l="1641742766788" />
     </e>
     <e n="Debug">
       <i c="4" l="1640634277578" />
     </e>
     <e n="EditorBackSpace">
-      <i c="2050" l="1641736767030" />
+      <i c="2209" l="1641742749220" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="168" l="1641736723558" />
+      <i c="177" l="1641742269719" />
     </e>
     <e n="EditorCopy">
-      <i c="44" l="1641736778934" />
+      <i c="49" l="1641742216059" />
     </e>
     <e n="EditorCut">
       <i c="1" l="1641403889958" />
     </e>
     <e n="EditorDown">
-      <i c="685" l="1641736765808" />
+      <i c="688" l="1641737247459" />
     </e>
     <e n="EditorEnter">
-      <i c="179" l="1641736746599" />
+      <i c="184" l="1641742258146" />
     </e>
     <e n="EditorEscape">
-      <i c="73" l="1641736164071" />
+      <i c="75" l="1641742263117" />
     </e>
     <e n="EditorLeft">
-      <i c="621" l="1641736766283" />
+      <i c="622" l="1641742261362" />
     </e>
     <e n="EditorLineEnd">
       <i c="1" l="1641726588688" />
@@ -52,10 +52,10 @@
       <i c="5" l="1641478127885" />
     </e>
     <e n="EditorPaste">
-      <i c="51" l="1641736746873" />
+      <i c="59" l="1641742745862" />
     </e>
     <e n="EditorRight">
-      <i c="1028" l="1641736700568" />
+      <i c="1031" l="1641742688165" />
     </e>
     <e n="EditorTab">
       <i c="22" l="1641736153705" />
@@ -64,46 +64,55 @@
       <i c="4" l="1641736159529" />
     </e>
     <e n="EditorUp">
-      <i c="724" l="1641736590431" />
+      <i c="730" l="1641741712666" />
     </e>
     <e n="FindNext">
       <i c="1" l="1641404080495" />
     </e>
     <e n="GotoDeclaration">
-      <i c="3" l="1641722713872" />
+      <i c="5" l="1641742011733" />
     </e>
     <e n="Kotlin.NewFile">
-      <i c="22" l="1641736025167" />
+      <i c="30" l="1641742735504" />
+    </e>
+    <e n="NewClass">
+      <i c="1" l="1641741483361" />
     </e>
     <e n="NewDir">
-      <i c="19" l="1641729896352" />
+      <i c="27" l="1641741450968" />
     </e>
     <e n="NextTemplateVariable">
-      <i c="3" l="1641665805586" />
+      <i c="6" l="1641742690027" />
+    </e>
+    <e n="OptimizeImports">
+      <i c="1" l="1641741768246" />
     </e>
     <e n="ReformatCode">
       <i c="21" l="1641736726230" />
     </e>
     <e n="RenameElement">
-      <i c="26" l="1641736540481" />
+      <i c="31" l="1641742686929" />
     </e>
     <e n="RenameFile">
       <i c="2" l="1641732753196" />
     </e>
     <e n="Run">
-      <i c="9" l="1641734966654" />
+      <i c="11" l="1641742382085" />
     </e>
     <e n="RunClass">
       <i c="5" l="1641734888319" />
     </e>
     <e n="SaveAll">
-      <i c="12" l="1641736847225" />
+      <i c="13" l="1641742813888" />
     </e>
     <e n="SearchEverywhere">
       <i c="1" l="1640684414714" />
     </e>
     <e n="ShowIntentionActions">
       <i c="2" l="1641732555577" />
+    </e>
+    <e n="ShowSettingsAndFindUsages">
+      <i c="1" l="1641741862635" />
     </e>
     <e n="StepInto">
       <i c="5" l="1640634331879" />
@@ -124,19 +133,22 @@
       <i c="1" l="1640274083632" />
     </e>
     <e n="com.intellij.execution.lineMarker.LineMarkerActionWrapper">
-      <i c="2" l="1641736817675" />
+      <i c="3" l="1641742357441" />
     </e>
     <e n="com.intellij.notification.NotificationAction$Simple">
       <i c="8" l="1640688885354" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
-      <i c="10" l="1641726861133" />
+      <i c="29" l="1641742015419" />
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
       <i c="1" l="1640684415799" />
     </e>
+    <e n="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
+      <i c="1" l="1641742388225" />
+    </e>
     <e n="com.intellij.ui.ScrollingUtil$ListMoveDownAction">
-      <i c="18" l="1641736029714" />
+      <i c="21" l="1641742742016" />
     </e>
     <e n="com.intellij.ui.ScrollingUtil$ListMoveUpAction">
       <i c="1" l="1641579371432" />

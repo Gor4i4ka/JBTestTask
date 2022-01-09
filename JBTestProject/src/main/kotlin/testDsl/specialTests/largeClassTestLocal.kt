@@ -1,24 +1,24 @@
 package testDsl.specialTests
 
-data class Crowd(
+data class CrowdLocal(
     val crowdName: String,
-    val people: List<Person>,
-    val forMovies: Set<Movie>
+    val people: List<PersonLocal>,
+    val forMovies: Set<MovieLocal>
 )
 
 
-data class Person(
+data class PersonLocal(
     val name: String,
-    var surname: String?,
+    var surname: StringBuilder?,
     val age: Int,
     var children: Int?,
     var bankAccountMoney: Float?,
-    val favouriteMovies: List<Movie>,
+    val favouriteMovies: List<MovieLocal>,
     val favouriteQuotes: List<String>
 )
 
 
-data class Movie(
+data class MovieLocal(
     val title: String,
     val budget: Float
 )
@@ -26,21 +26,21 @@ data class Movie(
 
 // Use cite BEFORE
 
-val crowdUsage = Crowd(
+val crowdUsage = CrowdLocal(
     "BOIZ",
     listOf(
-        Person(
+        PersonLocal(
             "Den",
-            "Serditiy",
+            surname = StringBuilder("Serditiy"),
             23,
             null,
             -100f,
             listOf(
-                Movie(
-                    "Titanic",
-                    100f
+                MovieLocal(
+                    budget = 100f,
+                    title = "Titanic"
                 ),
-                Movie(
+                MovieLocal(
                     "slonik",
                     100f
                 )
@@ -50,29 +50,25 @@ val crowdUsage = Crowd(
                 "next door"
             )
         ),
-        Person(
-            "AiWeeWee",
-            "drug",
-            20,
-            2,
-            1000f,
-            listOf(
-                Movie(
-                    "Anime",
-                    100f
-                ),
-            ),
-            listOf(
+        PersonLocal(
+
+            bankAccountMoney = 1000f,
+            surname = StringBuilder("Kozlov"),
+            age = 20,
+            favouriteMovies = listOf(),
+            name = "AiWeeWee",
+            children = null,
+            favouriteQuotes = listOf(
                 "kek",
             )
         )
     ),
     setOf(
-        Movie(
+        MovieLocal(
             "Titanic",
             100f
         ),
-        Movie(
+        MovieLocal(
             "slonik",
             100f
         )
