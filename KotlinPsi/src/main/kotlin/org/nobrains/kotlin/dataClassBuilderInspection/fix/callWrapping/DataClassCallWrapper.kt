@@ -1,6 +1,7 @@
 package org.nobrains.kotlin.dataClassBuilderInspection.fix.callWrapping
 
 import org.jetbrains.kotlin.idea.debugger.sequence.psi.callName
+import org.jetbrains.kotlin.idea.util.application.runWriteAction
 import org.jetbrains.kotlin.nj2k.postProcessing.type
 import org.jetbrains.kotlin.psi.*
 import org.jetbrains.kotlin.psi.psiUtil.isInsideOf
